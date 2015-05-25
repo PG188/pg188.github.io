@@ -1,13 +1,64 @@
-<!DOCTYPE html>
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body,td,th {
+	color: #003;
+}
+body {
+	background-color: #FFf;
+	margin-left: 10%;
+}
+</style>
 </head>
 
-<body>
-<h1>Hello girl</h1>
-
-<body>
-
+<body class="MenuBarActive">
+<ul id="MenuBar1" class="MenuBarHorizontal">
+  <li>
+    <div align="center"><a href="#">Home</a> </div>
+  </li>
+  <li>
+    <div align="center"><a href="#" class="MenuBarItemSubmenu">Interests</a>
+      <ul>
+        <li><a href="#">Engineering</a></li>
+        <li><a href="#">Origami</a></li>
+        <li><a href="#">Photography</a></li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    <div align="center"><a class="MenuBarItemSubmenu" href="#">Projects</a>
+      <ul>
+        <li><a class="MenuBarItemSubmenu" href="#">Team 188</a>
+          <ul>
+            <li><a href="#">Blizzard X</a></li>
+            <li><a href="#">Blizzard XI</a></li>
+            <li><a href="#">Blizzard XII</a></li>
+            <li><a href="#">Blizzard XIV</a></li>
+          </ul>
+        </li>
+        <li><a href="#">F1 in Schools</a></li>
+        <li><a href="#">Skills Robotics Competition</a></li>
+        <li><a href="#">VEX Robotics</a></li>
+        <li><a href="#">Formula Hybrid</a></li>
+        <li><a href="#">McMaster EcoCAR3</a></li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    <div align="center"><a href="#">Contact</a></div>
+  </li>
+  <div align="center" class="MenuBarActive"></div>
+</ul>
+<p>&nbsp;</p>
+<h1>About Me</h1>
+<p>&nbsp;</p>
+<div align="center"> </div>
+<pre><script type="text/javascript"> var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});     </script>
+</pre>
+</body>
 </html>
