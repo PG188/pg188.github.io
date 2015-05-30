@@ -63,7 +63,7 @@ img, object, embed, video {
 
 
 #AboutMe {
-	background-color: #EFEFFF;
+	background-color: #FFDFDF;
 }
 	#AboutMeText {
 		clear: both;
@@ -81,18 +81,15 @@ img, object, embed, video {
 		display: block;
 	}
 #Interest {
-	background-color: #EFFFEF;
+	background-color: #DFFFDF;
 }
 #Project {
-
+	background-color: #FCFEDA;
 }
-	#ProjectText {
-		clear: both;
-		float: left;
-		margin-left: 0;
-		width: 100%;
-		display: block;
-	}
+#Community{
+	background-color: #CBB0FF;
+}
+
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
@@ -165,7 +162,7 @@ img, object, embed, video {
 	/*margin: auto;*/
 	padding-top: 20px;
 	color: #000;
-	margin-left: 10%
+	margin-left: 10%;
 }
 .Attribute{
 	clear: none;
