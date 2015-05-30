@@ -44,81 +44,60 @@ img, object, embed, video {
 	margin-left: 1%;
 	width: 98%;
 	display: block;
+	background-color: #EFEFFF;
 }
-#AboutMeText {
-	clear: both;
-	float: left;
-	margin-left: 5%;
-	width: 80%;
-	display: block;
-	padding: 0;
-	padding-top: 5%;
-}
-#PhototMe {
-	clear: none;
-	float: left;
-	margin-left: 5%;
-	width: 80%;
-	display: block;
-	max-width: 300pt;
-}
+	#AboutMeText {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 80%;
+		display: block;
+		padding: 0;
+		padding-top: 5%;
+	}
+	#AboutMePhoto {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 90%;
+		display: block;
+	}
 #Interest {
 	clear: both;
 	float: left;
 	margin-left: 1%;
 	width: 98%;
 	display: block;
+	background-color: #EFFFEF;
 }
-
-#LayoutDiv2 {
-	clear: none;
-	float: left;
-	margin-left: 5%;
-	width: 80%;
-	display: block;
-}
-#AboutMePhoto {
-	clear: both;
-	float: left;
-	margin-left: 5%;
-	width: 90%;
-	display: block;
-}
-#LayoutDiv4 {
-	clear: none;
-	float: left;
-	margin-left: 2.3255%;
-	width: 100%;
-	display: block;
-}
-#Image1 {
-	clear: both;
-	float: left;
-	margin-left: 5%;
-	width: 42.5%;
-	display: block;
-}
-#Image2 {
-	clear: none;
-	float: left;
-	margin-left: 5%;
-	width: 42.5%;
-	display: block;
-}
-#Image3 {
-	clear: both;
-	float: left;
-	margin-left: 5%;
-	width: 42.5%;
-	display: block;
-}
-#Interests {
-	clear: both;
-	float: left;
-	margin-left: 5%;
-	width: 90%;
-	display: block;
-}
+	#Image1 {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 42.5%;
+		display: block;
+	}
+	#Image2 {
+		clear: none;
+		float: left;
+		margin-left: 5%;
+		width: 42.5%;
+		display: block;
+	}
+	#Image3 {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 42.5%;
+		display: block;
+	}
+	#Interests {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 90%;
+		display: block;
+	}
 #Project {
 	clear: none;
 	float: left;
@@ -126,13 +105,13 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 }
-#ProjectText {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
+	#ProjectText {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
@@ -148,21 +127,22 @@ img, object, embed, video {
 	margin-left: 0%;
 	width: 100%;
 	display: block;
+	background-color: #EFEFFF;
 }
-#AboutMeText {
-	clear: both;
-	float: left;
-	margin-left: 5%;
-	width: 49.4252%;
-	display: block;
-}
-#PhototMe {
-	clear: none;
-	float: left;
-	margin-left: 1.1494%;
-	width: 36.7816%;
-	display: block;
-}
+	#AboutMeText {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 49.4252%;
+		display: block;
+	}
+	#AboutMePhoto {
+		clear: none;
+		float: left;
+		margin-left: 1.1494%;
+		width: 36.7816%;
+		display: block;
+	}
 #Interest {
 	clear: none;
 	float: left;
@@ -170,58 +150,36 @@ img, object, embed, video {
 	width: 95%;
 	display: block;
 	padding-left: 5%;
+	background-color: #EFFFEF;
 }
-#Image1 {
-	clear: both;
-	float: left;
-	margin-left: 12.6436%;
-	width: 24.1379%;
-	display: block;
-}
-#LayoutDiv2 {
-	clear: none;
-	float: left;
-	margin-left: 0%;
-	width: 24.1379%;
-	display: block;
-	padding-left: 4%;
-	padding-right: 4%;
-}
-#AboutMePhoto {
-	clear: none;
-	float: left;
-	margin-left: 1.1494%;
-	width: 36.7816%;
-	display: block;
-}
-#LayoutDiv4 {
-	clear: none;
-	float: left;
-	margin-left: 1.1494%;
-	width: 100%;
-	display: block;
-}
-#Image2 {
-	clear: none;
-	float: left;
-	margin-left: 1.1494%;
-	width: 24.1379%;
-	display: block;
-}
-#Image3 {
-	clear: none;
-	float: left;
-	margin-left: 1.1494%;
-	width: 24.1379%;
-	display: block;
-}
-#Interests {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 80%;
-	display: block;
-}
+	#Image1 {
+		clear: both;
+		float: left;
+		margin-left: 12.6436%;
+		width: 24.1379%;
+		display: block;
+	}
+	#Image2 {
+		clear: none;
+		float: left;
+		margin-left: 1.1494%;
+		width: 24.1379%;
+		display: block;
+	}
+	#Image3 {
+		clear: none;
+		float: left;
+		margin-left: 1.1494%;
+		width: 24.1379%;
+		display: block;
+	}
+	#Interests {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 80%;
+		display: block;
+	}
 #Project {
 	clear: none;
 	float: left;
@@ -229,13 +187,13 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 }
-#ProjectText {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
+	#ProjectText {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -315,7 +273,7 @@ img, object, embed, video {
 		clear: both;
 		float: left;
 		margin-left: 5%;
-		width: 100%;
+		width: 80%;
 		display: block;
 	}
 
