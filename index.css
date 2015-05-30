@@ -38,12 +38,30 @@ img, object, embed, video {
 	padding-left: 1.0795%;
 	padding-right: 1.0795%;
 }
-#AboutMe {
-	clear: none;
+.Block{
+	clear: both;
 	float: left;
 	margin-left: 1%;
 	width: 98%;
 	display: block;
+}
+.Title {
+	clear: both;
+	float: left;
+	margin-left: 5%;
+	width: 90%;
+	display: block;
+}
+.Attribute {
+	clear: none;
+	float: left;
+	margin-left: 5%;
+	width: 42.5%;
+	display: block;
+}
+
+
+#AboutMe {
 	background-color: #EFEFFF;
 }
 	#AboutMeText {
@@ -63,47 +81,10 @@ img, object, embed, video {
 		display: block;
 	}
 #Interest {
-	clear: both;
-	float: left;
-	margin-left: 1%;
-	width: 98%;
-	display: block;
 	background-color: #EFFFEF;
 }
-	#Image1 {
-		clear: both;
-		float: left;
-		margin-left: 5%;
-		width: 42.5%;
-		display: block;
-	}
-	#Image2 {
-		clear: none;
-		float: left;
-		margin-left: 5%;
-		width: 42.5%;
-		display: block;
-	}
-	#Image3 {
-		clear: both;
-		float: left;
-		margin-left: 5%;
-		width: 42.5%;
-		display: block;
-	}
-	#Interests {
-		clear: both;
-		float: left;
-		margin-left: 5%;
-		width: 90%;
-		display: block;
-	}
 #Project {
-	clear: none;
-	float: left;
-	margin-left: 2.3255%;
-	width: 100%;
-	display: block;
+
 }
 	#ProjectText {
 		clear: both;
@@ -121,13 +102,30 @@ img, object, embed, video {
 	padding-left: 0.5681%;
 	padding-right: 0.5681%;
 }
-#AboutMe {
+.Block{
 	clear: none;
 	float: left;
-	margin-left: 0%;
-	width: 100%;
+	margin-left: 0;
+	width: 95%;
 	display: block;
-	background-color: #EFEFFF;
+	padding-left: 5%;
+}
+.Title {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 80%;
+	display: block;
+}
+.Attribute {
+	clear: none;
+	float: left;
+	margin-left: 1.1494%;
+	width: 24.1379%;
+	display: block;
+}
+
+#AboutMe {
 }
 	#AboutMeText {
 		clear: both;
@@ -141,57 +139,6 @@ img, object, embed, video {
 		float: left;
 		margin-left: 1.1494%;
 		width: 36.7816%;
-		display: block;
-	}
-#Interest {
-	clear: none;
-	float: left;
-	margin-left: 0;
-	width: 95%;
-	display: block;
-	padding-left: 5%;
-	background-color: #EFFFEF;
-}
-	#Image1 {
-		clear: both;
-		float: left;
-		margin-left: 12.6436%;
-		width: 24.1379%;
-		display: block;
-	}
-	#Image2 {
-		clear: none;
-		float: left;
-		margin-left: 1.1494%;
-		width: 24.1379%;
-		display: block;
-	}
-	#Image3 {
-		clear: none;
-		float: left;
-		margin-left: 1.1494%;
-		width: 24.1379%;
-		display: block;
-	}
-	#Interests {
-		clear: both;
-		float: left;
-		margin-left: 0;
-		width: 80%;
-		display: block;
-	}
-#Project {
-	clear: none;
-	float: left;
-	margin-left: 1.1494%;
-	width: 100%;
-	display: block;
-}
-	#ProjectText {
-		clear: both;
-		float: left;
-		margin-left: 0;
-		width: 100%;
 		display: block;
 	}
 }
@@ -210,7 +157,7 @@ img, object, embed, video {
 	background-color: #00F;
 	margin-left: 10%;
 }
-#AboutMe {
+.Block{
 	width: 80%;
 	max-width: 1000px;
 	padding-left: 0.303%;
@@ -218,8 +165,24 @@ img, object, embed, video {
 	/*margin: auto;*/
 	padding-top: 20px;
 	color: #000;
-	background-color: #EFEFFF;
-	margin-left: 10%;
+	margin-left: 10%
+}
+.Attribute{
+	clear: none;
+	float: left;
+	margin-left: 5%;
+	width: 23%;
+	display: block;
+}
+.Title{
+	clear: both;
+	float: left;
+	margin-left: 5%;
+	width: 80%;
+	display: block;
+}
+
+#AboutMe {
 }
 	#AboutMeText {
 		clear: both;
@@ -230,70 +193,11 @@ img, object, embed, video {
 		padding: 5pt;
 	}
 	#AboutMePhoto {
-	clear: none;
-	float: left;
-	margin-left: 0.7633%;
-	width: 24.4274%;
-	display: block;
-	}
-
-#Interest {
-	width: 80%;
-	max-width: 1000px;
-	padding-left: 0.303%;
-	padding-right: 0.303%;
-	/*margin: auto;*/
-	padding-top: 20px;
-	color: #000;
-	background-color: #EFFFEF;
-	margin-left: 10%
-}
-	#Image1 {
-		clear: both;
-		float: left;
-		margin-left: 5%;
-		width: 23%;
-		display: block;
-	}
-	#Image2 {
 		clear: none;
 		float: left;
-		margin-left: 5%;
-		width: 23%;
-		display: block;
-	}
-	#Image3 {
-		clear: none;
-		float: left;
-		margin-left: 5%;
-		width: 23%;
-		display: block;
-	}
-	#Interests {
-		clear: both;
-		float: left;
-		margin-left: 5%;
-		width: 80%;
+		margin-left: 0.7633%;
+		width: 24.4274%;
 		display: block;
 	}
 
-
-#Project {
-	clear: both;
-	float: left;
-	margin: auto;
-	width: 75%;
-	max-width: 1000px;
-	display: block;
-	margin-left: 10%;
-	padding-left: 0.303%;
-}
-
-
-#ProjectText {
-	clear: both;
-	float: left;
-	margin-left: 05%;
-	width: 100%;
-	display: block;
 }
