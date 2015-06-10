@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	width: 90%;
+	alignment-adjust: central;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width: 100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	10;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	padding-left: 1.0795%;
+	padding-right: 1.0795%;
+	background-color: #00FF66;
+}
+.Block{
+	clear: both;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	display: block;
+}
+.Title {
+	clear: both;
+	float: left;
+	margin-left: 5%;
+	width: 90%;
+	display: block;
+}
+.Attribute {
+	clear: none;
+	float: left;
+	margin-left: 5%;
+	width: 42.5%;
+	display: block;
+}
+
+
+#AboutMe {
+	background-color: #FFDFDF;
+}
+	#AboutMeText {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 80%;
+		display: block;
+		padding: 0;
+	}
+	#AboutMePhoto {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 90%;
+		display: block;
+	}
+#Interest {
+	background-color: #DFFFDF;
+}
+#Project {
+	background-color: #FCFEDA;
+}
+#Community{
+	background-color: #CBB0FF;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+h2{
+	font-size: small;
+}
+.gridContainer {
+	width: 98.8636%;
+	padding-left: 0.5681%;
+	padding-right: 0.5681%;
+}
+.Block{
+	clear: none;
+	width: 98.8636%;
+	padding-left: 0.5681%;
+	padding-right: 0.5681%;
+	display: block;
+}
+.Title {
+	clear: both;
+	float: left;
+	Padding-left: 0;
+	width: 90%;
+	display: block;
+}
+.Attribute {
+	clear: none;
+	float: left;
+	margin-left: 4%;
+	width: 20%;
+	display: block;
+}
+
+#AboutMe {
+}
+	#AboutMeText {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 49.4252%;
+		display: block;
+	}
+	#AboutMePhoto {
+		clear: none;
+		float: left;
+		margin-left: 1.1494%;
+		width: 36.7816%;
+		min-width: 200px;
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+h2{
+	font-size: medium;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 80%;
+	/*max-width: 1000px;*/
+	padding-left: 0.303%;
+	padding-right: 0.303%;
+	/*margin: auto;*/
+	padding-top: 20px;
+	color: #FFF;
+	background-color: #00F;
+	margin-left: 10%;
+}
+.Block{
+	width: 80%;
+	/*max-width: 1000px;*/
+	padding-left: 0.303%;
+	padding-right: 0.303%;
+	/*margin: auto;*/
+	padding-top: 20px;
+	color: #000;
+	margin-left: 10%;
+}
+.Attribute{
+	clear: none;
+	float: left;
+	margin-left: 3%;
+	width: 20%;
+	display: block;
+}
+.Title{
+	clear: both;
+	float: left;
+	margin-left: 5%;
+	width: 80%;
+	display: block;
+}
+
+#AboutMe {
+}
+	#AboutMeText {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 65%;
+		display: block;
+		padding: 5pt;
+	}
+	#AboutMePhoto {
+		clear: none;
+		float: left;
+		margin-left: 0.7633%;
+		width: 24.4274%;
+		min-width: 0;
+		display: block;
+	}
+
+}
+
+/* when the screen size is wayy too big */
+@media only screen and (min-width: 1000px) {
+p{
+	font-size: x-large;
+}
+h1{
+	font-size: x-large;
+}
+h2{
+	font-size: x-large;
+}
+h3{
+	font-size: x-large;
+}
+h4{
+	font-size: x-large;
+}
+}
