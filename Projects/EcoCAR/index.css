@@ -59,18 +59,20 @@ img, object, embed, video {
 .Block{
 	clear: none;
 	width: 98.8636%;
-	padding-left: 0.5681%;
+	padding-left: 5%;
 	padding-right: 0.5681%;
 	display: block;
 }
 .Paragraph{
-	width: 74%;
+	width: 69%;
+	/*clear: right;*/
+	float: left;
 	
 }
 .Image{
-	clear: left;
+	/*clear: left;*/
 	float: right;
-	width: 24%;
+	width: 29%;
 }
 
 }
@@ -92,7 +94,7 @@ h2{
 .gridContainer {
 	width: 80%;
 	/*max-width: 1000px;*/
-	padding-left: 0.303%;
+	padding-left: 5%;
 	padding-right: 0.303%;
 	/*margin: auto;*/
 	padding-top: 20px;
@@ -103,7 +105,7 @@ h2{
 .Block{
 	width: 80%;
 	/*max-width: 1000px;*/
-	padding-left: 0.303%;
+	padding-left: 5%;
 	padding-right: 0.303%;
 	/*margin: auto;*/
 	padding-top: 20px;
@@ -122,7 +124,7 @@ h2{
 }
 
 /* when the screen size is wayy too big */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
 p{
 	font-size: x-large;
 }
