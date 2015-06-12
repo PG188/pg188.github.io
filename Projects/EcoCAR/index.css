@@ -45,6 +45,20 @@ img, object, embed, video {
 	padding-left: 5%;
 	padding-right: 5%;
 }
+#LayoutDiv1{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv2{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
 
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
@@ -67,12 +81,28 @@ img, object, embed, video {
 	width: 69%;
 	/*clear: right;*/
 	float: left;
+	clear: left;
+	margin-top: 5%;
 	
 }
 .Image{
-	/*clear: left;*/
+	clear: right;
 	float: right;
 	width: 29%;
+}
+#LayoutDiv1{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv2{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
 }
 
 }
@@ -85,6 +115,20 @@ h2{
 	width: 96%;
 	color: #FFF;
 	margin-left: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
 }
 }
 
@@ -140,4 +184,5 @@ h3{
 h4{
 	font-size: x-large;
 }
+
 }
