@@ -136,25 +136,24 @@ h2{
 
 @media only screen and (min-width: 769px) {
 .gridContainer {
-	width: 80%;
+	width: 84.5%;
+	max-width: 1300px;
 	/*max-width: 1000px;*/
-	padding-left: 5%;
-	padding-right: 0.303%;
 	/*margin: auto;*/
-	padding-top: 20px;
 	color: #FFF;
-	background-color: #00F;
-	margin-left: 10%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .Block{
 	width: 80%;
+	max-width: 1300px;
 	/*max-width: 1000px;*/
 	padding-left: 5%;
 	padding-right: 0.303%;
 	/*margin: auto;*/
 	padding-top: 20px;
 	color: #000;
-	margin-left: 10%;
+	margin-left: auto;
 }
 .Attribute{
 	clear: none;
