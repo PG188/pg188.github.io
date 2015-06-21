@@ -89,6 +89,7 @@ img, object, embed, video {
 	clear: right;
 	float: right;
 	width: 29%;
+	margin-top: 5%;
 }
 #LayoutDiv1{
 	clear: both;
@@ -103,6 +104,9 @@ img, object, embed, video {
 	margin-left: 0;
 	width: 100%;
 	display: block;
+}
+#NudgeMe{
+	margin-top: 10%;
 }
 
 }
