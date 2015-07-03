@@ -4,7 +4,7 @@
    http://www.alistapart.com/articles/fluid-images/ 
 */
 img, object, embed, video {
-	width: 90%;
+	width: 100%;
 	alignment-adjust: central;
 }
 /* IE 6 does not support max-width so default to width 100% */
@@ -29,7 +29,9 @@ img, object, embed, video {
 
 /* Mobile Layout: 480px and below. */
 
-
+h2{
+	font-size: small;
+}
 
 .gridContainer {
 	margin-left: auto;
@@ -91,10 +93,14 @@ img, object, embed, video {
 	background-color: #CBB0FF;
 }
 
+@media only screen and (min-width: 450px) {
+h2{
+	font-size: large;
+}
+}
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
-
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 507px) {
 	
 h2{
 	font-size: small;
@@ -212,7 +218,7 @@ h2{
 }
 
 /* when the screen size is wayy too big */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
 p{
 	font-size: x-large;
 }
