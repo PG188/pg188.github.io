@@ -72,9 +72,9 @@ img, object, embed, video {
 }
 .Block{
 	clear: none;
-	width: 98.8636%;
-	padding-left: 5%;
-	padding-right: 0.5681%;
+	width: 95%;
+	padding-left: auto;
+	padding-right: auto;
 	display: block;
 }
 .Paragraph{
