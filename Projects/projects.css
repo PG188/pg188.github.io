@@ -91,12 +91,10 @@ img, object, embed, video {
 	width: 31%;
 }
 .Document{
-	border: #666;
 	clear: both;
 	float: left;
-	width: 90%;
+	width: 95%;
 	padding-left: 5%;
-	padding-right: 5%;
 }
 #LayoutDiv1{
 	clear: both;
