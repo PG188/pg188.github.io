@@ -30,7 +30,7 @@ img, object, embed, video {
 /* Mobile Layout: 480px and below. */
 
 h2{
-	font-size: small;
+	font-size: 13px;
 }
 
 .gridContainer {
@@ -95,7 +95,7 @@ h2{
 
 @media only screen and (min-width: 450px) {
 h2{
-	font-size: large;
+	font-size: 18px;
 }
 }
 
@@ -103,7 +103,7 @@ h2{
 @media only screen and (min-width: 507px) {
 	
 h2{
-	font-size: small;
+	font-size: 10px;
 }
 .gridContainer {
 	width: 98.8636%;
@@ -150,16 +150,20 @@ h2{
 		display: block;
 	}
 }
-
+@media only screen and (min-width: 550px) {
+h2{
+	font-size: 13px;
+}
+}
 @media only screen and (min-width: 650px) {
 h2{
-	font-size: medium;
+	font-size: 16px;
 }
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 767px) {
 .gridContainer {
 	width: 80%;
 	/*max-width: 1000px;*/
@@ -220,18 +224,18 @@ h2{
 /* when the screen size is wayy too big */
 @media only screen and (min-width: 1100px) {
 p{
-	font-size: x-large;
+	font-size: x-18px;
 }
 h1{
-	font-size: x-large;
+	font-size: x-18px;
 }
 h2{
-	font-size: x-large;
+	font-size: x-18px;
 }
 h3{
-	font-size: x-large;
+	font-size: x-18px;
 }
 h4{
-	font-size: x-large;
+	font-size: x-18px;
 }
 }
