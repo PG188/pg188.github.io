@@ -71,7 +71,7 @@ img, object, embed, video {
 	padding-right: 0.5681%;
 }
 .Block{
-	clear: none;
+	clear: both;
 	width: 95%;
 	padding-left: auto;
 	padding-right: auto;
