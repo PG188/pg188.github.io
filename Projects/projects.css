@@ -3,7 +3,7 @@
    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
    http://www.alistapart.com/articles/fluid-images/ 
 */
-img, object, embed, video {
+img, object, embed, video, iframe {
 	width: 90%;
 	alignment-adjust: central;
 }
@@ -59,11 +59,21 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 }
-
-
+iframe{
+	height: 315px;
+}
+p{
+	margin: 0;
+}
+h2{
+	background-color:#FFCECF
+}
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
+iframe{
+	height: 150px;
+}
 	
 .gridContainer {
 	width: 98.8636%;
@@ -71,28 +81,34 @@ img, object, embed, video {
 	padding-right: 0.5681%;
 }
 .Block{
-	clear: both;
+	float: left;
+	clear: left;
 	width: 95%;
 	padding-left: auto;
 	padding-right: auto;
+	margin-left: 2.5%;
+	margin-bottom: 10px;
 	display: block;
 }
 .Paragraph{
-	width: 69%;
+	width: 65%;
 	/*clear: right;*/
 	float: left;
 	clear: left;
-	margin-top: 5%;
-	
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-right: 4%;	
 }
 .Image{
 	clear: right;
 	float: right;
 	width: 31%;
+	padding-bottom: 20px;
 }
 .Document{
+	clear: left;
+	float: right;
 	clear: both;
-	float: left;
 	width: 95%;
 	padding-left: 5%;
 }
@@ -141,6 +157,7 @@ h2{
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
 @media only screen and (min-width: 769px) {
+
 .gridContainer {
 	width: 84.5%;
 	max-width: 1300px;
@@ -159,7 +176,7 @@ h2{
 	/*margin: auto;*/
 	padding-top: 20px;
 	color: #000;
-	margin-left: auto;
+	margin-left: 7.5%;
 }
 .Attribute{
 	clear: none;
@@ -174,6 +191,9 @@ h2{
 
 /* when the screen size is wayy too big */
 @media only screen and (min-width: 1100px) {
+iframe{
+	height: 315px;
+}
 p{
 	font-size: 24px;
 }
