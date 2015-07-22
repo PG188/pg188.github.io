@@ -43,7 +43,7 @@ img, object, embed, video, iframe {
 	margin-right: auto;
 	width: 94%;
 	padding-left: 5%;
-	padding-right: 5%;
+	padding-right: auto;
 }
 #LayoutDiv1{
 	clear: both;
@@ -81,10 +81,10 @@ iframe{
 .Block{
 	float: left;
 	clear: left;
-	width: 95%;
-	padding-left: auto;
-	padding-right: auto;
-	margin-left: 2.5%;
+	width: 94%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-left: 3%;
 	margin-bottom: 10px;
 	display: block;
 }

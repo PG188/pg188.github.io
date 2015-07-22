@@ -28,21 +28,63 @@ img, object, embed, video {
 */
 
 /* Mobile Layout: 480px and below. */
-
-ul{
-	list-style: none;
-	margin: none;
-	pading: none;
+ul.Icons1{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: auto;
 }
-li{
-	width: 200px;
-	display: inline;
+ul.Icons1 li{
+	margin: 0;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	padding: 0;
+	padding-top: 0px;
+	list-style-type: none;
+	position: relative;
+	text-align: center;
+	width: 98%;
+	float: left;
+	color: #00C;
+	clear: left;
 }
+ul.Icons1 li ul li{
+	margin: 0;
+	margin-top: 0px;
+	padding: 0;padding-top: 0px;
+	list-style-type: none;
+	position: relative;
+	text-align: center;
+	width: 50%;
+	float: left;
+	clear: none;
+	color: #00C;
+}
+ul.Icons1 li p{
+		width: 90%;
+		margin-left: 5%;
+	}
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
-
+ul.Icons1{
+}
+ul.Icons1 li{
+	width: 49%;
+	height: 250px;
+	float: left;
+	color: #00C;
+	clear: none;
+}
+ul.Icons1 li p{
+		width: 90%;
+		margin-left: 5%;
+}
+ul.Icons1 li ul li{
+	height: 225px;
 }
 
 @media only screen and (min-width: 650px) {
@@ -51,8 +93,20 @@ li{
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
 @media only screen and (min-width: 769px) {
+ul.Icons1 li{
+	height: 300px;
+}
+ul.Icons1 li ul li{
+	height: 280px;
+}
 }
 
 /* when the screen size is wayy too big */
 @media only screen and (min-width: 900px) {
+	ul.Icons1 li{
+	height: 375px;
+}
+ul.Icons1 li ul li{
+	height: 350px;
+}
 }
