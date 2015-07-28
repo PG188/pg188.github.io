@@ -45,6 +45,12 @@ img, object, embed, video, iframe {
 	padding-left: 5%;
 	padding-right: auto;
 }
+.Contact{
+	width: 30%;
+	float: left;
+	margin: 0.75%;
+	padding: 0.75%;
+}
 #LayoutDiv1{
 	clear: both;
 	float: left;
@@ -71,6 +77,9 @@ p{
 @media only screen and (min-width: 481px) {
 iframe{
 	height: 150px;
+}
+p{
+	font-size: 10px;
 }
 	
 .gridContainer {
@@ -110,6 +119,11 @@ iframe{
 	width: 95%;
 	padding-left: 5%;
 }
+.Contact{
+	width: 13%;
+	margin: 0.5%;
+	padding: 0.5%;
+}
 #LayoutDiv1{
 	clear: both;
 	float: left;
@@ -130,6 +144,9 @@ iframe{
 @media only screen and (min-width: 650px) {
 h2{
 	font-size: 16px;
+}
+p{
+	font-size: 13px;
 }
 .gridContainer {
 	width: 96%;
@@ -155,6 +172,9 @@ h2{
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
 @media only screen and (min-width: 769px) {
+p{
+	font-size: 12px;
+}
 
 .gridContainer {
 	width: 84.5%;
@@ -192,7 +212,7 @@ iframe{
 	height: 315px;
 }
 p{
-	font-size: 24px;
+	font-size: 20px;
 }
 h1{
 	font-size: 24px;
