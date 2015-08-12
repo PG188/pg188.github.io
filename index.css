@@ -154,16 +154,29 @@ div.Section div.Section {
 	width: 50%;
 	Clear: none;
 }
-/*
+#Interest {
+	background: url("DSC01035.JPG");
+	background-size: auto 100%;
+}
+
 .Attribute {
-	clear: none;
+	background:rgba(225,225,225,0.5);
+}
+/*	clear: none;
 	float: left;
 	margin: 2%;
 	width: 15%;
 	display: block;
 }
+*/
+
 .Attribute:hover{
-	margin: 0%;
+	box-shadow: 10px 10px 8px #111;
+	-webkit-box-shadow: 10px 10px 8px #111;
+	-moz-box-shadow: 10px 10px 8px #111;
+	Background: rgba(235,235,235,1);
+}
+/*	margin: 0%;
 	width: 19%;
 }
 */
