@@ -90,6 +90,8 @@ h2{
 
 #AboutMe {
 	background-color: #FFDFDF;
+	height: 100vh;
+
 }
 	#AboutMeText {
 		clear: both;
@@ -108,6 +110,7 @@ h2{
 	}
 #Interest {
 	background-color: #DFFFDF;
+	height: 100vh;
 }
 #Project {
 	background-color: #FCFEDA;
