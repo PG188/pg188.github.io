@@ -20,11 +20,6 @@ img, object, embed, video {
 	dw-num-cols-desktop:	12;
 	dw-gutter-percentage:	10;
 	
-	Inspiration from "Responsive Web Design" by Ethan Marcotte 
-	http://www.alistapart.com/articles/responsive-web-design
-	
-	and Golden Grid System by Joni Korpi
-	http://goldengridsystem.com/
 */
 
 /* Mobile Layout: 480px and below. */
@@ -46,7 +41,8 @@ h2{
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	width: 98%;
+	padding-bottom: 3%;
+	width: 100%;
 	display: block;
 }
 .Title {
@@ -56,13 +52,40 @@ h2{
 	width: 90%;
 	display: block;
 }
+.Section {
+	float: left;
+	clear: both;
+	padding: 0;
+	margin: 0;
+	min-width: 230px;
+	width: 100%;
+}
 .Attribute {
 	clear: none;
 	float: left;
-	margin-left: 5%;
-	width: 42.5%;
+	-webkit-transition: 0.05s;
+	-moz-transition: 0.05s;
+	-0-transition:0.05s;
+    transition: 0.05s;
 	display: block;
+
+	margin: 2.5%;
+	padding: 2%;
+	width: 40%;
+	background: inherit;
+	border: solid 1px #333333;
+	border-radius: 15px;
+
 }
+.Attribute:hover{
+	margin: 0%;
+	width: 44.75%;
+	border: solid 1px #333333;
+	box-shadow: 10px 10px 8px #888888;
+	-webkit-box-shadow: 10px 10px 8px #888888;
+	-moz-box-shadow: 10px 10px 8px #888888;
+}
+
 
 
 #AboutMe {
@@ -124,13 +147,23 @@ h2{
 	width: 90%;
 	display: block;
 }
+div.Section div.Section {
+	width: 50%;
+	Clear: none;
+}
+/*
 .Attribute {
 	clear: none;
 	float: left;
-	margin-left: 4%;
-	width: 20%;
+	margin: 2%;
+	width: 15%;
 	display: block;
 }
+.Attribute:hover{
+	margin: 0%;
+	width: 19%;
+}
+*/
 
 #AboutMe {
 }
@@ -184,13 +217,22 @@ h2{
 	color: #000;
 	margin-left: 10%;
 }
+/*
 .Attribute{
 	clear: none;
 	float: left;
-	margin-left: 3%;
+	margin: 2%;
 	width: 20%;
 	display: block;
 }
+.Attribute:hover{
+	margin: 0.5%;
+	width: 23%;
+	box-shadow: 10px 10px 8px #888888;
+	-webkit-box-shadow: 10px 10px 8px #888888;
+	-moz-box-shadow: 10px 10px 8px #888888;
+}
+*/
 .Title{
 	clear: both;
 	float: left;
