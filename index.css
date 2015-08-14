@@ -91,7 +91,9 @@ h2{
 	-moz-box-shadow: 10px 10px 8px #888888;
 }
 
-
+.Text {
+	margin-top: 15%;
+}
 
 #AboutMe {
 	background-color: #FFDFDF;
@@ -157,6 +159,10 @@ h2{
 	Padding-left: 0;
 	width: 90%;
 	display: block;
+	margin-top: 10vh;
+}
+.Text {
+	margin-top: 25vh;
 }
 div.Section div.Section {
 	width: 50%;
@@ -274,7 +280,9 @@ h2{
 	width: 80%;
 	display: block;
 }
-
+.Text {
+	margin-top: 20vh;
+}
 #AboutMe {
 }
 	#AboutMeText {
@@ -293,6 +301,11 @@ h2{
 		min-width: 0;
 		display: block;
 	}
+
+#Interest {
+	background: url("DSC01035.JPG");
+	background-size: 100% 100%;
+}
 
 }
 
