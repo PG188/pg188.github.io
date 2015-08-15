@@ -19,7 +19,7 @@ ul.MenuBarHorizontal
 	font-size: 100%;
 	cursor: default;
 	width: auto;
-	height: 12%;
+	/*height: 12%;*/
 }
 /* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
 ul.MenuBarActive
@@ -39,8 +39,8 @@ ul.MenuBarHorizontal li
 	width: 25%;
 	float: left;
 	color: #00C;
-	height: 50px;
-	background-color: #000080;
+	/*height: 50px;*/
+	background-color: inherit;
 }
 /* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
 ul.MenuBarHorizontal ul
@@ -94,7 +94,7 @@ ul.MenuBarHorizontal a
 {
 	display: block;
 	cursor: pointer;
-	background-color: #000080;
+	background-color: rgba(0,0,0,0.5);
 	padding: 0.5em 0.75em;
 	color: #FFF;
 	text-decoration: none;
@@ -102,13 +102,13 @@ ul.MenuBarHorizontal a
 /* Menu items that have mouse over or focus have a blue background and white text */
 ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
 {
-	background-color: #0000FF;
+	background-color: rgba(255,255,255,1);
 	color: #0F0;
 }
 /* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
 ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
 {
-	background-color: #33C;
+	background-color: rgba(0,0,0,1);
 	color: #FFF;
 }
 
@@ -168,6 +168,6 @@ ul.MenuBarHorizontal iframe
 	{
 		display: inline;
 		f\loat: center;
-		background: #00C;
+		background: inherit;
 	}
 }

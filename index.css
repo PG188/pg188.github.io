@@ -159,7 +159,6 @@ h2{
 	Padding-left: 0;
 	width: 90%;
 	display: block;
-	margin-top: 10vh;
 }
 .Text {
 	margin-top: 25vh;
@@ -176,6 +175,12 @@ div.Section div.Section {
 	margin-top: 10vh;
 	background: rgba(225,225,225,0.5);
 	border-radius: 15px;
+	margin-top: 10vh;
+
+}
+#AboutMe .Title{
+	margin-top: 10vh;
+
 }
 .Attribute {
 	background:rgba(225,225,225,0.5);
