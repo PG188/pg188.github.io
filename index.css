@@ -73,6 +73,7 @@ h2{
 	-0-transition:0.05s;
     transition: 0.05s;
 	display: block;
+	color: #0000ff;
 
 	margin: 2.5%;
 	padding: 2%;
@@ -167,6 +168,22 @@ div.Section div.Section {
 	width: 50%;
 	Clear: none;
 }
+#AboutMe{
+		background: url("Me.PNG");
+		background-size: 100% 100%;
+
+
+}
+#AboutMe .Title{
+	background: rgba(255,255,255,0.75);
+	margin-top: 35vh;
+}
+#AboutMe .Text{
+	background: rgba(255,255,255,0.75);
+	margin-top: 42vh;
+
+}
+
 #Interest {
 	background: url("DSC01035.JPG");
 	background-size: auto 100%;
@@ -183,10 +200,7 @@ div.Section div.Section {
 	background-size: auto 100%;	
 }
 
-#AboutMe .Title{
-	margin-top: 10vh;
 
-}
 .Attribute {
 	background:rgba(225,225,225,0.5);
 }
