@@ -125,6 +125,7 @@ h2{
 }
 #Community{
 	background-color: #CBB0FF;
+	min-height: 25vh;
 }
 
 @media only screen and (min-width: 450px) {
