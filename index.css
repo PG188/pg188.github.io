@@ -98,7 +98,7 @@ h2{
 
 #AboutMe {
 	background-color: #FFDFDF;
-	height: 100vh;
+	min-height: 100vh;
 
 }
 	#AboutMeText {
@@ -118,7 +118,7 @@ h2{
 	}
 #Interest {
 	background-color: #DFFFDF;
-	height: 100vh;
+	min-height: 100vh;
 }
 #Project {
 	background-color: #FCFEDA;
@@ -171,8 +171,6 @@ div.Section div.Section {
 #AboutMe{
 		background: url("Me.png");
 		background-size: 100% 100%;
-
-
 }
 #AboutMe .Title{
 	background: rgba(255,255,255,0.75);
