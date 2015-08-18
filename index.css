@@ -171,13 +171,18 @@ div.Section div.Section {
 	background: url("DSC01035.JPG");
 	background-size: auto 100%;
 }
-#Interest .Title{
+#Interest .Title, #Project .Title{
 	margin-top: 10vh;
 	background: rgba(225,225,225,0.5);
 	border-radius: 15px;
 	margin-top: 10vh;
 
 }
+#Project{
+	background: url("RandomNotes.png");
+	background-size: auto 100%;	
+}
+
 #AboutMe .Title{
 	margin-top: 10vh;
 
