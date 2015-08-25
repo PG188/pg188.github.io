@@ -3,55 +3,11 @@
    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
    http://www.alistapart.com/articles/fluid-images/ 
 */
-img, object, embed, video {
-	width: 100%;
-	alignment-adjust: central;
-}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-	font-family: Arial, Verdana, Tahoma;
-}
 
-/* IE 6 does not support max-width so default to width 100% */
-.ie6 img {
-	width: 100%;
-}
-
-/*
-	Dreamweaver Fluid Grid Properties
-	----------------------------------
-	dw-num-cols-mobile:		4;
-	dw-num-cols-tablet:		8;
-	dw-num-cols-desktop:	12;
-	dw-gutter-percentage:	10;
-	
-*/
 
 /* Mobile Layout: 480px and below. */
-
 h2{
 	font-size: 13px;
-}
-
-.gridContainer {
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	padding-left: 1.0795%;
-	padding-right: 1.0795%;
-	background-color: #00FF66;
-}
-.Block{
-	clear: both;
-	float: left;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 3%;
-	width: 100%;
-	min-width: 260px;
-	display: block;
 }
 .Title {
 	clear: both;
@@ -68,8 +24,7 @@ h2{
 	min-width: 230px;
 	
 }
-#Work .Section {
-}
+
 .Attribute {
 	clear: none;
 	float: left;
@@ -151,18 +106,7 @@ h2{
 	font-size: 10px;
 	text-align: center;
 }
-.gridContainer {
-	width: 98.8636%;
-	padding-left: 0.5681%;
-	padding-right: 0.5681%;
-}
-.Block{
-	clear: none;
-	width: 96.5%;
-	padding: 1.7045%;
-	display: block;
-	margin: 0;
-}
+
 .Title {
 	clear: both;
 	float: left;
@@ -170,29 +114,41 @@ h2{
 	width: 90%;
 	display: block;
 }
-.Text {
-	margin-top: 25vh;
+
+#AboutMe {
+	background: url("Me.png");
+	background-size: 100% 100%;
 }
-div.Section div.Section {
-	width: 50%;
-	Clear: none;
-}
-#AboutMe{
-		background: url("Me.png");
-		background-size: 100% 100%;
-}
-#AboutMe .Title{
-	background: rgba(255,255,255,0.75);
-	margin-top: 35vh;
-}
-#AboutMe .Text{
-	background: rgba(255,255,255,0.75);
-	margin-top: 42vh;
-}
+	#AboutMeText {
+		clear: both;
+		float: left;
+		margin-left: 5%;
+		width: 49.4252%;
+		display: block;
+		background: rgba(255,255,255,0.75);
+		margin-top: 35vh;
+		padding: 1%;
+		font-size: 
+
+	}
+	#AboutMePhoto {
+		clear: none;
+		float: left;
+		margin-left: 1.1494%;
+		width: 36.7816%;
+		min-width: 200px;
+		display: block;
+		margin-top: 35vh;
+	}
+
 
 #Interest {
 	background: url("DSC01035.JPG");
 	background-size: auto 100%;
+}
+#Project{
+	background: url("RandomNotes.PNG");
+	background-size: auto 100%;	
 }
 #Interest .Title, #Project .Title, #Work .Title{
 	margin-top: 10vh;
@@ -201,10 +157,6 @@ div.Section div.Section {
 	border-radius: 15px;
 	margin-top: 10vh;
 
-}
-#Project{
-	background: url("RandomNotes.PNG");
-	background-size: auto 100%;	
 }
 
 
@@ -215,19 +167,6 @@ div.Section div.Section {
 #Work .Attribute{
 	height: 37%;
 }
-.Section .Section {
-	width: 50%;
-}
-.Section {
-	width: 100%;
-}
-/*	clear: none;
-	float: left;
-	margin: 2%;
-	width: 15%;
-	display: block;
-}
-*/
 
 .Attribute:hover{
 	box-shadow: 10px 10px 8px #111;
@@ -235,28 +174,15 @@ div.Section div.Section {
 	-moz-box-shadow: 10px 10px 8px #111;
 	Background: rgba(235,235,235,1);
 }
-/*	margin: 0%;
-	width: 19%;
+div.Section div.Section {
+	width: 50%;
+	clear: none;
 }
-*/
+div.Section {
+	width: 100%;
+	clear: none;
+}
 
-#AboutMe {
-}
-	#AboutMeText {
-		clear: both;
-		float: left;
-		margin-left: 5%;
-		width: 49.4252%;
-		display: block;
-	}
-	#AboutMePhoto {
-		clear: none;
-		float: left;
-		margin-left: 1.1494%;
-		width: 36.7816%;
-		min-width: 200px;
-		display: block;
-	}
 }
 @media only screen and (min-width: 550px) {
 h2{
@@ -272,48 +198,7 @@ h2{
 /* Desktop Layout:*/
 
 @media only screen and (min-width: 875px) {
-.gridContainer {
-	width: 80%;
-	/*max-width: 1000px;*/
-	padding-left: 0.303%;
-	padding-right: 0.303%;
-	/*margin: auto;*/
-	padding-top: 20px;
-	color: #FFF;
-	margin-left: 10%;
-}
-.Block{
-	clear: none;
-	width: 70%;
-	padding: 10.7045%;
-	display: block;
-	margin: 0;
-	
-	
-	/*width: 96.5%;
-	/*max-width: 1000px;*/
-	padding-left: 15%;
-	padding-right: 15%;
-	/*margin: auto;*/
-	padding-top: 20px;
-	color: #000;
-}
-/*
-.Attribute{
-	clear: none;
-	float: left;
-	margin: 2%;
-	width: 20%;
-	display: block;
-}
-.Attribute:hover{
-	margin: 0.5%;
-	width: 23%;
-	box-shadow: 10px 10px 8px #888888;
-	-webkit-box-shadow: 10px 10px 8px #888888;
-	-moz-box-shadow: 10px 10px 8px #888888;
-}
-*/
+
 .Title{
 	clear: both;
 	float: left;
@@ -353,19 +238,5 @@ h2{
 
 /* when the screen size is wayy too big */
 @media only screen and (min-width: 1100px) {
-p{
-	font-size: x-18px;
-}
-h1{
-	font-size: x-18px;
-}
-h2{
-	font-size: x-18px;
-}
-h3{
-	font-size: x-18px;
-}
-h4{
-	font-size: x-18px;
-}
+
 }
