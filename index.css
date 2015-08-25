@@ -11,7 +11,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
+	font-family: Arial, Verdana, Tahoma;
 }
+
 /* IE 6 does not support max-width so default to width 100% */
 .ie6 img {
 	width: 100%;
@@ -184,7 +186,6 @@ div.Section div.Section {
 #AboutMe .Text{
 	background: rgba(255,255,255,0.75);
 	margin-top: 42vh;
-
 }
 #Work {
 	
