@@ -211,16 +211,14 @@ div.Section div.Section {
 .Attribute {
 	background:rgba(225,225,225,0.5);
 }
-#Work .Section {
-	width: 100%;
-}
+
 #Work .Attribute{
 	height: 37%;
 }
-#Community .Section .Section {
+.Section .Section {
 	width: 50%;
 }
-#Community .Section {
+.Section {
 	width: 100%;
 }
 /*	clear: none;
