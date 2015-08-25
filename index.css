@@ -65,7 +65,11 @@ h2{
 	padding: 0;
 	margin: 0;
 	min-width: 230px;
-	width: 100%;
+	
+}
+#Work .Section {
+	width: 90%;
+	margin-left: 5%;
 }
 .Attribute {
 	clear: none;
@@ -75,12 +79,11 @@ h2{
 	-0-transition:0.05s;
     transition: 0.05s;
 	display: block;
-	color: #0000ff;
-
+	color: #0000FF;
+	
 	margin: 2.5%;
 	padding: 2%;
 	width: 40%;
-	background: inherit;
 	border: solid 1px #333333;
 	border-radius: 15px;
 
@@ -210,7 +213,7 @@ div.Section div.Section {
 
 
 .Attribute {
-	background:rgba(225,225,225,0.5);
+	background:rgba(150,150,150,0.5);
 }
 /*	clear: none;
 	float: left;
@@ -224,7 +227,7 @@ div.Section div.Section {
 	box-shadow: 10px 10px 8px #111;
 	-webkit-box-shadow: 10px 10px 8px #111;
 	-moz-box-shadow: 10px 10px 8px #111;
-	Background: rgba(235,235,235,1);
+	Background: rgba(255,255,255,1);
 }
 /*	margin: 0%;
 	width: 19%;
