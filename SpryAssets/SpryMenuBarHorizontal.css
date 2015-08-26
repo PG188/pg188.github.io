@@ -11,6 +11,12 @@
  *******************************************************************************/
 
 /* The outermost container of the Menu Bar, an auto width box with no margin or padding */
+#MenuBar1 {
+	position:fixed; 
+	top: 0px; 
+	left:0; 
+	width: 100%;
+}
 ul.MenuBarHorizontal
 {
 	margin: 0;
