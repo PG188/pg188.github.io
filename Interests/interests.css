@@ -28,9 +28,27 @@ img, object, embed, video {
 */
 
 /* Mobile Layout: 480px and below. */
-
-
-
+body{
+	background: #030303;
+}
+h1 {
+	position:fixed; 
+	top: 30px; 
+	height: 5vh;
+	left:0; 
+	width: 100%;
+	background: #030303;
+	color: #FFFFFF;
+	z-index: 100;
+	text-align: center;
+}
+object, iframe {
+	position:fixed; 
+	top: 10vh; 
+	left:0; 
+	width: 100%;
+	height: 85vh;
+}
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
