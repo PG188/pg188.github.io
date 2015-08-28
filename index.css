@@ -220,6 +220,9 @@ h2{
 		display: block;
 		padding: 5pt;
 	}
+	#AboutMeText .Text {
+		margin-top: 36px;	
+	}
 	#AboutMePhoto {
 		clear: none;
 		float: left;
