@@ -6,6 +6,7 @@
 
 
 /* Mobile Layout: 480px and below. */
+
 h2{
 	font-size: 13px;
 }
@@ -38,10 +39,12 @@ h2{
 	margin: 2.5%;
 	padding: 2%;
 	width: 40%;
+	background:rgba(225,225,225,0.5);
 	border: solid 1px #333333;
 	border-radius: 15px;
 
 }
+
 .Attribute:hover{
 	margin: 0%;
 	width: 44.75%;
@@ -49,6 +52,8 @@ h2{
 	box-shadow: 10px 10px 8px #888888;
 	-webkit-box-shadow: 10px 10px 8px #888888;
 	-moz-box-shadow: 10px 10px 8px #888888;
+	Background: rgba(235,235,235,1);
+
 }
 
 .Text {
@@ -78,12 +83,18 @@ h2{
 #Work {
 	min-height: 100vh;
 }
+
+#Work .Attribute h2{
+	height: 36px
+}
 #Interest {
-	background-color: #DFFFDF;
+	background: url("InterestMobile.JPG");
+	background-size: auto 100%;
 	min-height: 100vh;
 }
 #Project {
-	background-color: #FCFEDA;
+	background: url("RandomNotesMobile.PNG");
+	background-size: 100% auto;
 }
 #Community{
 	background-color: #FFFFFF;
@@ -143,7 +154,7 @@ h2{
 
 
 #Interest {
-	background: url("DSC01035.JPG");
+	background: url("InterestDesktop.JPG");
 	background-size: auto 100%;
 }
 #Project{
@@ -233,8 +244,11 @@ h2{
 	}
 
 #Interest {
-	background: url("DSC01035.JPG");
+	background: url("InterestDesktop.JPG");
 	background-size: 100% 100%;
+}
+#Work .Attribute h2{
+	height: 64px
 }
 
 }
