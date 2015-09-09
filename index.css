@@ -141,29 +141,28 @@ h2{
 }
 
 #AboutMe {
+	position: relative;
 	background: url("Me.png");
 	background-size: 100% 100%;
+	padding-bottom: 0;
+	margin-bottom:0;
 }
 	#AboutMeText {
-		clear: both;
-		float: left;
-		margin-left: 5%;
-		width: 49.4252%;
-		display: block;
+		position: absolute;
+		bottom: 25vw;
+		left: 5%;
+		width: 45%;
 		background: rgba(255,255,255,0.75);
-		margin-top: 35vh;
-		padding: 1%;
-		font-size: 
-
 	}
 	#AboutMePhoto {
-		clear: none;
-		float: left;
-		margin-left: 1.1494%;
-		width: 36.7816%;
+		position: absolute;
+		width: 80%;
 		min-width: 200px;
-		display: block;
 		margin-top: 35vh;
+		margin-bottom: 0;
+		bottom: 0;
+		right: -15%;
+		max-height: 90vh;
 	}
 
 
@@ -248,23 +247,16 @@ p{
 #AboutMe {
 }
 	#AboutMeText {
-		clear: both;
-		float: left;
-		margin-left: 5%;
-		width: 65%;
-		display: block;
-		padding: 5pt;
+		bottom: 40vw;
+		width: 39%;
 	}
 	#AboutMeText .Text {
 		margin-top: 36px;	
 	}
 	#AboutMePhoto {
-		clear: none;
-		float: left;
 		margin-left: 0.7633%;
-		width: 24.4274%;
-		min-width: 0;
-		display: block;
+		width: 90%;
+		right: -15%;
 	}
 
 #Interest {
