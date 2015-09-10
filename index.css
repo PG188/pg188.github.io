@@ -68,7 +68,8 @@ h2{
 
 #AboutMe {
 	background-color: #FFDFDF;
-	min-height: 100vh;
+	padding-top: 10vh;
+	min-height: 90vh;
 
 }
 	#AboutMeText {
@@ -80,19 +81,36 @@ h2{
 		padding: 0;
 	}
 	#AboutMePhoto {
-		clear: both;
+		position: absolute;
+		width: 80%;
+		min-width: 200px;
+		margin-top: 35vh;
+		margin-bottom: 0;
+		bottom: 0;
+		right: auto;
+		left: auto;
+		max-height: 90vh;
+		
+		
+	/*	clear: both;
 		float: left;
 		margin-left: 5%;
 		width: 90%;
-		display: block;
+		display: block;  */
 	}
 #Work {
 	min-height: 100vh;
 	background: url("WorkBackground.jpg");
 	background-position: center center;
 	background-size: auto 100%;
+	padding-bottom: 0;
 	/*background: #DDD;*/
 }
+
+#Work .Title {
+	color: #FFFFFF
+}
+
 #Work .Attribute {
 	background:rgba(255,255,255,0.5);	
 }
@@ -180,6 +198,7 @@ h2{
 #Interest .Title, #Project .Title, #Work .Title{
 	margin-top: 10vh;
 	margin-bottom: 5vh;
+	padding: 10px;
 	background: rgba(225,225,225,0.5);
 	border-radius: 15px;
 	margin-top: 10vh;
@@ -250,7 +269,7 @@ p{
 #AboutMe {
 }
 	#AboutMeText {
-		bottom: 40vw;
+		bottom: 40vh;
 		width: 39%;
 	}
 	#AboutMeText .Text {
@@ -261,7 +280,9 @@ p{
 		width: 90%;
 		right: -15%;
 	}
-
+#Work {
+	background-size: 100% 100%;
+}
 #Interest {
 	background: url("InterestDesktop.JPG");
 	background-size: 100% 100%;
