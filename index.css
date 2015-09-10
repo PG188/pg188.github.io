@@ -88,7 +88,10 @@ h2{
 	}
 #Work {
 	min-height: 100vh;
-	background: #DDD;
+	background: url("WorkBackground.JPG");
+	background-position: center center;
+	background-size: auto 100%;
+	/*background: #DDD;*/
 }
 #Work .Attribute {
 	background:rgba(255,255,255,0.5);	
