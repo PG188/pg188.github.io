@@ -75,7 +75,7 @@ h2{
 	#AboutMeText {
 		clear: both;
 		float: left;
-		margin-left: 5%;
+		margin-left: 20%;
 		width: 80%;
 		display: block;
 		padding: 0;
@@ -90,6 +90,7 @@ h2{
 		right: auto;
 		left: auto;
 		max-height: 90vh;
+		visibility: hidden;
 		
 		
 	/*	clear: both;
