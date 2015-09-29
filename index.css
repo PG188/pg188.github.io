@@ -67,19 +67,28 @@ h2{
 }
 
 #AboutMe {
-	background-color: #FFDFDF;
+	background-color: #348CD3;
 	padding-top: 10vh;
 	min-height: 90vh;
-
 }
 	#AboutMeText {
 		clear: both;
 		float: left;
-		margin-left: 20%;
+		margin-left: 10%;
 		width: 80%;
 		display: block;
 		padding: 0;
+		font-family:"Arial Black", Gadget, sans-serif;
+		color: #FFFFFF;
+		margin-top: 10vh;
 	}
+	#AboutMeText h1 {
+		font-size:36px;
+	}
+	#AboutMeText p {
+		font-size: 24px;
+	}
+
 	#AboutMePhoto {
 		position: absolute;
 		width: 80%;
@@ -90,7 +99,7 @@ h2{
 		right: auto;
 		left: auto;
 		max-height: 90vh;
-		visibility: hidden;
+		visibility: hidden; 
 		
 		
 	/*	clear: both;
@@ -161,7 +170,7 @@ h2{
 	width: 90%;
 	display: block;
 }
-
+/*
 #AboutMe {
 	position: relative;
 	background: url("Me.png");
@@ -186,7 +195,17 @@ h2{
 		right: -15%;
 		max-height: 90vh;
 	}
+*/
+#AboutMeText {
+		position: absolute;
+		top: 15vh;
+		left: 5%;
+		width: 75%;
+	}
 
+	#AboutMeText Text {
+		padding-top: 5vh;
+	}
 
 #Interest {
 	background: url("InterestDesktop.JPG");
@@ -266,7 +285,7 @@ p{
 .Text {
 	margin-top: 20vh;
 }
-
+/*
 #AboutMe {
 }
 	#AboutMeText {
@@ -281,6 +300,10 @@ p{
 		width: 90%;
 		right: -15%;
 	}
+	
+	*/
+	
+	
 #Work {
 	background-size: 100% 100%;
 }
