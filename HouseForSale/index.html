@@ -17,117 +17,69 @@
 <![endif]-->
 <script src="../../../../../../Program Files (x86)/Adobe/Adobe Dreamweaver CS6/Configuration/BuiltIn/Fluid Grid Layout/respond.min.js"></script>
 <script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-</head>
-<body>
-
-<div class="Block">
-  <h1>31 Beaucourt Rd.  </h1>
-  
-  
-  <!--
-We will make a slider with stylized thumbnails using CSS3
-The markup is very simple:
-Radio Inputs
-Labels with thumbnails to detect click event
-Main Image
--->
-<div class="slider">
-	<input type="radio" name="slide_switch" id="id1"/>
-	<label for="id1">
-		<img src="Images/1.JPG" width="100"/>
-	</label>
-	<img src="Images/1.JPG"/>
-	
-	<!--Lets show the second image by default on page load-->
-	<input type="radio" name="slide_switch" id="id2" checked="checked"/>
-	<label for="id2">
-		<img src="Images/2.JPG" width="100"/>
-	</label>
-	<img src="Images/2.JPG"/>
-	
-	<input type="radio" name="slide_switch" id="id3"/>
-	<label for="id3">
-		<img src="Images/3.JPG" width="100"/>
-	</label>
-	<img src="Images/3.JPG"/>
-	
-	<input type="radio" name="slide_switch" id="id4"/>
-	<label for="id4">
-		<img src="Images/4.JPG" width="100"/>
-	</label>
-	<img src="Images/4.JPG"/>
-	
-	<input type="radio" name="slide_switch" id="id5"/>
-	<label for="id5">
-		<img src="Images/5.JPG" width="100"/>
-	</label>
-	<img src="Images/5.JPG"/>
-</div>
 
 <!-- We will use PrefixFree - a script that takes care of CSS3 vendor prefixes
 You can download it from http://leaverou.github.com/prefixfree/ -->
 <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+</head>
+<body>
 
+	<div class="Block">
+	  <h1>31 Beaucourt Rd.  </h1>
+	  <div class="gallery">
+			<div class="slider">
+				<input type="radio" name="slide_switch" id="id1"/>
+				<label for="id1">
+					<img src="Images/1.JPG" width="100"/>
+				</label>
+				<img src="Images/1.JPG"/>
+				
+				<!--Lets show the second image by default on page load-->
+				<input type="radio" name="slide_switch" id="id2" checked="checked"/>
+				<label for="id2">
+					<img src="Images/2.JPG" width="100"/>
+				</label>
+				<img src="Images/2.JPG"/>
+				
+				<input type="radio" name="slide_switch" id="id3"/>
+				<label for="id3">
+					<img src="Images/3.JPG" width="100"/>
+				</label>
+				<img src="Images/3.JPG"/>
+				
+				<input type="radio" name="slide_switch" id="id4"/>
+				<label for="id4">
+					<img src="Images/4.JPG" width="100"/>
+				</label>
+				<img src="Images/4.JPG"/>
+				
+				<input type="radio" name="slide_switch" id="id5"/>
+				<label for="id5">
+					<img src="Images/5.JPG" width="100"/>
+				</label>
+				<img src="Images/5.JPG"/>
+			</div>
+	  </div>
+	  <p Class="Asking">
+	    Asking price: $------
+	  </p>
+	  <p class="intro">
+		This bungalow in West Hamilton is based in the neighborhood of Anslie
+		Wood. The 6 bedroom, 2 bathroom property is situated on the HSR bus
+		route at a convenient location near Fortinos, St. Marry’s catholic
+		school and McMaster University. It is situates in a quiet
+		neighborhood around families and students alike. It boasts a newly
+		built basement with its own kitchenette and separate (rear) entrance.
+		Perfect for first time owners, investors or anyone with family 
+		attending McMaster University. Shingles: 7 years, AC: 5 years, Water
+		heater: 3 years owned, Driveway: 5 cars
+	  </p>
 
-  
-  
-  <object class="Photos">
-	<param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F133001206%40N08%2Fsets%2F72157667576114185%2Fshow%2F&page_show_back_url=%2Fphotos%2F133001206%40N08%2Fsets%2F72157667576114185%2F&set_id=72157667576114185&jump_to="></param> 
-	<param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=261948265"></param> 
-	<param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=261948265" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F133001206%40N08%2Fsets%2F72157667576114185%2Fshow%2F&page_show_back_url=%2Fphotos%2F133001206%40N08%2Fsets%2F72157667576114185%2F&set_id=72157667576114185&jump_to=" width="400" height="300"></embed>
-        <ul class="Photos">
-            <li><img src="Images/image (1).JPG"></li>
-            <li><img src="Images/image (2).JPG"></li>
-            <li><img src="Images/image (3).JPG"></li>
-            <li><img src="Images/image (4).JPG"></li>
-            <li><img src="Images/image (5).JPG"></li>
-        <!--<li><img src="Images/image (6).jpg"></li>
-            <li><img src="Images/image (7).jpg"></li>
-            <li><img src="Images/image (8).jpg"></li>
-            <li><img src="Images/image (9).jpg"></li>
-            <li><img src="Images/image (10).jpg"></li>
-            <li><img src="Images/image (11).jpg"></li>
-            <li><img src="Images/image (12).jpg"></li>
-            <li><img src="Images/image (13).jpg"></li>
-            <li><img src="Images/image (14).jpg"></li>
-            <li><img src="image (15).jpg"></li>
-            <li><img src="image (16).jpg"></li>
-            <li><img src="image (17).jpg"></li>
-            <li><img src="image (18).jpg"></li>
-            <li><img src="image (19).jpg"></li>
-            <li><img src="image (20).jpg"></li>
-            <li><img src="image (21).jpg"></li>
-            <li><img src="image (22).jpg"></li>
-            <li><img src="image (23).jpg"></li>
-            <li><img src="image (24).jpg"></li>
-            <li><img src="image (25).jpg"></li>
-            <li><img src="image (26).jpg"></li>
-            <li><img src="image (27).jpg"></li>
-            <li><img src="image (28).jpg"></li>
-            <li><img src="image (29).jpg"></li>
-    --> </ul>
-	</object>
-  
-  <p>
-	This bungalow in West Hamilton is based in the neighborhood of Anslie
-	Wood. The 6 bedroom, 2 bathroom property is situated on the HSR bus
-	route at a convenient location near Fortinos, St. Marry’s catholic
-	school and McMaster University. It is situates in a quiet
-	neighborhood around families and students alike. It boasts a newly
-	built basement with its own kitchenette and separate (rear) entrance.
-	Perfect for first time owners, investors or anyone with family 
-	attending McMaster University. Shingles: 7 years, AC: 5 years, Water
-	heater: 3 years owned, Driveway: 5 cars
-  </P>
+	  
+	  
+	  
+	</div>
 
-  
-  
-  
-</div>
-
-        
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
+			
 </body>
 </html>
