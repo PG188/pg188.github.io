@@ -101,7 +101,7 @@ p.intro{
 	width: 90%; /*Same as width of the large image*/
 	position: relative;
 	/*Instead of height we will use padding*/
-	padding-top: 67%; /*That helps bring the labels down*/
+	padding-top: 50%; /*That helps bring the labels down*/
 	margin-left: 5%;
 	margin: 5px auto;
 	
