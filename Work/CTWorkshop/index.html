@@ -16,23 +16,15 @@
 <link href="../../SharedElements.css" rel="stylesheet" type="text/css">
 <link href="../Work.css" rel="stylesheet" type="text/css">
 <link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
-<!-- 
-To learn more about the conditional comments around the html tags at the top of the file:
-paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
 
-Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
-* insert the link to your js here
-* remove the link below to the html5shiv
-* add the "no-js" class to the html tags at the top
-* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
--->
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="../../../../../../Program Files (x86)/Adobe/Adobe Dreamweaver CS6/Configuration/BuiltIn/Fluid Grid Layout/respond.min.js"></script>
-<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+<link href="../../HorizontalMenuBar/index.css" rel="stylesheet" type="text/css">
+<script src="../../HorizontalMenuBar/index.js"></script>
+
 </head>
-<body>
+<body onload='addMenubar()'>
+
+<!--
 <div class="Menu">
   <ul id="MenuBar1" class="MenuBarHorizontal">
     <li>
@@ -104,7 +96,7 @@ Do the following if you're using your customized build of modernizr (http://www.
     <li><a href="../../Contact/index.html">Contact</a></li>
   </ul>
 </div>
-
+-->
 <div class="Block" id="TopBLock">
   <h1>Children's Technology Workshop</h1>
   <h3>Summer - 2012, 2013</h3>
