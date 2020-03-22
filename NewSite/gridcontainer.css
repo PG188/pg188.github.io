@@ -4,6 +4,9 @@
 #Interests .grid-container {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+#Projects .grid-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 
 .grid-container {
   display: grid;

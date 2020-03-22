@@ -150,6 +150,94 @@ var Interests = {
 	}
 };
 
+var Projects = {
+	"distrist" : {
+		"company": "FIRST District Organisation",
+		"icon": "assets/icons/project/district/logo.jpg",
+		"ref": "",
+		"priority": "2"
+	},
+	"website" : {
+		"company": "Personal Website",
+		"icon": "assets/icons/project/website/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"quadcopter" : {
+		"company": "Quadcopter Design",
+		"icon": "assets/icons/project/quadcopter/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"hyperloop" : {
+		"company": "McMaster Hyperloop",
+		"icon": "assets/icons/project/hyperloop/logo.jpg",
+		"ref": "",
+		"priority": "2"
+	},
+	"ecocar" : {
+		"company": "EcoCAR3",
+		"icon": "assets/icons/project/ecocar/logo.jpg",
+		"ref": "",
+		"priority": "2"
+	},
+	"formulahybrid" : {
+		"company": "Formula Hybrid",
+		"icon": "assets/icons/project/formulahybrid/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"strangers" : {
+		"company": "Strangers",
+		"icon": "assets/icons/project/strangers/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"quadsim" : {
+		"company": "QuadSim",
+		"icon": "assets/icons/project/quadsim/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"sumobot" : {
+		"company": "Sumobot",
+		"icon": "assets/icons/project/sumobot/logo.jpg",
+		"ref": "",
+		"priority": "2"
+	},
+	"class" : {
+		"company": "Class Projects",
+		"icon": "assets/icons/project/class/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"first" : {
+		"company": "FIRST Robotics",
+		"icon": "assets/icons/project/first/logo.jpg",
+		"ref": "",
+		"priority": "3"
+	},
+	"f1" : {
+		"company": "F1 in schools",
+		"icon": "assets/icons/project/f1/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"vex" : {
+		"company": "VEX Robotics",
+		"icon": "assets/icons/project/vex/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"skills" : {
+		"company": "Skills Robotics",
+		"icon": "assets/icons/project/skills/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+};
+
+
 var domain = "test";
 
 
@@ -158,6 +246,9 @@ function pullWorkExperience() {
 }
 function pullInterests() {	
 	pullExperience(Interests, "Interests");
+}
+function pullProjects() {	
+	pullExperience(Projects, "Projects");
 }
 
 function pullExperience(experiences, target) {	
