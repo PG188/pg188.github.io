@@ -1,0 +1,96 @@
+#Work .grid-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#Interests .grid-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grid-container a:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.grid-container a {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  position: relative;
+  padding: 0;
+  display: flex;
+}
+
+
+.grid-container img, .grid-container h2, .grid-container h3 {
+  border: none;
+  padding : 0;
+  margin: 0;
+  min-width: 100%;
+  display: block;
+  position: inherit;
+  align: center;
+  
+}
+.grid-container h2{
+  font-size: 0.5em;
+  top:0.3em;
+  left: 0;
+}
+.grid-container h3{
+  font-size: 0.4em;
+  top: 2em;
+  left: 0;
+}
+@charset "utf-8";
+
+
+.grid-container img{
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.grid-container .details{
+  display: none;
+}
+
+.grid-container > a:hover .details{
+  display: block;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  max-height: 100%;
+  border: 0;
+}
+.grid-container > a:hover img{
+  display: none;
+}
+
+.priority2 {
+  grid-row: span 2;
+  grid-column: span 2; 
+}
+.priority3 {
+  grid-row: span 3;
+  grid-column: span 3; 
+}
+.item3 {
+  grid-row: span 3;
+  grid-column: span 3;
+  
+}
