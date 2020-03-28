@@ -1,4 +1,59 @@
 
+var Education = {
+	"masters" : {
+		"company": "McMaster University",
+		"icon": "assets/icons/education/masters/logo.jpg",
+		"ref": "",
+		"priority": "3",
+		"jobs" : [
+			{
+				"title": "Masters of Applied Science",
+				"start": "",
+				"stop": ""
+			}
+		]
+	},
+	"bachlors" : {
+		"company": "McMaster University",
+		"icon": "assets/icons/education/bachlors/logo.jpg",
+		"ref": "",
+		"priority": "2",
+		"jobs" : [
+			{
+				"title": "Mechatronics Engineering with Management and CO-OP",
+				"start": "",
+				"stop": ""
+			}
+		]
+	},
+	"webdesign" : {
+		"company": "Ryerson University",
+		"icon": "assets/icons/education/webdesign/logo.jpg",
+		"ref": "",
+		"priority": "1",
+		"jobs" : [
+			{
+				"title": "Web Development",
+				"start": "",
+				"stop": ""
+			}
+		]
+	},
+	"highschool" : {
+		"company": "Woburn CI",
+		"icon": "assets/icons/education/highschool/logo.jpg",
+		"ref": "",
+		"priority": "1",
+		"jobs" : [
+			{
+				"title": "Highschool Diploma",
+				"start": "",
+				"stop": ""
+			}
+		]
+	}
+};
+
 var workExperiences = {
 	"gdms" : {
 		"company": "General Dynamics Mission Systems",
@@ -106,27 +161,15 @@ var workExperiences = {
 };
 
 var Interests = {
-	"origami" : {
-		"company": "Origami",
-		"icon": "assets/icons/interest/origami/logo.jpg",
+	"gardening" : {
+		"company": "Gardening",
+		"icon": "assets/icons/interest/gardening/logo.jpg",
 		"ref": "",
-		"priority": "1"
+		"priority": "2"
 	},
-	"travel" : {
-		"company": "Travelling",
-		"icon": "assets/icons/interest/travel/logo.jpg",
-		"ref": "",
-		"priority": "1"
-	},
-	"robotics" : {
-		"company": "Robotics",
-		"icon": "assets/icons/interest/robotics/logo.jpg",
-		"ref": "",
-		"priority": "1"
-	},
-	"photography" : {
-		"company": "Photography",
-		"icon": "assets/icons/interest/photography/logo.jpg",
+	"cooking" : {
+		"company": "Cooking",
+		"icon": "assets/icons/interest/cooking/logo.jpg",
 		"ref": "",
 		"priority": "1"
 	},
@@ -136,15 +179,33 @@ var Interests = {
 		"ref": "",
 		"priority": "1"
 	},
-	"cooking" : {
-		"company": "Cooking",
-		"icon": "assets/icons/interest/cooking/logo.jpg",
+	"3dprint" : {
+		"company": "3D Printing",
+		"icon": "assets/icons/interest/3dprint/logo.jpg",
+		"ref": "",
+		"priority": "2"
+	},
+	"photography" : {
+		"company": "Photography",
+		"icon": "assets/icons/interest/photography/logo.jpg",
+		"ref": "",
+		"priority": "2"
+	},
+	"robotics" : {
+		"company": "Robotics",
+		"icon": "assets/icons/interest/robotics/logo.jpg",
 		"ref": "",
 		"priority": "1"
 	},
-	"gardening" : {
-		"company": "Gardening",
-		"icon": "assets/icons/interest/gardening/logo.jpg",
+	"travel" : {
+		"company": "Travelling",
+		"icon": "assets/icons/interest/travel/logo.jpg",
+		"ref": "",
+		"priority": "1"
+	},
+	"origami" : {
+		"company": "Origami",
+		"icon": "assets/icons/interest/origami/logo.jpg",
 		"ref": "",
 		"priority": "1"
 	}
@@ -215,7 +276,7 @@ var Projects = {
 		"company": "FIRST Robotics",
 		"icon": "assets/icons/project/first/logo.jpg",
 		"ref": "",
-		"priority": "3"
+		"priority": "2"
 	},
 	"f1" : {
 		"company": "F1 in schools",
@@ -241,6 +302,9 @@ var Projects = {
 var domain = "test";
 
 
+function pullEducation() {	
+	pullExperience(Education, "Education");
+}
 function pullWorkExperience() {	
 	pullExperience(workExperiences, "Work");
 }
