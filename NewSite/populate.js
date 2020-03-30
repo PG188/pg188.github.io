@@ -211,7 +211,7 @@ var Interests = {
 		"icon": "assets/icons/interest/robotics/logo.jpg",
 		"ref": "",
 		"priority": "1",
-		"hide": true
+		"hide": false
 	},
 	"travel" : {
 		"company": "Travelling",

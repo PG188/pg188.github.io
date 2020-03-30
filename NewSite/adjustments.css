@@ -1,0 +1,9 @@
+#Projects-show-more-button {
+  grid-column: span 4; 
+}
+
+#Projects-show-less-button {
+  grid-column: span 3; 
+}
+
+
