@@ -175,49 +175,57 @@ var Interests = {
 		"company": "Gardening",
 		"icon": "assets/icons/interest/gardening/logo.jpg",
 		"ref": "",
-		"priority": "2"
+		"priority": "2",
+		"hide": false
 	},
 	"cooking" : {
 		"company": "Cooking",
 		"icon": "assets/icons/interest/cooking/logo.jpg",
 		"ref": "",
-		"priority": "1"
+		"priority": "1",
+		"hide": false
 	},
 	"axes" : {
 		"company": "Axe Throwing",
 		"icon": "assets/icons/interest/axes/logo.jpg",
 		"ref": "",
-		"priority": "1"
+		"priority": "1",
+		"hide": false
 	},
 	"3dprint" : {
 		"company": "3D Printing",
 		"icon": "assets/icons/interest/3dprint/logo.jpg",
 		"ref": "",
-		"priority": "2"
+		"priority": "2",
+		"hide": false
 	},
 	"photography" : {
 		"company": "Photography",
 		"icon": "assets/icons/interest/photography/logo.jpg",
 		"ref": "",
-		"priority": "2"
+		"priority": "2",
+		"hide": false
 	},
 	"robotics" : {
 		"company": "Robotics",
 		"icon": "assets/icons/interest/robotics/logo.jpg",
 		"ref": "",
-		"priority": "1"
+		"priority": "1",
+		"hide": true
 	},
 	"travel" : {
 		"company": "Travelling",
 		"icon": "assets/icons/interest/travel/logo.jpg",
 		"ref": "",
-		"priority": "1"
+		"priority": "1",
+		"hide": false
 	},
 	"origami" : {
 		"company": "Origami",
 		"icon": "assets/icons/interest/origami/logo.jpg",
 		"ref": "",
-		"priority": "1"
+		"priority": "1",
+		"hide": false
 	}
 };
 
@@ -350,6 +358,7 @@ function pullProjects() {
 function pullExperience(experiences, target) {	
 	var container = document.createElement("div");
 	container.className = 'grid-container';
+	container.id = target+"-grid-container"
 	includeShowMoreButton = false;
 	for (company in experiences) {
 		var jobcontainer = document.createElement("a");
@@ -393,24 +402,35 @@ function pullExperience(experiences, target) {
 	}
 	
 	if (includeShowMoreButton == true) {
-		showMoreContainer = document.createElement("a");
-		showMoreContainer.className = "showmorebutton"
-		showMoreContainer.id = target+"showmorebutton"
-		
+		var showContainer = document.createElement("a");
+		showContainer.className = "show-more-button";
+		showContainer.id = target+"-show-more-button";
+		showContainer.onclick = function() {showmore(target);};
+		showContainer.style.display = "flex";
+
 		var more = document.createElement("h2");
-		more.className = "showmore"
+		more.className = "show-more";
 		var moretext = document.createTextNode("Show More");
 		more.appendChild(moretext);
 		
+		showContainer.appendChild(more);
+		
+		container.appendChild(showContainer);
+		
+		showContainer = document.createElement("a");
+		showContainer.className = "show-less-button";
+		showContainer.id = target+"-show-less-button";
+		showContainer.onclick = function() {showless(target);};
+		showContainer.style.display = "none";
+
 		var less = document.createElement("h2");
-		less.className = "showless"
+		less.className = "show-less";
 		var lesstext = document.createTextNode("Show Less");
-		less.appendChild(moretext);
+		less.appendChild(lesstext);
 		
-		showMoreContainer.appendChild(more);
-		showMoreContainer.appendChild(less);
+		showContainer.appendChild(less);
 		
-		container.appendChild(showMoreContainer);
+		container.appendChild(showContainer);
 	}
 
 	
@@ -418,5 +438,24 @@ function pullExperience(experiences, target) {
 
 
 
+	
+}
+
+function showmore(target){
+	document.getElementById(target+"-show-more-button").style.display = "none";
+	document.getElementById(target+"-show-less-button").style.display = "flex";
+	list = document.getElementById(target).getElementsByClassName("hiddentrue");
+	for (var i = 0; i < list.length; i++) {
+		list[i].style.display = "flex";
+	}
+	
+}
+function showless(target){
+	document.getElementById(target+"-show-less-button").style.display = "none";
+	document.getElementById(target+"-show-more-button").style.display = "flex";
+	list = document.getElementById(target).getElementsByClassName("hiddentrue");
+	for (var i = 0; i < list.length; i++) {
+		list[i].style.display = "none";
+	}
 	
 }

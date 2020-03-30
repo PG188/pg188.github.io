@@ -1,15 +1,5 @@
-#Education .grid-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-#Work .grid-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-#Interests .grid-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-#Projects .grid-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
+
+
 
 .grid-container {
   display: grid;
@@ -22,6 +12,7 @@
   bottom: 0;
   grid-auto-flow: row dense;
   grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .grid-container .block:before {
@@ -30,13 +21,14 @@
   padding-top: 100%;
 }
 
-.grid-container .showmorebutton {
+.show-more-button, .show-less-button {
   background-color: rgba(0, 0, 0, 0.1); 
   text-align: center;
   padding: 20px 0;
   position: relative;
   padding: 0;
 }
+
 
 .grid-container .block {
   background-color: rgba(0, 0, 0, 0.1); 
