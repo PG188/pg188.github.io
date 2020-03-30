@@ -21,6 +21,7 @@
 		 /* border: solid 5px; */
 		 margin: 0;
 		 padding: 0;
+		 padding-top: 15vh;
 		 position: relative;
 	 }
 	 .Block .Title {
@@ -28,7 +29,7 @@
 		 margin: 0;
 		 padding: 0;
 		 position: static;
-		 margin: 15vh 0px 0px 5%;
+		 margin: 0px 0px 0px 5%;
 		 height: 10vh;
 	 }
 	 .Block .Text{
@@ -44,15 +45,49 @@
 		 margin: 5vh 5% 0px 30%;
 		 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	 }
+	#Projects-show-more-button {
+	  grid-column: span 4; 
+	}
+
+	#Projects-show-less-button {
+	  grid-column: span 3; 
+	}
+	
+	#AboutMeText{
+		background: #DDD;
+	}
+	#Education{
+		background: #BBB;
+	}
+	#Work{
+		background: #999;
+	}
+	#Interests{
+		background: #777;
+	}
+	#Projects{
+		background: #555;
+	}
+
+
  }
  
 @media all and (max-width: 1280px) {
 	body {
 		width: 100%;
 	}
+	.Block {
+		 min-height : 100vh;
+		 /* border: solid 5px; */
+		 margin: 0;
+		 padding: 0;
+		 padding-left: 15vh;
+		 position: relative;
+		 padding-top: 15vh;
+	 }
 	 .Block .Title {
 		 width: 448px;
-		 margin: 15vh 0px 0px 5%;
+		 margin: 0px 0px 0px 5%;
 	 }
 	 .Block .Text{
 		 width: 832px;
@@ -91,12 +126,13 @@
 		 margin: 0;
 		 padding: 0;
 		 position: static;
+		 padding-top: 10%;
 	 }
 	 .Block .Title {
 		 width: 75%;
 		 margin: 0;
 		 padding: 0;
-		 margin: 10% 0% 0% 10%;
+		 margin: 0% 0% 0% 10%;
 		 position: static;
 		 left: 5%;
 	 }
