@@ -27,25 +27,21 @@
 		 width: 35%;
 		 margin: 0;
 		 padding: 0;
-		 position: absolute;
-		 top: 15vh;
-		 left: 5%;
+		 position: static;
+		 margin: 15vh 0px 0px 5%;
+		 height: 10vh;
 	 }
 	 .Block .Text{
 		 margin: 0;
-		 position: absolute;
+		 position: static;
 		 width: 65%;
-		 margin: 0;
-		 right: 5%;
-		 top: 30vh;
+		 margin: 30vh 5% 0px 30%;
 	 }
 	 .Block .grid-container{
 		 margin: 0;
-		 position: absolute;
+		 position: static;
 		 width: 65%;
-		 margin: 0;
-		 right: 5%;
-		 top: 30vh;
+		 margin: 5vh 5% 0px 30%;
 		 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	 }
  }
@@ -56,12 +52,16 @@
 	}
 	 .Block .Title {
 		 width: 448px;
+		 margin: 15vh 0px 0px 5%;
 	 }
 	 .Block .Text{
 		 width: 832px;
+		 margin: 30vh 5% 0px auto;
 	 }
 	 .Block .grid-container{
 		 width: 832px;
+		 margin: 5vh 5% 5% auto;
+		 
 	 }
 }
 
@@ -120,7 +120,7 @@
 	 }
 	 
 	#Education .grid-container{
-		margin: 125px 7% 7% 7%;
+		margin: 50px 7% 7% 7%;
 	}
 	 
 	#Education .priority2 {
@@ -129,7 +129,7 @@
 	}
 	 
 	#Work .grid-container{
-		margin: 125px 7% 7% 7%;
+		margin: 50px 7% 7% 7%;
 	}
 	
 	#Projects-show-more-button {
