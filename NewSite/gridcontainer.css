@@ -6,13 +6,8 @@
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   grid-auto-flow: row dense;
   grid-auto-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .grid-container .block:before {

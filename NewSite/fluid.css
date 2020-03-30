@@ -10,13 +10,146 @@
  *   480-less    - phone landscape & smaller
  * --------------------------------------------
  */
-@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+ @media all {
+	 body {
+		max-width: 1280px;
+		margin: auto;
+	 }
+	 .Block {
+		 min-height : 100vh;
+		 /* border: solid 5px; */
+		 margin: 0;
+		 padding: 0;
+		 position: relative;
+	 }
+	 .Block .Title {
+		 width: 35%;
+		 margin: 0;
+		 padding: 0;
+		 position: absolute;
+		 top: 15vh;
+		 left: 5%;
+	 }
+	 .Block .Text{
+		 margin: 0;
+		 position: absolute;
+		 width: 65%;
+		 margin: 0;
+		 right: 5%;
+		 top: 30vh;
+	 }
+	 .Block .grid-container{
+		 margin: 0;
+		 position: absolute;
+		 width: 65%;
+		 margin: 0;
+		 right: 5%;
+		 top: 30vh;
+		 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	 }
+ }
+ 
+@media all and (max-width: 1280px) {
+	body {
+		width: 100%;
+	}
+	 .Block .Title {
+		 width: 448px;
+	 }
+	 .Block .Text{
+		 width: 832px;
+	 }
+	 .Block .grid-container{
+		 width: 832px;
+	 }
+}
 
-@media all and (min-width: 768px) and (max-width: 1024px) { }
+@media all and (max-width: 1024px) {
 
-@media all and (min-width: 480px) and (max-width: 768px) { }
+	body {
+		width: 100%;
+	}
+	 .Block .Title {
+		 width: 75%;
+	 }
+	 .Block .Text{
+		 width: 81%;
+	 }
+	 .Block .grid-container{
+		 width: 81%;
+	 }
+}
 
-@media all and (max-width: 480px) { }
+@media all and (max-width: 768px) {
+	 body {
+		max-width: 1280px;
+		margin: auto;
+	 }
+	 .Block {
+		 min-height : 100vh;
+		 border: solid 5px;
+		 margin: 0;
+		 padding: 0;
+		 position: static;
+	 }
+	 .Block .Title {
+		 width: 75%;
+		 margin: 0;
+		 padding: 0;
+		 margin: 10% 0% 0% 10%;
+		 position: static;
+		 left: 5%;
+	 }
+	 .Block .Text{
+		 margin: 0;
+		 position: static;
+		 width: 85%;
+		 margin: 0px 7% 7% 7%;
+		 right: 5%;
+		 top: 30vh;
+	 }
+	 .Block .grid-container{
+		 margin: 0;
+		 position: static;
+		 width: 85%;
+		 margin: 0px 7% 7% 7%;
+		 right: 5%;
+		 top: 30vh;
+		 grid-template-columns: 1fr 1fr 1fr 1fr;
+	 }
+	 
+	#Education .grid-container{
+		margin: 125px 7% 7% 7%;
+	}
+	 
+	#Education .priority2 {
+	  grid-row: span 1;
+	  grid-column: span 1; 
+	}
+	 
+	#Work .grid-container{
+		margin: 125px 7% 7% 7%;
+	}
+	
+	#Projects-show-more-button {
+	  grid-column: span 2; 
+	  grid-row: span 2; 
+	}
+
+	#Projects-show-less-button {
+	  grid-column: span 3; 
+	  grid-row: span 1; 
+	}
+}
+
+@media all and (max-width: 480px) {
+	.Block .grid-container {
+	  grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	
+}
 
 
 /* Portrait */
