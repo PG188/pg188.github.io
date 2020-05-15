@@ -10,13 +10,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Prakhar Garg | About Me</title>
-	<link href="HorizontalMenuBar/index.css" rel="stylesheet" type="text/css">
+<!--	<link href="HorizontalMenuBar/index.css" rel="stylesheet" type="text/css">
 	<link href="index.css" rel="stylesheet" type="text/css">
 	<link href="gridcontainer.css" rel="stylesheet" type="text/css">
-	<link href="fluid.css" rel="stylesheet" type="text/css">
+	<link href="fluid.css" rel="stylesheet" type="text/css"> -->
+	<link href="gridcontainer.css" rel="stylesheet" type="text/css">
 	<script src="HorizontalMenuBar/index.js"></script>
 	<script src="populate.js"></script>
-
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -24,24 +25,30 @@
 
 
 
-<body onload='addMenubar(); pullEducation(); pullWorkExperience(); pullInterests(); pullProjects();'>
-	<div name="AboutMe" class="Block" id="AboutMeText">
+<body onload=' addMenubar(); pullEducation(); pullWorkExperience(); pullInterests(); pullProjects(); pullCommunity(); pullContact();'>
+	<div name="AboutMe" class="Block container jumbotron" id="AboutMeText">
 		<div class="Title"><h1> About Me </h1></div>
 		<div class="Text">
 			<p>I am a student of McMaster University, studying Mechatronics Engineering. I have a passion for technology and innovation. My years of experience in robotics had helped me grow as an engineer and a person. The purpose of this website is to share some of my past accomplishments and expand my knowledge on web development.</p></div>
 		</div>
 	</div>
-	<div name="Education" class="Block" id="Education">
+	<div name="Education" class="Block container" id="Education">
 		<div class="Title"><h1>Education</h1></div>
 	</div>
-	<div name="Work" class="Block" id="Work">
+	<div name="Work" class="Block container" id="Work">
 		<div class="Title"><h1>Work Experience</h1></div>
 	</div>
-	<div name="Interests" class="Block" id="Interests">
+	<div name="Interests" class="Block container" id="Interests">
 		<div class="Title"><h1>Interests</h1></div>
 	</div>
-	<div name="Projects" class="Block" id="Projects">
+	<div name="Projects" class="Block container" id="Projects">
 		<div class="Title"><h1>Projects</h1></div>
+	</div>
+	<div name="Community" class="Block container" id="Community">
+		<div class="Title"><h1>Community</h1></div>
+	</div>
+	<div name="Contact" class="Block container" id="Contact">
+		<div class="Title"><h1>Contact</h1></div>
 	</div>
 
 
