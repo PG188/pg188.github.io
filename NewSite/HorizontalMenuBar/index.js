@@ -451,7 +451,7 @@ nav = document.createElement("nav");
 nav.className = "navbar navbar-expand-lg navbar-dark bg-primary";
 link = document.createElement("a"); 
 link.className = "navbar-brand";
-link.href = "http://www.prakhargarg.me/" +  "#";
+link.href = domain +  "#";
 link.innerHTML = "Prakhar Garg"
 
 button = document.createElement("button"); 
@@ -493,7 +493,7 @@ for (mainitem in sitemap) {
 	li.className = "nav-item";
 	a = document.createElement("a");
 	a.className = "nav-link";
-	a.href = "http://www.prakhargarg.me/" +  sitemap[mainitem].path;
+	a.href = domain +  sitemap[mainitem].path;
 	textnode = document.createTextNode(mainitem);
 	a.appendChild(textnode);
 	var dropdown = false;
@@ -505,7 +505,7 @@ for (mainitem in sitemap) {
 			dropdown = true;
 			var suba = document.createElement("a");
 			suba.className = "dropdown-item";
-			suba.href = "http://www.prakhargarg.me/" +  sitemap[mainitem][subitem].path;
+			suba.href = domain +  sitemap[mainitem][subitem].path;
 			textnode = document.createTextNode(subitem);
 			suba.appendChild(textnode);
 			subdiv.appendChild(suba);
@@ -604,7 +604,7 @@ function addMenu(references,level) {
 				var a = document.createElement("a");
 				var node = document.createTextNode(item);
 				a.appendChild(node);
-				a.href = "http://www.prakhargarg.me/" +  domain + references[item];
+				a.href = domain + references[item];
 				li.appendChild(a);
 				ul.appendChild(li);
 			}
@@ -613,7 +613,7 @@ function addMenu(references,level) {
 				li.className = 'dropdown';
 				var a = document.createElement("a");
 				a.className = 'subMenu';
-				a.href = "http://www.prakhargarg.me/" +  domain + references[item]['path'];
+				a.href = domain + references[item]['path'];
 				var node = document.createTextNode(item);
 				a.appendChild(node);
 				li.appendChild(a);
