@@ -4,6 +4,10 @@
 	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 
+footer .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
+  }
 
 .grid-container {
   display: grid;

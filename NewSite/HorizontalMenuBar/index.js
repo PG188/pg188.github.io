@@ -448,7 +448,7 @@ var button
 var span
 
 nav = document.createElement("nav");
-nav.className = "navbar navbar-expand-lg navbar-dark bg-primary";
+nav.className = "navbar navbar-expand-lg navbar-dark bg-primary sticky-top";
 link = document.createElement("a"); 
 link.className = "navbar-brand";
 link.href = domain +  "#";
