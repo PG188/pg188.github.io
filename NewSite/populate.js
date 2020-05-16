@@ -437,7 +437,7 @@ var sitemap = {
 
 var domain = "test";
 
-function populate() {
+function populatesite() {
 	pullEducation();
 	pullWork();
 	pullInterests();
