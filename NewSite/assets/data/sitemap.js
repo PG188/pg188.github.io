@@ -1,4 +1,4 @@
-var domain = 'http://www.prakhargarg.me';
+var domain = 'http://www.prakhargarg.me/NewSite';
 var sitemap = {
 	"Home" : "",
 	"Education" : {
@@ -7,7 +7,7 @@ var sitemap = {
 		"masters" : {
 			"company": "Masters of Applied Science (in progress)",
 			"icon": "assets/icons/education/masters/logo.jpg",
-			"path": "",
+			"path": "/Education/masters/index.html",
 			"priority": "3",
 			"hide": false,
 			"jobs" : [
@@ -21,7 +21,7 @@ var sitemap = {
 		"bachlors" : {
 			"company": "Bachlors in Engineering",
 			"icon": "assets/icons/education/bachlors/logo.jpg",
-			"path": "",
+			"path": "/Education/bachlors/index.html",
 			"priority": "2",
 			"hide": false,
 			"jobs" : [
@@ -35,7 +35,7 @@ var sitemap = {
 		"webdesign" : {
 			"company": "Web Design",
 			"icon": "assets/icons/education/webdesign/logo.jpg",
-			"path": "",
+			"path": "/Education/webdesign/index.html",
 			"priority": "1",
 			"hide": false,
 			"jobs" : [
@@ -49,7 +49,7 @@ var sitemap = {
 		"highschool" : {
 			"company": "High School Diploma",
 			"icon": "assets/icons/education/highschool/logo2.jpg",
-			"path": "",
+			"path": "/Education/highschool/index.html",
 			"priority": "1",
 			"hide": false,
 			"jobs" : [
