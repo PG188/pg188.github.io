@@ -499,7 +499,6 @@ for (mainitem in sitemap) {
 	var dropdown = false;
 	var subdiv = document.createElement("div");
 	for (subitem in sitemap[mainitem]) {
-		console.log(subitem);
 		subdiv.className = "dropdown-menu dropdown-primary";
 		subdiv.setAttribute("aria-labelledby","navbarDropdownMenuLink");
 		if (typeof sitemap[mainitem][subitem].path === 'string'){
