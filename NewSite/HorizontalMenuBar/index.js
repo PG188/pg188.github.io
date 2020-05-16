@@ -543,6 +543,9 @@ document.body.prepend(nav, document.body.firstChild);
 
 }
 
+
+
+/*  OLD
 function addMenubar_ignore() {
 	var references = {
 		'Home' : '',
@@ -574,13 +577,6 @@ function addMenubar_ignore() {
 		'Contact' : ''
 	};
 
-/*	var menu = document.getElementById('MenuBar1');
-	var ul = document.createElement("p");
-	ul.id = 'MenuBar1';
-	ul.className = 'MenuBarHorizontal';
-	ul.inner = 'Home';
-	document.body.innerHTML = ul;
-	*/	
 
 	addMenu(references);
 }
@@ -637,3 +633,4 @@ function addMenu(references,level) {
 	return ul;
 	
 }
+*/

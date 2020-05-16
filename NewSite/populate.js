@@ -245,7 +245,7 @@ var sitemap = {
 		},
 		"capstone" : {
 			"company": "Mechatronics Engineering Capstone",
-			"icon": "assets/icons/project/website/logo.jpg",
+			"icon": "assets/icons/project/capstone/icon.png",
 			"path": "",
 			"priority": "2",
 			"hide": false
@@ -378,56 +378,56 @@ var sitemap = {
 		"path" 			: "/#Contact",
 		"linkedin" : {
 			"company": "LinkedIn",
-			"icon": "assets/icons/community/district/logo.jpg",
+			"icon": "assets/icons/Contact/linkedin/icon.png",
 			"path": "",
 			"priority": "1",
 			"hide": false
 		},
 		"github" : {
 			"company": "GitHub",
-			"icon": "assets/icons/community/macfirst/logo.jpg",
+			"icon": "assets/icons/Contact/github/github.png",
 			"path": "",
 			"priority": "1",
 			"hide": false
 		},
-		"challengepost" : {
+		"devpost" : {
 			"company": "Challenge Post",
-			"icon": "assets/icons/community/volunteering/logo.jpg",
+			"icon": "assets/icons/Contact/devpost/download.png",
 			"path": "",
 			"priority": "1",
 			"hide": false
 		},
 		"gmail" : {
 			"company": "Gmail",
-			"icon": "assets/icons/community/mentoring/logo.jpg",
+			"icon": "assets/icons/Contact/gmail/icon.gif",
 			"path": "",
 			"priority": "1",
 			"hide": false
 		},
 		"hotmail" : {
 			"company": "Hotmail",
-			"icon": "assets/icons/community/mentoring/logo.jpg",
+			"icon": "assets/icons/Contact/hotmail/Outlook-icon.png",
 			"path": "",
 			"priority": "1",
 			"hide": false
 		},
 		"twitter" : {
 			"company": "Twitter",
-			"icon": "assets/icons/community/mentoring/logo.jpg",
+			"icon": "assets/icons/Contact/twitter/icon.png",
 			"path": "",
 			"priority": "1",
 			"hide": false
 		},
 		"flickr" : {
 			"company": "Flickr",
-			"icon": "assets/icons/community/mentoring/logo.jpg",
+			"icon": "assets/icons/Contact/flickr/flickr.png",
 			"path": "",
 			"priority": "1",
 			"hide": false
 		},
 		"instagram" : {
 			"company": "Instagram",
-			"icon": "assets/icons/community/mentoring/logo.jpg",
+			"icon": "assets/icons/Contact/instagram/icon.png",
 			"path": "",
 			"priority": "1",
 			"hide": false
@@ -437,12 +437,21 @@ var sitemap = {
 
 var domain = "test";
 
+function populate() {
+	pullEducation();
+	pullWork();
+	pullInterests();
+	pullProjects();
+	pullCommunity();
+	pullContact();
+	adjustments()
+}
 
 
 function pullEducation() {	
 	pullExperience(sitemap.Education, "Education");
 }
-function pullWorkExperience() {	
+function pullWork() {	
 	pullExperience(sitemap.Employment, "Work");
 }
 function pullInterests() {	
@@ -536,13 +545,11 @@ function pullExperience(experiences, target) {
 		
 		container.appendChild(showContainer);
 	}
+	document.getElementById(target).appendChild(container)	
+}
 
-	
-	document.getElementById(target).appendChild(container)
+function adjustments(){
 
-
-
-	
 }
 
 function showmore(target){
