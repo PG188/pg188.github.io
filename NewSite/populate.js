@@ -288,7 +288,7 @@ var sitemap = {
 		},
 		"quadsim" : {
 			"company": "QuadSim",
-			"icon": "assets/icons/project/quadsim/logo.jpg",
+			"icon": "assets/icons/project/quadsim/logo.JPG",
 			"path": "/Projects/QuadSim/index.html",
 			"priority": "1",
 			"hide": false
