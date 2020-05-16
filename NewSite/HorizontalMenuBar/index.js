@@ -497,8 +497,9 @@ for (mainitem in sitemap) {
 	textnode = document.createTextNode(mainitem);
 	a.appendChild(textnode);
 	var dropdown = false;
+	var subdiv = document.createElement("div");
 	for (subitem in sitemap[mainitem]) {
-		var subdiv = document.createElement("div");
+		console.log(subitem);
 		subdiv.className = "dropdown-menu dropdown-primary";
 		subdiv.setAttribute("aria-labelledby","navbarDropdownMenuLink");
 		if (typeof sitemap[mainitem][subitem].path === 'string'){
@@ -506,7 +507,7 @@ for (mainitem in sitemap) {
 			var suba = document.createElement("a");
 			suba.className = "dropdown-item";
 			suba.href = domain +  sitemap[mainitem][subitem].path;
-			textnode = document.createTextNode(subitem);
+			textnode = document.createTextNode(sitemap[mainitem][subitem].company);
 			suba.appendChild(textnode);
 			subdiv.appendChild(suba);
 		}
