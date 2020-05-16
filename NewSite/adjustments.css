@@ -1,9 +1,68 @@
-#Projects-show-more-button {
-  grid-column: span 4; 
+
+
+
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Author: Michael Vieth
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+ 
+@media all {
+	.grid-container {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	footer .grid-container {
+	  grid-template-columns: 1fr 1fr 1fr;
+	  width: 75%;
+	}	
+	#Projects-show-more-button {
+	  grid-row: span 1; 
+	  grid-column: span 4; 
+	}
+
+	#Projects-show-less-button {
+	  grid-row: span 1; 
+	  grid-column: span 3; 
+	}
+
+}
+ 
+@media all and (max-width: 1280px) {
+
 }
 
-#Projects-show-less-button {
-  grid-column: span 3; 
+@media all and (max-width: 1024px) {
+
 }
 
+@media all and (max-width: 768px) {
+	.grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
+	footer .grid-container {
+	  grid-template-columns: 1fr 1fr 1fr;
+	  width: 75%;
+	}	
+	#Projects-show-more-button {
+	  grid-row: span 4; 
+	  grid-column: span 1; 
+	}
+
+	#Projects-show-less-button {
+	  grid-row: span 3; 
+	  grid-column: span 1; 
+	}
+}
+
+@media all and (max-width: 480px) {
+
+}

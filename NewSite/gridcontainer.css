@@ -127,6 +127,16 @@ footer .grid-container {
   grid-row: span 3;
   grid-column: span 3; 
 }
+.educationquote{
+  grid-column: span 3;
+  align-self: end;
+  margin-bottom: 0 !important;
+}
+
+.educationquote .quote {
+  font-family: Zapf-Chancery;
+
+}
 .item3 {
   grid-row: span 3;
   grid-column: span 3;

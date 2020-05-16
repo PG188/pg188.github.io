@@ -47,7 +47,7 @@ var sitemap = {
 		},
 		"highschool" : {
 			"company": "Woburn CI",
-			"icon": "assets/icons/education/highschool/logo.jpg",
+			"icon": "assets/icons/education/highschool/logo2.jpg",
 			"path": "",
 			"priority": "1",
 			"hide": false,
@@ -444,7 +444,7 @@ function populatesite() {
 	pullProjects();
 	pullCommunity();
 	pullContact();
-	adjustments()
+	adjustments();
 }
 
 
@@ -549,7 +549,20 @@ function pullExperience(experiences, target) {
 }
 
 function adjustments(){
+	var text = document.createTextNode("A good education is no longer just a pathway to opportunity. It is a prerequisite.");
+	var p = document.createElement("p");
+	var div = document.createElement("blockquote")
+	p.className = "quote mb-0";
+	p.appendChild(text);
+	div.appendChild(p);
+	text = document.createTextNode("Barack Obama");
+	p = document.createElement("footer");
+	p.appendChild(text);
+	p.className = "by blockquote-footer";
+	div.appendChild(p);
 
+	div.className = "educationquote blockquote text-center align-middle";
+	document.getElementById("Education-grid-container").appendChild(div);
 }
 
 function showmore(target){
