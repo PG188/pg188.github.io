@@ -113,6 +113,11 @@
 	#Bottom {
 		background-color: #000;
 	}
+	#Community-Bottom {
+		border: none;
+		padding: none;
+		margin: none;
+	}
 }
  
 @media all and (max-width: 1280px) {
@@ -156,6 +161,10 @@
 	}
 	#AboutMeSeperator h1{
     	font-size: 3em;
+    }
+    #Projects {
+    	padding-top: 10%;
+    	padding-bottom: 10%;
     }
 	#Work{
 		background-color: #1c1c1c; 
