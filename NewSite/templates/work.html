@@ -17,6 +17,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="http://prakhargarg.me/NewSite/assets/data/sitemap.js"></script>
+	<script src="http://prakhargarg.me/NewSite/assets/js/dividers.js"></script>
 
 
 	<!-- Building the site -->
@@ -38,8 +39,9 @@
 
 <body onload=' addMenubar();'>
 	<div name="" class="container-fluid jumbotron" id="Intro">
-		<h1>General Dynamics Mission System Canada</h1>
-		<p class="lead">2019</p>
+		<h1 id="jobtitle"></h1>
+		<p class="lead float-right" id="date"></p>
+		<p class="lead" id="company"></p>
 		<div class="container">
 	    	<h2>Job Description</h2>
 			<ul>
@@ -51,14 +53,18 @@
 		<div class="container">
 		  <div class="row">
 		    <div class="col-sm">
-				<h2>Knowledge, Skills and Abillities</h2>
-				<ul>
-					<li></li>
-				</ul>
-				<h2>Goals, Success Factors</h2>
-				<ul>
-					<li></li>
-				</ul>
+		    	<div id="ksa">
+					<h2>Knowledge, Skills and Abillities</h2>
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<div id="gsf">
+					<h2>Goals, Success Factors</h2>
+					<ul>
+						<li></li>
+					</ul>
+				</div>
 		    </div>
 		    <div class="col-sm-4">
 				<div  class="grid-container container" id="Images-grid-container">

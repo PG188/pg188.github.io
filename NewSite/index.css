@@ -5,3 +5,8 @@
 
 }
 
+.separator {
+	position: relativs;
+	height: -30 vh;
+	top: -30 vh;
+}
