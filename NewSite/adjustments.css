@@ -184,6 +184,9 @@
 		padding-bottom: 25%;
 	    clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 100%, 50% 100%, 0 100%);
 	}
+	#Projects, #Interests, #Work{
+		padding-bottom: 30%
+	}
 }
 
 @media all and (max-width: 480px) {
