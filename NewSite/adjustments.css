@@ -82,6 +82,11 @@
 	/*    background-image: radial-gradient(ellipse farthest-corner at 0% 99%, #FEB15F 2%, #DA4531 10%, #1C1C1C 30%);*/
 	    background-image: linear-gradient(5deg, #FEB15F 0%, #BA2511 15%, #5A0000 70%);
 	}
+	#Work svg {
+		position: absolute;
+		left: 0;
+
+	}
 	#Work-Interests {
 		position: relative;
 		background: none;
