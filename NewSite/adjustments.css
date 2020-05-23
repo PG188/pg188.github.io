@@ -93,12 +93,14 @@
 		width: 100%;
 		bottom: 300px;
 		height: 0;
+
 	}
 	#Work-Interests svg{
 		width: 100%;
 		bottom: 0px;
 		height: 300px;
 		position: relative;
+		pointer-events: none;
 	}
 	#Interests-Projects {
 /*		top: 0;
