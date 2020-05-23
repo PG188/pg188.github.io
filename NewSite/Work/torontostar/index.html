@@ -1,66 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="">
 <!--<![endif]-->
+
+<html>
 <head>
-<meta charset="utf-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prakhar Garg | THALES</title>
-<link href="../Work.css" rel="stylesheet" type="text/css">
-<link href="../../HorizontalMenuBar/index.css" rel="stylesheet" type="text/css">
-<script src="../../HorizontalMenuBar/index.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Prakahr Garg's portfolio website">
+	<meta name="author" content="Prakhar Garg">
+	
+	<title>Prakhar Garg | About Me</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="http://prakhargarg.me/NewSite/assets/data/sitemap.js"></script>
+
+
+	<!-- Building the site -->
+	<script src="http://prakhargarg.me/NewSite/HorizontalMenuBar/index.js"></script>
+	<script src="http://prakhargarg.me/NewSite/populate.js"></script>
+
+	<!-- Event Handlers -->
+
+	<!-- Styling -->
+	<link href="http://prakhargarg.me/NewSite/gridcontainer.css" rel="stylesheet" type="text/css">
+	<link href="http://prakhargarg.me/NewSite/bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="http://prakhargarg.me/NewSite/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
 
 </head>
-<body onload='addMenubar()'>
 
-<div class="Block" id="TopBlock">
-  <h1>The Toronto Star</h1>
-  <h3>2009</h3>
-    <div id="LayoutDiv1">
-		<div class="Image"><p><img src="Logo.gif"></p></div>
-        <div class="Description">
-			<h2>Job Description</h2>
+
+
+
+
+<body onload=' addMenubar();'>
+	<div name="" class="container-fluid jumbotron" id="Intro">
+		<h1 id="jobtitle">Sales</h1>
+		<p class="lead float-right" id="date">2009</p>
+		<p class="lead" id="company">Toronto Star</p>
+		<div class="container">
+	    	<h2>Job Description</h2>
 			<ul>
-				<li>Sell newspaper subscriptions, door to door.</li>
 				<li></li>
-				<li>Coordinate new sales with manager.</li>
 			</ul>
-        </div>
-		<div class="KSA">
-			<h2>Knowledge, Skills and Abilities</h2>
-			<ul>
-				<li>Communication</li>
-				<li>Experience working with and troubleshooting c++ and JavaScript.</li>
-				<li>Excillent comunication and organisational skills</li>
-			</ul>
-        </div>
-		        <div class="Goals">
-			<h2>Goals, Success Factors</h2>
-			<ul>
-				<li>Completion of assigned tasks in a timely manner</li>
-				<li>Ability to manage competing deadlines</li>
-				<li>Creating designing an untuative UX for the automation process</li>
-			</ul>
-        </div>
-		<div class="Reflection">
-			<h2>Reflection</h2>
-			<p>
-				Working at THALS was an amazing experience. Working in the Research and Development department,
-				I have learned a lot about how large firms begin new software projects and what goes into mintaining 
-				prexisting software.
-			
-			</p>
 		</div>
 	</div>
- 
-
-</div>
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
+	<div name="" class="container-fluid " id="Details">
+		<div class="container">
+		  <div class="row">
+		    <div class="col-sm">
+		    	<div id="ksa">
+					<h2>Knowledge, Skills and Abillities</h2>
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<div id="gsf">
+					<h2>Goals, Success Factors</h2>
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="col-sm-4">
+				<div  class="grid-container container" id="Images-grid-container">
+					<img class="priority1 hiddenfalse" src="">
+				</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<div name="" class="container" id="Reflection">
+		<h2>Reflection</h2>
+		<p></p>
+	</div>
+	
 </body>
+
 </html>

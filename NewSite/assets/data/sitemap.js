@@ -124,10 +124,34 @@ var sitemap = {
 	},	
 	"Employment" : {	
 		"path" 				: "/#Work",
-		"gdms" : {
-			"company": "General Dynamics Mission Systems",
+		
+		"mcmasterTA" : {
+			"company": "Teaching Assistant",
+			"icon": "assets/icons/work/mcmaster/logo.jpg",
+			"path": "/Work/mcmasterTA/index.html",
+			"priority": "1",
+			"hide": false,
+			"jobs" : [
+				{
+					"title": "Teaching Assistant",
+					"start": "",
+					"stop": ""
+				},
+				{
+					"title": "Research Assistant",
+					"start": "",
+					"stop": ""
+				},
+				{
+					"title": "Special Projects Assistant",
+					"start": "",
+					"stop": ""
+				}
+			]
+		},"gdms" : {
+			"company": "Software Developer COOP",
 			"icon": "assets/icons/work/gdms/logo.jpg",
-			"path": "",
+			"path": "/Work/gdms/index.html",
 			"priority": "2",
 			"hide": false,
 			"jobs" : [
@@ -138,10 +162,34 @@ var sitemap = {
 				}
 			]
 		},
-		"mcmaster" : {
-			"company": "McMaster University",
+		"mcmasterRA" : {
+			"company": "Research Assistant",
 			"icon": "assets/icons/work/mcmaster/logo.jpg",
-			"path": "",
+			"path": "/Work/mcmasterRA/index.html",
+			"priority": "1",
+			"hide": false,
+			"jobs" : [
+				{
+					"title": "Teaching Assistant",
+					"start": "",
+					"stop": ""
+				},
+				{
+					"title": "Research Assistant",
+					"start": "",
+					"stop": ""
+				},
+				{
+					"title": "Special Projects Assistant",
+					"start": "",
+					"stop": ""
+				}
+			]
+		},
+		"mcmasterSPA" : {
+			"company": "Special Projects Assistant",
+			"icon": "assets/icons/work/mcmaster/logo.jpg",
+			"path": "/Work/mcmasterSPA/index.html",
 			"priority": "1",
 			"hide": false,
 			"jobs" : [
@@ -165,7 +213,7 @@ var sitemap = {
 		"thales" : {
 			"company": "THALES Transportation Canada",
 			"icon": "assets/icons/work/thales/logo.jpg",
-			"path": "",
+			"path": "/Work/thales/index.html",
 			"priority": "2",
 			"hide": false,
 			"jobs" : [
@@ -184,7 +232,7 @@ var sitemap = {
 		"capreit" : {
 			"company": "CAPREIT",
 			"icon": "assets/icons/work/capreit/logo.jpg",
-			"path": "/Work/CAPREIT/index.html",
+			"path": "/Work/capreit/index.html",
 			"priority": "1",
 			"hide": false,
 			"jobs" : [
@@ -203,7 +251,7 @@ var sitemap = {
 		"ctw" : {
 			"company": "Children's Technology Workshop",
 			"icon": "assets/icons/work/ctw/logo.jpg",
-			"path": "/Work/CTWorkshop/index.html",
+			"path": "/Work/ctw/index.html",
 			"priority": "1",
 			"hide": false,
 			"jobs" : [
@@ -222,7 +270,7 @@ var sitemap = {
 		"torontostar" : {
 			"company": "The Toronto Star",
 			"icon": "assets/icons/work/torontostar/logo.jpg",
-			"path": "",
+			"path": "/Work/torontostar/index.html",
 			"priority": "1",
 			"hide": false,
 			"jobs" : [
