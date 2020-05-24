@@ -288,21 +288,21 @@ var sitemap = {
 		"printedcnc" : {
 			"company": "Printed CNC",
 			"icon": "assets/icons/project/printedcnc/logo.jpg",
-			"ref": "Projects/printedcnc/index.html",
+			"ref": "/Projects/printedcnc/index.html",
 			"priority": "2",
 			"hide": false
 		},
 		"capstone" : {
 			"company": "Mechatronics Engineering Capstone",
 			"icon": "assets/icons/project/capstone/icon.png",
-			"path": "Projects/capstone/index.html",
+			"path": "/Projects/capstone/index.html",
 			"priority": "2",
 			"hide": false
 		},
 		"website" : {
 			"company": "Personal Website",
 			"icon": "assets/icons/project/website/logo.jpg",
-			"path": "Projects/website/index.html",
+			"path": "/Projects/website/index.html",
 			"priority": "1",
 			"hide": false
 		},
@@ -310,7 +310,7 @@ var sitemap = {
 		"hyperloop" : {
 			"company": "McMaster Hyperloop",
 			"icon": "assets/icons/project/hyperloop/logo.jpg",
-			"path": "Projects/hyperloop/index.html",
+			"path": "/Projects/hyperloop/index.html",
 			"priority": "2",
 			"hide": false
 		},
