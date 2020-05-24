@@ -211,7 +211,7 @@ var sitemap = {
 			]
 		},
 		"thales" : {
-			"company": "THALES Transportation Canada",
+			"company": "Software Developer - COOP",
 			"icon": "assets/icons/work/thales/logo.jpg",
 			"path": "/Work/thales/index.html",
 			"priority": "2",
@@ -230,7 +230,7 @@ var sitemap = {
 			]
 		},
 		"capreit" : {
-			"company": "CAPREIT",
+			"company": "IT Support Student",
 			"icon": "assets/icons/work/capreit/logo.jpg",
 			"path": "/Work/capreit/index.html",
 			"priority": "1",
@@ -249,7 +249,7 @@ var sitemap = {
 			]
 		},
 		"ctw" : {
-			"company": "Children's Technology Workshop",
+			"company": "Camp Instructor",
 			"icon": "assets/icons/work/ctw/logo.jpg",
 			"path": "/Work/ctw/index.html",
 			"priority": "1",
@@ -268,7 +268,7 @@ var sitemap = {
 			]
 		},
 		"torontostar" : {
-			"company": "The Toronto Star",
+			"company": "Sales",
 			"icon": "assets/icons/work/torontostar/logo.jpg",
 			"path": "/Work/torontostar/index.html",
 			"priority": "1",
@@ -288,21 +288,21 @@ var sitemap = {
 		"printedcnc" : {
 			"company": "Printed CNC",
 			"icon": "assets/icons/project/printedcnc/logo.jpg",
-			"ref": "",
+			"ref": "Projects/printedcnc/index.html",
 			"priority": "2",
 			"hide": false
 		},
 		"capstone" : {
 			"company": "Mechatronics Engineering Capstone",
 			"icon": "assets/icons/project/capstone/icon.png",
-			"path": "",
+			"path": "Projects/capstone/index.html",
 			"priority": "2",
 			"hide": false
 		},
 		"website" : {
 			"company": "Personal Website",
 			"icon": "assets/icons/project/website/logo.jpg",
-			"path": "",
+			"path": "Projects/website/index.html",
 			"priority": "1",
 			"hide": false
 		},
@@ -310,7 +310,7 @@ var sitemap = {
 		"hyperloop" : {
 			"company": "McMaster Hyperloop",
 			"icon": "assets/icons/project/hyperloop/logo.jpg",
-			"path": "",
+			"path": "Projects/hyperloop/index.html",
 			"priority": "2",
 			"hide": false
 		},
