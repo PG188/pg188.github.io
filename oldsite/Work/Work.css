@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+/* Mobile Layout: 480px and below. */
+body {
+	background: #EEEEEE; 
+
+}
+#TopBlock{
+	padding-top: 48px;
+	margin: 0;
+	background: #EEEEEE; 
+	float: left;
+}
+h1 , h3 {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+div{
+	margin: 5%;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.Description {
+	width: 55%;
+	/*clear: right;*/
+	float: left;
+	clear: left;
+	margin-top: 5%;	
+	margin-left: 5%;
+}
+.KSA, .Goals {
+	width: 40%;
+	float: left;
+	clear: right;
+}
+
+.Image{
+	clear: right;
+	float: right;
+	width: 29%;
+	margin: 0;
+	margin-right: 5%;
+
+}
+.Reflection {
+	margin: 5%;
+	float: left;
+	clear: both;
+}
+}
+
+@media only screen and (min-width: 650px) {
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+}
+
+/* when the screen size is wayy too big */
+@media only screen and (min-width: 900px) {
+}

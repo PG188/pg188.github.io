@@ -1,56 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="">
 <!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prakhar Garg | QuadSim</title>
-<link href="index.css" rel="stylesheet" type="text/css">
-<link href="../../SharedElements.css" rel="stylesheet" type="text/css">
-<link href="../../../../../../Program Files (x86)/Adobe/Adobe Dreamweaver CS6/Configuration/BuiltIn/Fluid Grid Layout/boilerplate.css" rel="stylesheet" type="text/css">
-<link href="../projects.css" rel="stylesheet" type="text/css">
-<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
 
-<link href="../../HorizontalMenuBar/index.css" rel="stylesheet" type="text/css">
-<script src="../../HorizontalMenuBar/index.js"></script>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prakahr Garg's portfolio website">
+  <meta name="author" content="Prakhar Garg">
+  
+  <title>Prakhar Garg | Quad Sim</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://prakhargarg.me/NewSite/assets/data/sitemap.js"></script>
+
+
+  <!-- Building the site -->
+  <script src="http://prakhargarg.me/NewSite/HorizontalMenuBar/index.js"></script>
+  <script src="http://prakhargarg.me/NewSite/populate.js"></script>
+
+  <!-- Event Handlers -->
+
+  <!-- Styling -->
+  <link href="http://prakhargarg.me/NewSite/gridcontainer.css" rel="stylesheet" type="text/css">
+  <link href="http://prakhargarg.me/NewSite/bootstrap.css" rel="stylesheet" type="text/css">
+  <script src="http://prakhargarg.me/NewSite/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
 
 </head>
-<body onload='addMenubar()'>
 
-<div class="Block" id="Strangers">
-  <h1>Quad Sim </h1>
-
-    <div id="LayoutDiv1">
-      <div class="Image" ><p><img src="Project QuadSIM.JPG" width="100%"></p>
-		</div>
-        <div class="Paragraph">
-			<P>QuadSim was the first project I worked on in a hackathon. The aim of the project was to get familiar with Microsoft's Kinnect developer kit and use it to create an intuitive game. My group and I decided to create a Quadcopter simulator where the hand movements would determine the yaw, pitch, and roll as well as the throttle speed. We used the Unitiy game engine to interface with the sensor and to control all aspects of the simulator. The sensor viewed the angles of both the player's hand and provided an experience similar to using the wheel on an airplane.</P>
-		</div>
-	</div>
-
-
-    
-  <div id="LayoutDiv2">
-    <div id="NudgeMe" class="Image">
-      <iframe margine-top="5%" width="95%" height="400px" src="https://www.youtube.com/embed/QvIKqO3_fws" frameborder="0" allowfullscreen></iframe>
+<body onload=' addMenubar();'>
+  <div name="" class="container-fluid jumbotron" id="Intro">
+    <h1 id="jobtitle">Quad Sim</h1>
+    <p class="lead float-right" id="date">Oct 2015</p>
+    <p class="lead" id="company">Rutgers University</p>
+    <div class="container">
+      <h2>Project Description</h2>
+      <p>QuadSim was the first project I worked on in a hackathon. The aim of the project was to get familiar with Microsoft's Kinnect developer kit and use it to create an intuitive game. My group and I decided to create a Quadcopter simulator where the hand movements would determine the yaw, pitch, and roll as well as the throttle speed. We used the Unitiy game engine to interface with the sensor and to control all aspects of the simulator. The sensor viewed the angles of both the player's hand and provided an experience similar to using the wheel on an airplane.</p>
     </div>
-    <div class="Paragraph">
-      <P>What I found exciting about this project was that I could apply my knowledge in mechanical design and simulation to create a basic simulator. The models in this project were designed on Autodesk Inventor and the textures were applied on Blender. This project was the first time I worked in a team for a pure software based application. Through this experience I learned how essential it is to create modular code. Furthermore my team and I got a chance to be mentored by software developers from Microsoft and learned a lot about the Kinnect sensor.</P></div>
+  </div>
+
+  <div name="" class="container-fluid " id="Details">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>My Role</h2>
+          <p>What I found exciting about this project was that I could apply my knowledge in mechanical design and simulation to create a basic simulator. The models in this project were designed on Autodesk Inventor and the textures were applied on Blender. This project was the first time I worked in a team for a pure software based application. Through this experience I learned how essential it is to create modular code. Furthermore my team and I got a chance to be mentored by software developers from Microsoft and learned a lot about the Kinnect sensor.</p>
+        </div>
+        <div class="col-sm">
+          <img width="100%" class="priority1 hiddenfalse" src="QuadSIM.JPG">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+        <video width="100%" controls>
+          <source src="00020.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+        </div>
+        <div class="col-sm">
+          <div id="ksa">
+          <h2>Knowledge, Skills and Abillities</h2>
+          <ul>
+            <li>CAD</li>
+            <li>UNITY</li>
+            <li>Microsoft Kinect</li>
+          </ul>
+        </div>
+        <div id="gsf">
+          <h2>Goals, Success Factors</h2>
+          <ul>
+            <li>Have a complete project</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h2>Challenges</h2>
+          <ul>
+            <li>Working with the Kinect</li>
+            <li>Understanding how to work with skeleton data</li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <img src="20141011-DSC04503.jpg" width="100%">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div name="" class="container" id="Reflection">
+    <h2>Reflection</h2>
+    <p>The project proceeded to win the Company API prize from Microsoft at a hackathon in Rutgers University (HACK RU). As a result my team and I got to meet a lot of representatives from different companies and get their opinion and feedback on our project. The source code to our project is publically available on the team <a href="https://github.com/SNavleen/QuadSim">GIT</a></p>
   </div>
   
-  <div id="LayoutDiv2">
-    <div class="Image"><p><img src="20141011-DSC04503.jpg"></p>
-    </div>
-    <div class="Paragraph">
-      <P>The project proceeded to win the Company API prize from Microsoft at a hackathon in Rutgers University (HACK RU). As a result my team and I got to meet a lot of representatives from different companies and get their opinion and feedback on our project. The source code to our project is publically available on the team <a href="https://github.com/SNavleen/QuadSim">GIT</a></P></div>
-  </div>
-</div>
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
 </body>
+
 </html>
