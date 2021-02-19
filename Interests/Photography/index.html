@@ -1,158 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="">
 <!--<![endif]-->
+
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Photography</title>
-<link href="../../SharedElements.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Prakahr Garg's portfolio website">
+	<meta name="author" content="Prakhar Garg">
+	
+	<title>Prakhar Garg | Photography</title>
 
-<link href="../../boilerplate.css" rel="stylesheet" type="text/css">
-<link href="index.css" rel="stylesheet" type="text/css">
-<link href="../Interests.css" rel="stylesheet" type="text/css">
-<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
-<!-- 
-To learn more about the conditional comments around the html tags at the top of the file:
-paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+	<script src="gallery/https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="gallery/http://prakhargarg.me/NewSite/assets/data/sitemap.js"></script>
 
-Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
-* insert the link to your js here
-* remove the link below to the html5shiv
-* add the "no-js" class to the html tags at the top
-* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
--->
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="../../../../../../Program Files (x86)/Adobe/Adobe Dreamweaver CS6/Configuration/BuiltIn/Fluid Grid Layout/respond.min.js"></script>
-<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+	<!-- Building the site -->
+	<script src="gallery/http://prakhargarg.me/NewSite/HorizontalMenuBar/index.js"></script>
+	<script src="gallery/http://prakhargarg.me/NewSite/populate.js"></script>
+
+	<!-- Event Handlers -->
+
+	<!-- Styling -->
+	<link href="http://prakhargarg.me/NewSite/gridcontainer.css" rel="stylesheet" type="text/css">
+	<link href="gallery.css" rel="stylesheet" type="text/css">
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<link href="http://prakhargarg.me/NewSite/bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="gallery/http://prakhargarg.me/NewSite/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+
 </head>
-<body>
-<div class="Menu">
-  <ul id="MenuBar1" class="MenuBarHorizontal">
-    <li>
-		<a href="../../index.html">
-			Home
-		</a>
-	</li>
-    <li><a class="MenuBarItemSubmenu" href="../../index.html#Interest" >Interests</a>
-		<ul>
-			<li><a href="../Origami/index.html">
-				Origami
-			</a></li>
-			<li><a href="../Travelling/index.html">
-				Travelling
-			</a></li>
-			<li><a href="../Robots/index.html">
-				Robots
-			</a></li>
-			<li><a href="../Photography/index.html">
-				Photography
-			</a></li>
-			</ul>
-	</li>
-	<li><a class="MenuBarItemSubmenu" href="../../index.html#Work" >Employment</a>
-		<ul>
-			<li><a href="../../Work/CAPREIT/index.html">
-				CAPREIT
-			</a></li>
-			<li><a href="../../Work/CTWorkshop/index.html">
-				Children's Technology Workshop
-			</a></li>
-		</ul>
-	</li>
-    <li><a class="MenuBarItemSubmenu" href="../../index.html#Project">Projects</a>
-      <ul>
-		<li><a href="../../Projects/EcoCAR/index.html">
-			McMaster EcoCar3
-		</a></li>
-		<li><a href="../../Projects/FormulaHybrid/index.html">
-			McMaster Formula Hybrid
-		</a></li>
-        <li><a href="../../Projects/Strangers/index.html">
-			Strangers App
-		</a></li>	
-		<li><a href="../../Projects/QuadSim/index.html">
-			QuadSIM
-		</a></li>	
-		<li><a href="../../Projects/SumoBot/index.html">
-			SumoBot
-		</a></li>		
-        <li><a class="MenuBarItemSubmenu" href="../../Projects/FIRST/index.html">FIRST Robotics</a>
-          <ul>
-            <li><a href="../../Projects/FIRST/index.html#2009">Blizzard X</a></li>
-            <li><a href="../../Projects/FIRST/index.html#2010">Blizzard XI</a></li>
-            <li><a href="../../Projects/FIRST/index.html#2011">Blizzard XII</a></li>
-            <li><a href="../../Projects/FIRST/index.html#2012">Blizzard XIII</a></li>
-          </ul>
-        </li>
-        <li><a href="../../Projects/VEX/index.html">
-			VEX Robotics
-		</a></li>
-        <li><a href="../../Projects/F1/index.html">
-				F1 in Schools
-		</a></li>
-        <li><a href="../../Projects/Skills/index.html">Skills Robotics</a></li>
 
-      </ul>
-    </li>
-    <li><a href="../../Contact/index.html">Contact</a></li>
-  </ul>
-</div>
+<body onload=' addMenubar();'>
+	<div name="" class="container-fluid jumbotron" id="Intro">
+		<h1 id="jobtitle">Photography</h1>
+		<div class="container">
+	    	<h2>Project Description</h2>
+			<p>...</p>
+		</div>
+	</div>
 
-<div class="Block">
-  <h1>Photography </h1>
-  <object width="100%" height="600">
-      <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F133001206%40N08%2Fshow%2F&page_show_back_url=%2Fphotos%2F133001206%40N08%2F&user_id=133001206@N08&jump_to="></param>
-      <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554"></param>
-      <param name="allowFullScreen" value="true"></param>
-      <embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F133001206%40N08%2Fshow%2F&page_show_back_url=%2Fphotos%2F133001206%40N08%2F&user_id=133001206@N08&jump_to=" width="400" height="300">
-        <ul class="Instagram">
-            <li><img src="Instagram/image (1).jpg"></li>
-            <li><img src="Instagram/image (2).jpg"></li>
-            <li><img src="Instagram/image (3).jpg"></li>
-            <li><img src="Instagram/image (4).jpg"></li>
-            <li><img src="Instagram/image (5).jpg"></li>
-            <li><img src="Instagram/image (6).jpg"></li>
-            <li><img src="Instagram/image (7).jpg"></li>
-            <li><img src="Instagram/image (8).jpg"></li>
-            <li><img src="Instagram/image (9).jpg"></li>
-            <li><img src="Instagram/image (10).jpg"></li>
-            <li><img src="Instagram/image (11).jpg"></li>
-            <li><img src="Instagram/image (12).jpg"></li>
-            <li><img src="Instagram/image (13).jpg"></li>
-            <li><img src="Instagram/image (14).jpg"></li>
-            <li><img src="Instagram/image (15).jpg"></li>
-            <li><img src="Instagram/image (16).jpg"></li>
-            <li><img src="Instagram/image (17).jpg"></li>
-            <li><img src="Instagram/image (18).jpg"></li>
-            <li><img src="Instagram/image (19).jpg"></li>
-            <li><img src="Instagram/image (20).jpg"></li>
-            <li><img src="Instagram/image (21).jpg"></li>
-            <li><img src="Instagram/image (22).jpg"></li>
-            <li><img src="Instagram/image (23).jpg"></li>
-            <li><img src="Instagram/image (24).jpg"></li>
-            <li><img src="Instagram/image (25).jpg"></li>
-            <li><img src="Instagram/image (26).jpg"></li>
-            <li><img src="Instagram/image (27).jpg"></li>
-            <li><img src="Instagram/image (28).jpg"></li>
-            <li><img src="Instagram/image (29).jpg"></li>
-        </ul>
-      </embed>
-  </object>
+	<div name="" class="container-fluid " id="">
+		<div class="container">
+		  	<h2>My Role</h2>
+		  	<div class="gallery">
+		  		
+		  		<a href="" class="block priority1 ">
+		  			<img src="gallery/1.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority2 portrait ">
+		  			<img src="gallery/1.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 ">
+		  			<img src="gallery/1.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 ">
+		  			<img src="gallery/2.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 portrait">
+		  			<img src="gallery/3.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority3 landscape">
+		  			<img src="gallery/4.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 portrait">
+		  			<img src="gallery/1.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority2 portrait">
+		  			<img src="gallery/2.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 landscape">
+		  			<img src="gallery/3.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority3 ">
+		  			<img src="gallery/4.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 landscape">
+		  			<img src="gallery/1.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority2 portrait">
+		  			<img src="gallery/2.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 landscape">
+		  			<img src="gallery/3.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority3 landscape">
+		  			<img src="gallery/4.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 landscape">
+		  			<img src="gallery/1.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority2 landscape">
+		  			<img src="gallery/2.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 landscape">
+		  			<img src="gallery/3.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority3 landscape">
+		  			<img src="gallery/4.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 landscape">
+		  			<img src="gallery/1.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority2 landscape">
+		  			<img src="gallery/2.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority1 landscape">
+		  			<img src="gallery/3.jpg" loading="lazy">
+		  		</a>
+		  		<a href="" class="block priority3 landscape">
+		  			<img src="gallery/4.jpg" loading="lazy">
+		  		</a>
+		  	</div>
+		</div>
+	</div>
 
-  
-  
-  
-</div>
-
-        
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
+	
 </body>
+
 </html>

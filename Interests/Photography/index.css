@@ -3,14 +3,8 @@
    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
    http://www.alistapart.com/articles/fluid-images/ 
 */
-img, object, embed, video {
-	width: 90%;
-	alignment-adjust: central;
-}
+
 /* IE 6 does not support max-width so default to width 100% */
-.ie6 img {
-	width: 100%;
-}
 
 /*
 	Dreamweaver Fluid Grid Properties
@@ -28,25 +22,7 @@ img, object, embed, video {
 */
 
 /* Mobile Layout: 480px and below. */
-ul.Instagram{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	font-size: 100%;
-	cursor: default;
-	width: auto;
-}
-ul.Instagram li{
-	margin: 0px;
-	padding: 0px;
-	border-color: #000;
-	list-style-type: none;
-	position: relative;
-	text-align: center;
-	width: 33%;
-	float: left;
-	color: #00C;
-}
+
 
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
@@ -67,6 +43,10 @@ ul.Instagram li{
 
 /* when the screen size is wayy too big */
 @media only screen and (min-width: 900px) {
+
+.gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 
 
 }
