@@ -69,7 +69,7 @@ for (mainitem in sitemap) {
 			else {
 				suba.href = sitemap[mainitem][subitem].path;
 			}
-			suba.href = domain +  sitemap[mainitem][subitem].path;
+			// suba.href = domain +  sitemap[mainitem][subitem].path;
 			textnode = document.createTextNode(sitemap[mainitem][subitem].company);
 			suba.appendChild(textnode);
 			subdiv.appendChild(suba);
