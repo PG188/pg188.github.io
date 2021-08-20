@@ -37,7 +37,6 @@ function pullExperience(experiences, target) {
 	for (company in experiences) {
 		if (company != "path") {
 			var jobcontainer = document.createElement("a");
-			console.log(experiences[company].path);
 			if (experiences[company].path.charAt(0) == '/') {
 				jobcontainer.href = domain + experiences[company].path;
 			}

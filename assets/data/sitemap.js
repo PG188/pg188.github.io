@@ -67,8 +67,8 @@ var sitemap = {
 	"Interests" : {
 		"path" 				: "/#Interest",
 		"FIRST" : {
-			"company": "FIRST Robotics",
-			"icon": "assets/icons/interest/first/logo.jpg",
+			"company": "FIRST",
+			"icon": "assets/icons/project/first/logo.jpg",
 			"path": "/Interests/FIRST/index.html",
 			"priority": "2",
 			"hide": false
