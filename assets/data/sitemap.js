@@ -90,7 +90,7 @@ var sitemap = {
 		"axes" : {
 			"company": "Axe Throwing",
 			"icon": "assets/icons/interest/axes/logo.jpg",
-			"path": "",
+			"path": "https://axescores.com/player/826261/",
 			"priority": "1",
 			"hide": false
 		},
@@ -413,7 +413,7 @@ var sitemap = {
 			"hide": true
 		}
 	},
-	"Community"	: {
+/*	"Community"	: {
 		"path" 			: "/#Community",
 		"district" : {
 			"company": "FIRST District Organisation",
@@ -443,24 +443,24 @@ var sitemap = {
 			"priority": "1",
 			"hide": false
 		},
-	},
+	}, */
 	"Contact" : {
 		"path" 			: "/#Contact",
 		"linkedin" : {
 			"company": "LinkedIn",
 			"icon": "assets/icons/Contact/linkedin/icon.png",
-			"path": "",
+			"path": "https://www.linkedin.com/in/garg-prakhar/",
 			"priority": "1",
 			"hide": false
 		},
 		"github" : {
 			"company": "GitHub",
 			"icon": "assets/icons/Contact/github/github.png",
-			"path": "",
+			"path": "https://github.com/PG188",
 			"priority": "1",
 			"hide": false
 		},
-		"devpost" : {
+	/*	"devpost" : {
 			"company": "Challenge Post",
 			"icon": "assets/icons/Contact/devpost/download.png",
 			"path": "",
@@ -473,15 +473,15 @@ var sitemap = {
 			"path": "",
 			"priority": "1",
 			"hide": false
-		},
+		}, */
 		"hotmail" : {
 			"company": "Hotmail",
 			"icon": "assets/icons/Contact/hotmail/Outlook-icon.png",
-			"path": "",
+			"path": "mailto:prakhar@live.com",
 			"priority": "1",
 			"hide": false
 		},
-		"twitter" : {
+/*		"twitter" : {
 			"company": "Twitter",
 			"icon": "assets/icons/Contact/twitter/icon.png",
 			"path": "",
@@ -494,11 +494,11 @@ var sitemap = {
 			"path": "",
 			"priority": "1",
 			"hide": false
-		},
+		}, */
 		"instagram" : {
 			"company": "Instagram",
 			"icon": "assets/icons/Contact/instagram/icon.png",
-			"path": "",
+			"path": "https://www.instagram.com/keeping_it_pg/",
 			"priority": "1",
 			"hide": false
 		},

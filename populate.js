@@ -37,7 +37,13 @@ function pullExperience(experiences, target) {
 	for (company in experiences) {
 		if (company != "path") {
 			var jobcontainer = document.createElement("a");
-			jobcontainer.href = domain + experiences[company].path;
+			if experiences[company].path(0) == '/' {
+				jobcontainer.href = domain + experiences[company].path;
+			}
+			else {
+				jobcontainer.href = experiences[company].path;
+			}
+			
 			jobcontainer.className = "priority" + experiences[company].priority;
 			jobcontainer.className = jobcontainer.className  + " hidden" + experiences[company].hide;
 			jobcontainer.className = jobcontainer.className  + " block";
