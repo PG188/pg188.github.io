@@ -69,14 +69,14 @@ var sitemap = {
 		"gardening" : {
 			"company": "Gardening",
 			"icon": "assets/icons/interest/gardening/logo.jpg",
-			"path": "",
+			"path": "/Interests/Gardening/index.html",
 			"priority": "2",
 			"hide": false
 		},
 		"cooking" : {
 			"company": "Cooking",
 			"icon": "assets/icons/interest/cooking/logo.jpg",
-			"path": "",
+			"path": "/Interests/Cooking/index.html",
 			"priority": "1",
 			"hide": false
 		},
@@ -90,7 +90,7 @@ var sitemap = {
 		"3dprint" : {
 			"company": "3D Printing",
 			"icon": "assets/icons/interest/3dprint/logo.jpg",
-			"path": "",
+			"path": "/Interests/3DPrinting/index.html",
 			"priority": "2",
 			"hide": false
 		},
