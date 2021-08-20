@@ -447,7 +447,7 @@ var sitemap = {
 	}, */
 	"Resume" : {
 		"path" : "/Resume"
-	}
+	},
 	"Contact" : {
 		"path" 			: "/#Contact",
 		"linkedin" : {
