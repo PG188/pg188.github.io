@@ -94,6 +94,7 @@
 
 
   .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
     display: grid;
     grid-gap: 40px 10px;
     /* background-color: #2196F3; */
@@ -124,4 +125,42 @@
   .priority3 .details{
     font-size: 1.5rem;
   }
+
+  .priority1.landscape{
+    grid-row: span 1;
+    grid-column: span 2; 
+  } 
+  .priority2.landscape{
+    grid-row: span 1;
+    grid-column: span 3; 
+  }
+  .priority3.landscape{
+    grid-row: span 2;
+    grid-column: span 3; 
+  }  
+  .priority1.portrait{
+    grid-row: span 2;
+    grid-column: span 1; 
+  }
+  .priority2.portrait{
+    grid-row: span 3;
+    grid-column: span 1; 
+  }
+  .priority3.portrait{
+    grid-row: span 3;
+    grid-column: span 2; 
+  }
+  .priority1 {
+    grid-row: span 1;
+    grid-column: span 1; 
+  }
+  .priority2 {
+    grid-row: span 2;
+    grid-column: span 2; 
+  }
+  .priority3 {
+    grid-row: span 3;
+    grid-column: span 3; 
+  }
+
 }
