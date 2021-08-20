@@ -4,7 +4,7 @@ function populatesite() {
 	pullWork();
 	pullInterests();
 	pullProjects();
-	pullCommunity();
+//	pullCommunity();
 	pullContact();
 	adjustments();
 }
@@ -37,7 +37,8 @@ function pullExperience(experiences, target) {
 	for (company in experiences) {
 		if (company != "path") {
 			var jobcontainer = document.createElement("a");
-			if experiences[company].path.charAt(0) == '/' {
+			console.log(experiences[company].path);
+			if (experiences[company].path.charAt(0) == '/') {
 				jobcontainer.href = domain + experiences[company].path;
 			}
 			else {

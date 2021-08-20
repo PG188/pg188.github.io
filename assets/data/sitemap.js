@@ -66,7 +66,7 @@ var sitemap = {
 	},
 	"Interests" : {
 		"path" 				: "/#Interest",
-		"gardening" : {
+		"FIRST" : {
 			"company": "FIRST Robotics",
 			"icon": "assets/icons/interest/first/logo.jpg",
 			"path": "/Interests/FIRST/index.html",
@@ -77,7 +77,7 @@ var sitemap = {
 			"company": "Gardening",
 			"icon": "assets/icons/interest/gardening/logo.jpg",
 			"path": "/Interests/Gardening/index.html",
-			"priority": "2",
+			"priority": "1",
 			"hide": false
 		},
 		"cooking" : {
@@ -130,7 +130,7 @@ var sitemap = {
 			"hide": false
 		}
 	},	
-	"Employment" : {	
+	"Employment" : {
 		"path" 				: "/#Work",
 		
 		"L3Harris" : {
@@ -305,14 +305,15 @@ var sitemap = {
 	},	
 	"Projects" : {	
 		"path" 			: "/#Project",
-
+/*
 		"printedcnc" : {
 			"company": "Printed CNC",
 			"icon": "assets/icons/project/printedcnc/logo.jpg",
 			"ref": "/Projects/printedcnc/index.html",
-			"priority": "2",
+			"path": "/Projects/printedcnc/index.html",
+			"priority": "1",
 			"hide": false
-		},
+		}, */
 		"capstone" : {
 			"company": "Mechatronics Engineering Capstone",
 			"icon": "assets/icons/project/capstone/icon.png",
@@ -444,6 +445,9 @@ var sitemap = {
 			"hide": false
 		},
 	}, */
+	"Resume" : {
+		"path" : "/Resume"
+	}
 	"Contact" : {
 		"path" 			: "/#Contact",
 		"linkedin" : {

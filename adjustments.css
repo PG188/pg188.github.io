@@ -118,9 +118,6 @@
 	  padding-top: 4%;
 	  padding-bottom: 4%;
 	}
-	#Bottom {
-		background-color: #000;
-	}
 	#Community-Bottom {
 		border: none;
 		padding: none;
@@ -129,6 +126,7 @@
 	#Bottom{
 		padding-top: 5%;
 		padding-bottom: 5%;
+		background-color: none;
 	}
 }
  
