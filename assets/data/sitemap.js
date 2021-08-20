@@ -325,7 +325,7 @@ var sitemap = {
 		},
 		"website" : {
 			"company": "Personal Website",
-			"icon": "assets/icons/project/website/logo.jpg",
+			"icon": "assets/icons/project/website/logo.png",
 			"path": "/Projects/website/index.html",
 			"priority": "1",
 			"hide": false
