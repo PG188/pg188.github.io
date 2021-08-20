@@ -71,7 +71,7 @@ var sitemap = {
 		"FIRST" : {
 			"company": "FIRST",
 			"icon": "assets/icons/project/first/logo.jpg",
-			"path": "/Interests/FIRST/index.html",
+			"path": "/Interests/first/index.html",
 			"priority": "2",
 			"hide": false
 		},
