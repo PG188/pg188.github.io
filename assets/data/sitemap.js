@@ -446,7 +446,7 @@ var sitemap = {
 		},
 	}, */
 	"Resume" : {
-		"path" : "/Resume"
+		"path" : "/Resume/index.html"
 	},
 	"Contact" : {
 		"path" 			: "/#Contact",
