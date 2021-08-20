@@ -1,4 +1,109 @@
 function addMenubar() {
+
+var nav
+var link
+var button
+var span
+
+nav = document.createElement("nav");
+nav.className = "navbar navbar-expand-lg navbar-dark bg-primary sticky-top";
+link = document.createElement("a"); 
+link.className = "navbar-brand";
+link.href = domain +  "#";
+link.innerHTML = "Prakhar Garg"
+
+button = document.createElement("button"); 
+button.className = "navbar-toggler";
+button.setAttribute("type","button");
+button.setAttribute("data-toggle","collapse");
+button.setAttribute("data-target","#navbarSupportedContent");
+button.setAttribute("aria-controls","navbarSupportedContent");
+button.setAttribute("aria-expanded","false");
+button.setAttribute("aria-label","Toggle navigation");
+
+span = document.createElement("span"); 
+span.className = "navbar-toggler-icon";
+
+button.appendChild(span);
+
+nav.appendChild(link);
+nav.appendChild(button);
+
+delete link
+delete button
+delete span
+
+var div
+var ul
+var li
+var a
+var textnode
+
+div = document.createElement("div");
+div.className = "collapse navbar-collapse";
+div.id = "navbarSupportedContent";
+
+ul = document.createElement("ul");
+ul.className = "navbar-nav mr-auto";
+
+for (mainitem in sitemap) {
+	li = document.createElement("li");
+	li.className = "nav-item";
+	a = document.createElement("a");
+	a.className = "nav-link";
+	a.href = "#"; //domain +  sitemap[mainitem].path;
+	textnode = document.createTextNode(mainitem);
+	a.appendChild(textnode);
+	var dropdown = false;
+	var subdiv = document.createElement("div");
+	for (subitem in sitemap[mainitem]) {
+		subdiv.className = "dropdown-menu dropdown-primary";
+		subdiv.setAttribute("aria-labelledby","navbarDropdownMenuLink");
+		if (typeof sitemap[mainitem][subitem].path === 'string'){
+			dropdown = true;
+			var suba = document.createElement("a");
+			suba.className = "dropdown-item";
+			suba.href = domain +  sitemap[mainitem][subitem].path;
+			textnode = document.createTextNode(sitemap[mainitem][subitem].company);
+			suba.appendChild(textnode);
+			subdiv.appendChild(suba);
+		}
+	}
+
+	if (dropdown == true){
+		li.className = li.className + " dropdown";
+		a.className = a.className + " dropdown-toggle";
+		a.id="navbarDropdown" 
+		a.setAttribute("role","button");
+		a.setAttribute("data-toggle","dropdown");
+		a.setAttribute("aria-haspopup","true");
+		a.setAttribute("aria-expanded","false");
+	}
+
+
+	
+	li.appendChild(a);
+
+
+	if (dropdown == true){
+		li.appendChild(subdiv);
+	}
+
+
+	ul.appendChild(li);
+}
+
+div.appendChild(ul);
+nav.appendChild(div);
+
+document.body.prepend(nav, document.body.firstChild);
+
+}
+
+
+
+/*  OLD
+function addMenubar_ignore() {
 	var references = {
 		'Home' : '',
 		'Interests' : {
@@ -29,13 +134,6 @@ function addMenubar() {
 		'Contact' : ''
 	};
 
-/*	var menu = document.getElementById('MenuBar1');
-	var ul = document.createElement("p");
-	ul.id = 'MenuBar1';
-	ul.className = 'MenuBarHorizontal';
-	ul.inner = 'Home';
-	document.body.innerHTML = ul;
-	*/	
 
 	addMenu(references);
 }
@@ -72,7 +170,6 @@ function addMenu(references,level) {
 				a.href = domain + references[item]['path'];
 				var node = document.createTextNode(item);
 				a.appendChild(node);
-			//	a.className = 'MenuBarItemSubmenu';
 				li.appendChild(a);
 				li.appendChild(addMenu(references[item],level + 1));
 				ul.appendChild(li);		
@@ -93,3 +190,4 @@ function addMenu(references,level) {
 	return ul;
 	
 }
+*/

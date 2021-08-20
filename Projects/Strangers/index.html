@@ -1,53 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="">
 <!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About Prakhar Garg</title>
-<link href="../../SharedElements.css" rel="stylesheet" type="text/css">
-<link href="../../../../../../Program Files (x86)/Adobe/Adobe Dreamweaver CS6/Configuration/BuiltIn/Fluid Grid Layout/boilerplate.css" rel="stylesheet" type="text/css">
-<link href="../projects.css" rel="stylesheet" type="text/css">
-<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
 
-<link href="../../HorizontalMenuBar/index.css" rel="stylesheet" type="text/css">
-<script src="../../HorizontalMenuBar/index.js"></script>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prakahr Garg's portfolio website">
+  <meta name="author" content="Prakhar Garg">
+  
+  <title>Prakhar Garg | Strangers</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://prakhargarg.me/NewSite/assets/data/sitemap.js"></script>
+
+
+  <!-- Building the site -->
+  <script src="http://prakhargarg.me/NewSite/HorizontalMenuBar/index.js"></script>
+  <script src="http://prakhargarg.me/NewSite/populate.js"></script>
+
+  <!-- Event Handlers -->
+
+  <!-- Styling -->
+  <link href="http://prakhargarg.me/NewSite/gridcontainer.css" rel="stylesheet" type="text/css">
+  <link href="http://prakhargarg.me/NewSite/bootstrap.css" rel="stylesheet" type="text/css">
+  <script src="http://prakhargarg.me/NewSite/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
 
 </head>
-<body onload='addMenubar()'>
 
-<div class="Block" id="Strangers">
-	<h1>Strangers Android Application </h1>
+<body onload=' addMenubar();'>
+  <div name="" class="container-fluid jumbotron" id="Intro">
+    <h1 id="jobtitle">Strangers Android Application</h1>
+    <p class="lead float-right" id="date">Nov 2015</p>
+    <p class="lead" id="company">McMaster University Engineering Capstone</p>
+    <div class="container">
+        <h2>Project Description</h2>
+      <p>Strangers is an android application developed by me and three of my peers at a hackathon in Duke University, HackDuke. The aim of the project was to develop a fun ecosystem for people to chat and communicate with strangers while using APIs provided by Facebook, FireBase and IBM. Over 24 hours my team and I planned and designed the app to scan your recent posts on Facebook and pair you with someone who has the opposite personality as you. The aim of the app was to help connect people from different backgrounds and help the community appreciate the difference in personalities.</p>
+    </div>
+  </div>
 
+  <div name="" class="container-fluid " id="Details">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img width="100%" class="priority1 hiddenfalse" src="Screen 1.png">
+        </div>
+        <div class="col-sm">
+          <h2>Future Plans</h2>
+          <p>Future plans for the application involved creating a more intuitive interface with improved branding. Furthermore we wanted to have the app passively block offensive content or anything that violated our terms of use. This social experiment would help us understand how well people will opposite personalities interact with each other and provide insight into potential problems or advantages.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h2>My Role</h2>
+          <p>In this porject I was responsible for Working with the <a src="https://www.ibm.com/watson/services/personality-insights/"> Watson personaity insights API</a> to generate a character profile of the person. The profile returned data the person's personality characteristics, needs and values. this was my first time working with a web API so this was fairly challenging for me. I worked with a mentor from Google who taught me the basic commands and how to navigate IBM's security.</p>
+        </div>
+        <div class="col-sm">
+          <img width="100%" class="priority1 hiddenfalse" src="Screen 2.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <img width="100%" class="priority1 hiddenfalse" src="Project Strangers.jpg">
+        </div>
+        <div class="col-sm">
+          <div id="ksa">
+          <h2>Knowledge, Skills and Abillities</h2>
+          <ul>
+            <li>Web API</li>
+            <li>Android Development</li>
+            <li>Facebook AUthentication</li>
+            <li>Watson Personality Insights</li>
+          </ul>
+        </div>
+        <div id="gsf">
+          <h2>Goals, Success Factors</h2>
+          <ul>
+            <li>Learn about Android development</li>
+            <li>Get a better understadn of working with web API</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h2>Challenges</h2>
+          <p>This was a very challenging project for me as i knew nothing about any of the topics i was about to explore. THis was completely out of my comfort zone</p>
+        </div>
+        <div class="col-sm">
+          <img width="100%" class="priority1 hiddenfalse" src="">
+        </div>
 
-    <div id="LayoutDiv1">
-		<div class="Image"><p><img src="Screen 1.png" width="100%"></p></div>
-        <div class="Paragraph">
-			<P>Strangers is an android application developed by me and three of my peers at a hackathon in Duke University, HackDuke. The aim of the project was to develop a fun ecosystem for people to chat and communicate with strangers while using APIs provided by Facebook, FireBase and IBM. Over 24 hours my team and I planned and designed the app to scan your recent posts on Facebook and pair you with someone who has the opposite personality as you. The aim of the app was to help connect people from different backgrounds and help the community appreciate the difference in personalities.</P>
-		</div>
-	</div>
-
-
-    
-  <div id="LayoutDiv2">
-    <div id="NudgeMe" class="Image"><p><img src="Screen 2.jpg" width="100%"></p></div>
-    <div class="Paragraph">
-      <P> While developing Strangers with my team I gained a lot of firsthand experience and mentorship working with the Google android SDK and learning the basics of how to develop the front end of the application. The data we received from Facebook was packaged as a JSON file. Our app repackaged the file to better work with IBM's Bluemix servers. In Bluemix I learned how to code in node.js and interface with Watson. Watson was the computation engine responsible for analysing the data packets sent to Bluemix and respond with a personality profile. The data was used to pair users who were directed to a FireBase script that allowed us to quickly set up a messenger feed between two users.</p></div>
+      </div>
+    </div>
+  </div>
+  <div name="" class="container" id="Reflection">
+    <h2>Reflection</h2>
+    <p>While developing Strangers with my team I gained a lot of firsthand experience and mentorship working with the Google android SDK and learning the basics of how to develop the front end of the application. The data we received from Facebook was packaged as a JSON file. Our app repackaged the file to better work with IBM's Bluemix servers. In Bluemix I learned how to code in node.js and interface with Watson. Watson was the computation engine responsible for analysing the data packets sent to Bluemix and respond with a personality profile. The data was used to pair users who were directed to a FireBase script that allowed us to quickly set up a messenger feed between two users.</p>
   </div>
   
-  <div id="LayoutDiv2">
-    <div class="Image"><p><img src="Project Strangers.jpg" width="100%"></p></div>
-    <div class="Paragraph">
-      <P>Future plans for the application involved creating a more intuitive interface with improved branding. Furthermore we wanted to have the app passively block offensive content or anything that violated our terms of use. This social experiment would help us understand how well people will opposite personalities interact with each other and provide insight into potential problems or advantages. You can view our source code and androids app on the group's <a href="../../https://github.com/SNavleen/Stranger">Git</a></P></div>
-  </div>
-</div>
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
 </body>
+
 </html>
