@@ -63,6 +63,12 @@ for (mainitem in sitemap) {
 			dropdown = true;
 			var suba = document.createElement("a");
 			suba.className = "dropdown-item";
+			if (experiences[company].path.charAt(0) == '/') {
+				suba.href = domain +  sitemap[mainitem][subitem].path;
+			}
+			else {
+				suba.href = sitemap[mainitem][subitem].path;
+			}
 			suba.href = domain +  sitemap[mainitem][subitem].path;
 			textnode = document.createTextNode(sitemap[mainitem][subitem].company);
 			suba.appendChild(textnode);
