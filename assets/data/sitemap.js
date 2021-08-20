@@ -67,6 +67,13 @@ var sitemap = {
 	"Interests" : {
 		"path" 				: "/#Interest",
 		"gardening" : {
+			"company": "FIRST Robotics",
+			"icon": "assets/icons/interest/first/logo.jpg",
+			"path": "/Interests/FIRST/index.html",
+			"priority": "2",
+			"hide": false
+		},
+		"gardening" : {
 			"company": "Gardening",
 			"icon": "assets/icons/interest/gardening/logo.jpg",
 			"path": "/Interests/Gardening/index.html",
