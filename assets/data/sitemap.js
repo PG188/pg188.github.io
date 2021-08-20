@@ -1,4 +1,5 @@
 var domain = 'http://www.prakhargarg.me/NewSite';
+var domain = 'file:///C:/Users/prakh/Documents/GIT/pg188.github.io/';
 var sitemap = {
 	"Home" : "",
 	"Education" : {
@@ -125,7 +126,20 @@ var sitemap = {
 	"Employment" : {	
 		"path" 				: "/#Work",
 		
-		"mcmasterTA" : {
+		"L3Harris" : {
+			"company": "Algorithm Developer",
+			"icon": "assets/icons/work/l3/logo.png",
+			"path": "/Work/l3/index.html",
+			"priority": "2",
+			"hide": false,
+			"jobs" : [
+				{
+					"title": "Algorithm Developer",
+					"start": "",
+					"stop": ""
+				}
+			]
+		},"mcmasterTA" : {
 			"company": "Teaching Assistant",
 			"icon": "assets/icons/work/mcmaster/logo.jpg",
 			"path": "/Work/mcmasterTA/index.html",

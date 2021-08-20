@@ -13,112 +13,48 @@
 	<meta name="description" content="Prakahr Garg's portfolio website">
 	<meta name="author" content="Prakhar Garg">
 	
-	<title>Prakhar Garg | Photography</title>
+	<title>Prakhar Garg | About Me</title>
 
-	<script src="gallery/https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="gallery/http://prakhargarg.me/NewSite/assets/data/sitemap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="http://prakhargarg.me/NewSite/assets/data/sitemap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 
 
 	<!-- Building the site -->
-	<script src="gallery/http://prakhargarg.me/NewSite/HorizontalMenuBar/index.js"></script>
-	<script src="gallery/http://prakhargarg.me/NewSite/populate.js"></script>
+	<script src="http://prakhargarg.me/NewSite/HorizontalMenuBar/index.js"></script>
+	<script src="http://prakhargarg.me/NewSite/populate.js"></script>
+	<script src="http://prakhargarg.me/NewSite/assets/data/photoGallery.js"></script>
+	<script src="photoGallery.js"></script>
 
 	<!-- Event Handlers -->
 
 	<!-- Styling -->
 	<link href="http://prakhargarg.me/NewSite/gridcontainer.css" rel="stylesheet" type="text/css">
-	<link href="gallery.css" rel="stylesheet" type="text/css">
-	<link href="index.css" rel="stylesheet" type="text/css">
+	<link href="http://prakhargarg.me/NewSite/adjustments.css" rel="stylesheet" type="text/css">
 	<link href="http://prakhargarg.me/NewSite/bootstrap.css" rel="stylesheet" type="text/css">
-	<script src="gallery/http://prakhargarg.me/NewSite/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
-
+	<script src="http://prakhargarg.me/NewSite/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+	<link href="http://prakhargarg.me/NewSite/assets/css/gallery.css" rel="stylesheet" type="text/css">
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+	
 </head>
 
-<body onload=' addMenubar();'>
+
+
+
+
+<body onload=' addMenubar(); pullPhotos(photoGallery, "gallery");  baguetteBox.run(".gallery");'>
 	<div name="" class="container-fluid jumbotron" id="Intro">
-		<h1 id="jobtitle">Photography</h1>
 		<div class="container">
-	    	<h2>Project Description</h2>
-			<p>...</p>
+	    	<h1> Photography</h1>
+			<p>A collection of some of my favorite photos</p>
+			<p></p>
 		</div>
 	</div>
 
-	<div name="" class="container-fluid " id="">
-		<div class="container">
-		  	<h2>My Role</h2>
-		  	<div class="gallery">
-		  		
-		  		<a href="" class="block priority1 ">
-		  			<img src="gallery/1.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority2 portrait ">
-		  			<img src="gallery/1.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 ">
-		  			<img src="gallery/1.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 ">
-		  			<img src="gallery/2.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 portrait">
-		  			<img src="gallery/3.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority3 landscape">
-		  			<img src="gallery/4.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 portrait">
-		  			<img src="gallery/1.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority2 portrait">
-		  			<img src="gallery/2.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 landscape">
-		  			<img src="gallery/3.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority3 ">
-		  			<img src="gallery/4.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 landscape">
-		  			<img src="gallery/1.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority2 portrait">
-		  			<img src="gallery/2.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 landscape">
-		  			<img src="gallery/3.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority3 landscape">
-		  			<img src="gallery/4.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 landscape">
-		  			<img src="gallery/1.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority2 landscape">
-		  			<img src="gallery/2.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 landscape">
-		  			<img src="gallery/3.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority3 landscape">
-		  			<img src="gallery/4.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 landscape">
-		  			<img src="gallery/1.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority2 landscape">
-		  			<img src="gallery/2.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority1 landscape">
-		  			<img src="gallery/3.jpg" loading="lazy">
-		  		</a>
-		  		<a href="" class="block priority3 landscape">
-		  			<img src="gallery/4.jpg" loading="lazy">
-		  		</a>
-		  	</div>
-		</div>
-	</div>
-
+	<div name="" class="container gallery" id="gallery">
 	
+	</div>
 </body>
 
 </html>
