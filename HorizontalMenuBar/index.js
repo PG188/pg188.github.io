@@ -51,7 +51,7 @@ for (mainitem in sitemap) {
 	li.className = "nav-item";
 	a = document.createElement("a");
 	a.className = "nav-link";
-	a.href = "#"; //domain +  sitemap[mainitem].path;
+	a.href = domain +  sitemap[mainitem].path;
 	textnode = document.createTextNode(mainitem);
 	a.appendChild(textnode);
 	var dropdown = false;
