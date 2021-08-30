@@ -483,7 +483,7 @@ var sitemap = {
 		"hotmail" : {
 			"company": "Hotmail",
 			"icon": "assets/icons/Contact/hotmail/Outlook-icon.png",
-			"path": "mailto:prakhar@live.com",
+			"path": "mailto:prakhar@live.ca",
 			"priority": "1",
 			"hide": false
 		},
