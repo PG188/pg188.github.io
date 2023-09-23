@@ -1,5 +1,5 @@
-var domain = 'https://www.prakhargarg.me';
-// var domain = 'file:///C:/Users/prakh/Documents/GIT/pg188.github.io/';
+//var domain = 'https://www.prakhargarg.me';
+ var domain = 'file:///C:/Users/prakh/Documents/GIT/pg188.github.io/';
 var sitemap = {
 	"Home" : {
 		"path" : "/#"
@@ -8,7 +8,7 @@ var sitemap = {
 		"path"				: "/#Eduation",
 
 		"masters" : {
-			"company": "Masters of Applied Science (in progress)",
+			"company": "Masters of Applied Science",
 			"icon": "assets/icons/education/masters/logo.jpg",
 			"path": "/Education/masters/index.html",
 			"priority": "3",
