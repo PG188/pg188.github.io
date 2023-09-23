@@ -136,7 +136,7 @@ var sitemap = {
 		"path" 				: "/#Work",
 		
 		"L3Harris" : {
-			"company": "Algorithm Developer",
+			"company": "Senior Associate, Software Engineer",
 			"icon": "assets/icons/work/l3/logo.png",
 			"path": "/Work/l3/index.html",
 			"priority": "2",
