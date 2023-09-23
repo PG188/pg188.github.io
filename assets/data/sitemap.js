@@ -1,5 +1,6 @@
-var domain = 'https://www.prakhargarg.me';
-// var domain = 'file:///C:/Users/prakh/Documents/GIT/pg188.github.io/';
+//var domain = 'https://www.prakhargarg.me';
+ var domain = 'file:///C:/Users/prakh/Documents/GIT/pg188.github.io/';
+
 var sitemap = {
 	"Home" : {
 		"path" : "/#"
@@ -143,7 +144,7 @@ var sitemap = {
 			"hide": false,
 			"jobs" : [
 				{
-					"title": "Algorithm Developer",
+					"title": "Senior Associate, Software Engineer",
 					"start": "",
 					"stop": ""
 				}
@@ -190,7 +191,7 @@ var sitemap = {
 			"icon": "assets/icons/work/mcmaster/logo.jpg",
 			"path": "/Work/mcmasterRA/index.html",
 			"priority": "1",
-			"hide": false,
+			"hide": true,
 			"jobs" : [
 				{
 					"title": "Teaching Assistant",
