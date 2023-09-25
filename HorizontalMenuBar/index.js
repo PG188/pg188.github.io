@@ -146,7 +146,7 @@ function addMenubar_ignore() {
 }
 
 function addMenu(references,level) {
-	var domain = 'http://www.prakhargarg.me';
+	var domain = 'http://www.prakhargarg.ca';
 	if (level == null) {
 		level = 1;
 	}
