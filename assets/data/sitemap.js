@@ -377,7 +377,7 @@ var sitemap = {
 		"quadcopter" : {
 			"company": "Quadcopter Design",
 			"icon": "assets/icons/project/quadcopter/logo.jpg",
-			"path": "",
+			"path": "/Projects/Quadcopter/index.html",
 			"priority": "1",
 			"hide": true
 		},
