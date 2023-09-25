@@ -23,7 +23,7 @@ var sitemap = {
 			]
 		},
 		"bachlors" : {
-			"company": "Bachlors in Engineering",
+			"company": "Bachelors in Engineering",
 			"icon": "assets/icons/education/bachlors/logo.jpg",
 			"path": "/Education/bachlors/index.html",
 			"priority": "2",
