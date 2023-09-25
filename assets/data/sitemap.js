@@ -1,5 +1,5 @@
-// var domain = 'https://www.prakhargarg.me';
- var domain = 'file:///C:/Users/prakh/Documents/GIT/pg188.github.io/';
+ var domain = 'https://www.prakhargarg.me';
+// var domain = 'file:///C:/Users/prakh/Documents/GIT/pg188.github.io/';
 
 var sitemap = {
 	"Home" : {
