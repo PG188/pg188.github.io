@@ -138,7 +138,7 @@ var sitemap = {
 		
 		"palantir" : {
 			"company": "Software Engineer",
-			"icon": "assets/icons/work/palantir/logo.jpg",
+			"icon": "assets/icons/work/palantir/logo2.jpg",
 			"path": "/Work/palantir/index.html",
 			"priority": "2",
 			"hide": false,
