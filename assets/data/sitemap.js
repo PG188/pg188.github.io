@@ -136,7 +136,20 @@ var sitemap = {
 	"Employment" : {
 		"path" 				: "/#Work",
 		
-		"L3Harris" : {
+		"palantir" : {
+			"company": "Software Engineer",
+			"icon": "assets/icons/work/palantir/logo2.jpg",
+			"path": "/Work/palantir/index.html",
+			"priority": "2",
+			"hide": false,
+			"jobs" : [
+				{
+					"title": "Software Engineer",
+					"start": "April 2025",
+					"stop": "Present"
+				}
+			]
+		},"L3Harris" : {
 			"company": "Senior Associate, Software Engineer",
 			"icon": "assets/icons/work/l3/logo.png",
 			"path": "/Work/l3/index.html",
