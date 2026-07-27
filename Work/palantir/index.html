@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Prakhar Garg's portfolio website">
+	<meta name="author" content="Prakhar Garg">
+	
+	<title>Prakhar Garg | About Me</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://prakhargarg.ca/assets/data/sitemap.js"></script>
+
+
+	<!-- Building the site -->
+	<script src="https://prakhargarg.ca/HorizontalMenuBar/index.js"></script>
+	<script src="https://prakhargarg.ca/populate.js"></script>
+
+	<!-- Event Handlers -->
+
+	<!-- Styling -->
+	<link href="https://prakhargarg.ca/gridcontainer.css" rel="stylesheet" type="text/css">
+	<link href="https://prakhargarg.ca/bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="https://prakhargarg.ca/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+	<style>
+		body {
+			background-color: #f7f8fa;
+			color: #1f2933;
+		}
+		.experience-page {
+			padding: 2rem 0 3rem;
+		}
+		.hero-card {
+			background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%);
+			border: 1px solid #e5e7eb;
+			border-radius: 16px;
+			padding: 2rem;
+			box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+		}
+		.hero-meta {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			gap: 1rem;
+			margin-bottom: 1rem;
+		}
+		.hero-date {
+			background: #1c1e22;
+			color: #ffffff;
+			padding: 0.45rem 0.8rem;
+			border-radius: 999px;
+			font-size: 0.95rem;
+			font-weight: 600;
+		}
+		.summary-block {
+			background: #f4f7fb;
+			border-left: 4px solid #ec4e20;
+			padding: 0.9rem 1rem;
+			border-radius: 6px;
+			margin-top: 1rem;
+			font-size: 1rem;
+			line-height: 1.6;
+			color: #4b5563;
+		}
+		.section-card {
+			background: #ffffff;
+			border: 1px solid #e5e7eb;
+			border-radius: 12px;
+			padding: 1.25rem 1.4rem;
+			margin-top: 1rem;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+		}
+		.section-card h2 {
+			font-size: 1.2rem;
+			margin-bottom: 0.75rem;
+			color: #1c1e22;
+		}
+		.section-card ul {
+			padding-left: 1.2rem;
+			margin-bottom: 0;
+		}
+		.section-card li {
+			margin-bottom: 0.5rem;
+			line-height: 1.6;
+		}
+		@media (max-width: 767px) {
+			.hero-card {
+				padding: 1.25rem;
+			}
+			.hero-meta {
+				align-items: flex-start;
+			}
+		}
+	</style>
+
+</head>
+
+
+
+<body onload=' addMenubar();'>
+	<div class="experience-page">
+		<div class="container">
+			<div class="hero-card">
+				<div class="hero-meta">
+					<div>
+						<h1 id="jobtitle" class="mb-2">Software Engineer</h1>
+						<p class="lead mb-0" id="company"><strong>Palantir Technologies</strong></p>
+					</div>
+					<span class="hero-date" id="date">April 2025 – Present</span>
+				</div>
+				<div class="summary-block">
+					Building mission-critical software for aerospace and maritime operations through sensor fusion, geospatial analytics, and distributed systems.
+				</div>
+				<div class="section-card mt-4">
+					<h2>Job Description</h2>
+					<ul>
+						<li>Develop and maintain mission-critical sensor fusion, multi-target tracking, and trajectory prediction software supporting aerospace and maritime operational domains.</li>
+						<li>Design and implement distributed software using C++, Python, and Rust integrated with Palantir Foundry and Gotham.</li>
+						<li>Fuse heterogeneous sensor feeds, geospatial intelligence, and operational data into real-time situational awareness products.</li>
+						<li>Develop software utilizing Gaia mapping services and geospatial analytics to support operational planning and field deployments.</li>
+						<li>Collaborate with customers and cross-functional engineering teams to validate software in operational field environments.</li>
+						<li>Support deployment of software capabilities from development through operational testing and customer demonstrations.</li>
+						<li>Contribute to highly reliable software used in defense and aerospace mission planning and decision support.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section-card" id="Details">
+				<h2>Knowledge, Skills and Abilities</h2>
+				<ul>
+					<li>Advanced software engineering in C++, Python, and Rust</li>
+					<li>Experience building distributed systems for operational environments</li>
+					<li>Knowledge of geospatial analytics, sensor fusion, and mission planning workflows</li>
+					<li>Strong collaboration and customer-facing engineering skills</li>
+				</ul>
+			</div>
+
+			<div class="section-card" id="Details-2">
+				<h2>Goals, Success Factors</h2>
+				<ul>
+					<li>Deliver reliable software for high-stakes defense and aerospace missions</li>
+					<li>Successfully transition capabilities from development to operational testing</li>
+					<li>Support customers with robust field-ready solutions</li>
+				</ul>
+			</div>
+
+			<div class="section-card" id="Reflection">
+				<h2>Reflection</h2>
+				<p>Working at Palantir has been an opportunity to contribute to software that directly supports complex operational decisions in aerospace and maritime domains. Building technologies that combine sensor fusion, geospatial intelligence, and distributed systems has been both technically demanding and highly meaningful. The experience has strengthened my ability to work across engineering and customer teams in fast-moving, mission-critical environments.</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
