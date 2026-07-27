@@ -16,9 +16,9 @@
 				}
 			]
 		},
-		"bachlors" : {
+		"bachelors" : {
 			"company": "McMaster University",
-			"icon": "assets/icons/education/bachlors/logo.jpg",
+			"icon": "assets/icons/education/bachelors/logo.jpg",
 			"path": "",
 			"priority": "2",
 			"hide": false,
@@ -52,7 +52,7 @@
 			"hide": false,
 			"jobs" : [
 				{
-					"title": "Highschool Diploma",
+					"title": "High school Diploma",
 					"start": "",
 					"stop": ""
 				}
