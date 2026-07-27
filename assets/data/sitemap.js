@@ -22,10 +22,10 @@ var sitemap = {
 				}
 			]
 		},
-		"bachlors" : {
+		"bachelors" : {
 			"company": "Bachelors in Engineering",
-			"icon": "assets/icons/education/bachlors/logo.jpg",
-			"path": "/Education/bachlors/index.html",
+			"icon": "assets/icons/education/bachelors/logo.jpg",
+			"path": "/Education/bachelors/index.html",
 			"priority": "2",
 			"hide": false,
 			"jobs" : [
@@ -58,7 +58,7 @@ var sitemap = {
 			"hide": false,
 			"jobs" : [
 				{
-					"title": "Highschool Diploma",
+					"title": "High school Diploma",
 					"start": "",
 					"stop": ""
 				}
@@ -173,7 +173,7 @@ var sitemap = {
 				}
 			]
 		},"gdms" : {
-			"company": "Software Developer COOP",
+			"company": "Software Developer co-op",
 			"icon": "assets/icons/work/gdms/logo.jpg",
 			"path": "/Work/gdms/index.html",
 			"priority": "2",
@@ -235,7 +235,7 @@ var sitemap = {
 			]
 		},
 		"thales" : {
-			"company": "Software Developer - COOP",
+			"company": "Software Developer - co-op",
 			"icon": "assets/icons/work/thales/logo.jpg",
 			"path": "/Work/thales/index.html",
 			"priority": "2",
