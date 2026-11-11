@@ -1,0 +1,50 @@
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #272b30;
+  font-family: Arial, sans-serif;
+}
+
+.project-header {
+  padding: 2rem;
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.back-link {
+  color: #a63a19;
+}
+
+.date {
+  float: right;
+  margin: 0;
+}
+
+.organization {
+  font-size: 1.2rem;
+}
+
+.content {
+  margin: 2rem 0;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  align-items: start;
+  gap: 2rem;
+}
+
+.project-image,
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h1,
+h2 {
+  color: #272b30;
+}
