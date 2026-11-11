@@ -1,14 +1,1 @@
-<main>
-  <h1>Prakhar Garg</h1>
-  <p>Welcome to my portfolio. Here are some projects I’ve worked on.</p>
-
-  <section aria-labelledby="projects-heading">
-    <h2 id="projects-heading">Projects</h2>
-
-    @for (project of projects; track project.title) {
-      <article>
-        <h3><a [href]="project.url">{{ project.title }}</a></h3>
-      </article>
-    }
-  </section>
-</main>
+<router-outlet />
