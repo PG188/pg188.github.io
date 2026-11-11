@@ -36,6 +36,21 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+## Deploying to GitHub Pages
+
+The `Deploy Angular site` workflow publishes the Angular production build from
+`dist/portfolio/browser` to the root of GitHub Pages. It runs on pushes to
+`master`. Once the workflow is on the default branch, it can also be started
+manually from the Actions tab using another branch. It preserves the
+repository's `CNAME` and adds a `404.html` fallback so direct Angular routes can
+load.
+
+Before the first deployment, open the repository's **Settings → Pages** and set
+the build and deployment source to **GitHub Actions**. After that, merge the
+Angular changes into `master` to replace the live static homepage. The original
+static files remain in the repository but are not included in the deployed
+site.
+
 ## Running unit tests
 
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
