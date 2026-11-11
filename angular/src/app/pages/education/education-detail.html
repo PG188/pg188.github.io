@@ -1,0 +1,55 @@
+@if (education; as currentEducation) {
+  <main>
+    <header class="education-header">
+      <a class="back-link" routerLink="/" fragment="education-heading">All education</a>
+      <img [src]="currentEducation.logo" [alt]="currentEducation.logoAlt" />
+      <h1>{{ currentEducation.title }}</h1>
+      <p class="organization">{{ currentEducation.institution }}</p>
+      @if (currentEducation.program) {
+        <p class="program">{{ currentEducation.program }}</p>
+      }
+    </header>
+
+    <section class="content">
+      <h2>Overview</h2>
+      <p>{{ currentEducation.overview }}</p>
+      @if (currentEducation.links) {
+        <ul>
+          @for (link of currentEducation.links; track link.url) {
+            <li><a [href]="link.url" target="_blank" rel="noopener noreferrer">{{ link.label }}</a></li>
+          }
+        </ul>
+      }
+    </section>
+
+    <section class="content">
+      <h2>Courses of Interest</h2>
+      <ul class="topics">
+        @for (course of currentEducation.courses; track course) {
+          <li>{{ course }}</li>
+        }
+      </ul>
+    </section>
+
+    <section class="content">
+      <h2>Topics Explored</h2>
+      <ul class="topics">
+        @for (topic of currentEducation.topics; track topic) {
+          <li>{{ topic }}</li>
+        }
+      </ul>
+    </section>
+
+    @if (currentEducation.image && currentEducation.imageAlt) {
+      <figure class="education-image">
+        <img [src]="currentEducation.image" [alt]="currentEducation.imageAlt" loading="lazy" />
+      </figure>
+    }
+  </main>
+} @else {
+  <main>
+    <h1>Education entry not found</h1>
+    <p>This education entry may have moved or the address may be incorrect.</p>
+    <a routerLink="/" fragment="education-heading">Return to education</a>
+  </main>
+}

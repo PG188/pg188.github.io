@@ -1,0 +1,105 @@
+@if (project; as currentProject) {
+  <main>
+    <header class="project-header">
+      <a class="back-link" routerLink="/">All projects</a>
+      @if (currentProject.date) {
+        <p class="date">{{ currentProject.date }}</p>
+      }
+      <h1>{{ currentProject.title }}</h1>
+      @if (currentProject.organization) {
+        <p class="organization">{{ currentProject.organization }}</p>
+      }
+    </header>
+
+    @for (section of currentProject.sections; track section.heading) {
+      <section
+        class="content project-section"
+        [class.has-media]="sectionMedia(currentProject, section, $index)"
+        [class.media-left]="mediaIsLeft(currentProject, $index)"
+      >
+        <div class="section-copy">
+          <h2>{{ section.heading }}</h2>
+          @if (section.paragraphs) {
+            @for (paragraph of section.paragraphs; track $index) {
+              <p>{{ paragraph }}</p>
+            }
+          }
+          @if (section.items) {
+            <ul>
+              @for (item of section.items; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          }
+        </div>
+        @if (sectionMedia(currentProject, section, $index); as item) {
+          <figure class="section-media">
+            @if (item.src.endsWith('.mp4')) {
+              <video controls preload="metadata">
+                <source [src]="assetUrl(currentProject.slug, item.src)" type="video/mp4" />
+                Your browser does not support HTML video.
+              </video>
+            } @else {
+              <img [src]="assetUrl(currentProject.slug, item.src)" [alt]="item.alt" />
+            }
+            @if (item.caption) {
+              <figcaption>{{ item.caption }}</figcaption>
+            }
+          </figure>
+        }
+      </section>
+    }
+
+    @if (currentProject.skills) {
+      <section class="content">
+        <h2>Knowledge, Skills and Abilities</h2>
+        <ul class="skills">
+          @for (skill of currentProject.skills; track skill) {
+            <li>{{ skill }}</li>
+          }
+        </ul>
+      </section>
+    }
+
+    @if (additionalMedia(currentProject); as extraMedia) {
+      @if (extraMedia.length) {
+        <section class="content media-grid" aria-label="Project media">
+          @for (item of extraMedia; track item.src) {
+            <figure>
+              @if (item.src.endsWith('.mp4')) {
+                <video controls preload="metadata">
+                  <source [src]="assetUrl(currentProject.slug, item.src)" type="video/mp4" />
+                  Your browser does not support HTML video.
+                </video>
+              } @else {
+                <img [src]="assetUrl(currentProject.slug, item.src)" [alt]="item.alt" />
+              }
+              @if (item.caption) {
+                <figcaption>{{ item.caption }}</figcaption>
+              }
+            </figure>
+          }
+        </section>
+      }
+    }
+
+    @if (currentProject.resources) {
+      <section class="content">
+        <h2>Project Resources</h2>
+        <ul>
+          @for (resource of currentProject.resources; track resource.url) {
+            <li>
+              <a [href]="resourceUrl(currentProject.slug, resource.url)">{{ resource.label }}</a>
+            </li>
+          }
+        </ul>
+      </section>
+    }
+  </main>
+} @else {
+  <main>
+    <h1>Project not found</h1>
+    <p>This project may have moved or the address may be incorrect.</p>
+    <a routerLink="/">Return to all projects</a>
+  </main>
+}

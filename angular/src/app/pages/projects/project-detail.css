@@ -1,0 +1,93 @@
+:host {
+  display: block;
+  color: #272b30;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-header {
+  padding: 2rem;
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.back-link {
+  color: #a63a19;
+}
+
+.date {
+  float: right;
+  margin: 0;
+}
+
+.organization {
+  font-size: 1.2rem;
+}
+
+.content {
+  margin: 2rem 0;
+}
+
+.project-section.has-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-section.media-left .section-copy {
+  order: 2;
+}
+
+.section-media {
+  margin: 0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  align-items: start;
+  gap: 1.5rem;
+}
+
+figure {
+  margin: 0;
+}
+
+img,
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+}
+
+h1,
+h2 {
+  color: #272b30;
+}
+
+@media (max-width: 700px) {
+  .project-section.has-media {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-section.media-left .section-copy {
+    order: 0;
+  }
+}

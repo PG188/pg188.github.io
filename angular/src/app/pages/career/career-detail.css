@@ -1,0 +1,84 @@
+:host {
+  display: block;
+  color: #272b30;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.career-header {
+  position: relative;
+  min-height: 150px;
+  padding: 2rem;
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #a63a19;
+}
+
+.career-header > img {
+  float: right;
+  width: min(28%, 220px);
+  max-height: 130px;
+  margin: 1rem 0 1rem 2rem;
+  object-fit: contain;
+}
+
+.date {
+  margin: 0 0 0.5rem;
+  color: #666;
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  color: #272b30;
+}
+
+.organization {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.content {
+  margin: 2rem 0;
+}
+
+.content li {
+  margin: 0.5rem 0;
+  line-height: 1.55;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.reflection p {
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  .career-header {
+    padding: 1.25rem;
+  }
+
+  .career-header > img {
+    width: 35%;
+    margin-left: 1rem;
+  }
+}

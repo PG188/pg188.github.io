@@ -1,0 +1,30 @@
+.construction-ribbon {
+  position: fixed;
+  z-index: 1000;
+  top: 55px;
+  right: -55px;
+  width: 220px;
+  padding: 0.55rem 1rem;
+  box-sizing: content-box;
+  transform: rotate(45deg);
+  background: #d84b27;
+  box-shadow: 0 3px 12px rgb(32 38 48 / 18%);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+@media (max-width: 520px) {
+  .construction-ribbon {
+    top: 55px;
+    right: -55px;
+    width: 200px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.6rem;
+  }
+}
