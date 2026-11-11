@@ -64,6 +64,12 @@ main {
   background: #eceeef;
 }
 
+.career-card > img {
+  box-sizing: border-box;
+  object-fit: contain;
+  padding: 1.25rem;
+}
+
 .card-content {
   display: flex;
   flex: 1;
@@ -81,6 +87,10 @@ main {
   margin: 0 0 0.4rem;
   color: #666;
   font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.career-company {
   font-weight: 700;
 }
 

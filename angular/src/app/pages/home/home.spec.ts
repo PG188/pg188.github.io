@@ -22,7 +22,9 @@ describe('Home', () => {
   });
 
   it('should link all project cards to their Angular project routes', () => {
-    const links = fixture.nativeElement.querySelectorAll('.project-card');
+    const links = fixture.nativeElement.querySelectorAll(
+      '#projects-heading ~ .project-card',
+    );
 
     expect(links.length).toBe(14);
     expect(fixture.nativeElement.querySelector('a[href="/projects/quadsim"]')?.textContent)
@@ -31,7 +33,9 @@ describe('Home', () => {
 
   it('should render a thumbnail and summary for every project', () => {
     const page = fixture.nativeElement as HTMLElement;
-    const cards = page.querySelectorAll<HTMLAnchorElement>('.project-card');
+    const cards = page.querySelectorAll<HTMLAnchorElement>(
+      '#projects-heading ~ .project-card',
+    );
 
     expect(
       Array.from(cards).every(
@@ -44,10 +48,31 @@ describe('Home', () => {
 
   it('should display projects from newest to oldest', () => {
     const years = Array.from(
-      (fixture.nativeElement as HTMLElement).querySelectorAll('.project-year'),
+      (fixture.nativeElement as HTMLElement).querySelectorAll(
+        '#projects-heading ~ .project-card .project-year',
+      ),
       (element) => Number(element.textContent),
     );
 
     expect(years).toEqual([...years].sort((first, second) => second - first));
+  });
+
+  it('should display career cards from newest to oldest with employer logos', () => {
+    const page = fixture.nativeElement as HTMLElement;
+    const cards = page.querySelectorAll<HTMLAnchorElement>('.career-card');
+    const dates = Array.from(page.querySelectorAll('.career-card .project-year'), (element) =>
+      Number(element.textContent?.match(/\d{4}/)?.[0]),
+    );
+
+    expect(cards.length).toBe(10);
+    expect(dates).toEqual([...dates].sort((first, second) => second - first));
+    expect(
+      Array.from(cards).every(
+        (card) =>
+          card.querySelector('img')?.getAttribute('src') &&
+          card.querySelector('h3') &&
+          card.getAttribute('href')?.startsWith('/career/'),
+      ),
+    ).toBe(true);
   });
 });

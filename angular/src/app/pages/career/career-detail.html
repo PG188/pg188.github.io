@@ -1,0 +1,49 @@
+@if (position; as currentPosition) {
+  <main>
+    <header class="career-header">
+      <a class="back-link" routerLink="/" fragment="career-heading">All career roles</a>
+      <img [src]="currentPosition.logo" [alt]="currentPosition.logoAlt" />
+      <p class="date">{{ currentPosition.date }}</p>
+      <h1>{{ currentPosition.role }}</h1>
+      <p class="organization">{{ currentPosition.company }}</p>
+    </header>
+
+    <section class="content">
+      <h2>Job Description</h2>
+      <ul>
+        @for (responsibility of currentPosition.responsibilities; track responsibility) {
+          <li>{{ responsibility }}</li>
+        }
+      </ul>
+    </section>
+
+    <section class="content">
+      <h2>Knowledge, Skills and Abilities</h2>
+      <ul class="skills">
+        @for (skill of currentPosition.skills; track skill) {
+          <li>{{ skill }}</li>
+        }
+      </ul>
+    </section>
+
+    <section class="content">
+      <h2>Goals and Success Factors</h2>
+      <ul>
+        @for (goal of currentPosition.goals; track goal) {
+          <li>{{ goal }}</li>
+        }
+      </ul>
+    </section>
+
+    <section class="content reflection">
+      <h2>Reflection</h2>
+      <p>{{ currentPosition.reflection }}</p>
+    </section>
+  </main>
+} @else {
+  <main>
+    <h1>Career role not found</h1>
+    <p>This role may have moved or the address may be incorrect.</p>
+    <a routerLink="/" fragment="career-heading">Return to career roles</a>
+  </main>
+}

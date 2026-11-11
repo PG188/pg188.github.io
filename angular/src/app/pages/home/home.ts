@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { projectCards } from '../projects/project-data';
+import { careerPages } from './career-data';
 
 @Component({
   imports: [RouterLink],
@@ -9,6 +10,10 @@ import { projectCards } from '../projects/project-data';
   templateUrl: './home.html',
 })
 export class Home {
+  protected readonly career = [...careerPages].sort(
+    (first, second) => second.startYear - first.startYear,
+  );
+
   protected readonly projects = [...projectCards].sort(
     (first, second) => second.startYear - first.startYear,
   );

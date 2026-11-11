@@ -2,6 +2,23 @@
   <h1>Prakhar Garg</h1>
   <p class="intro">A selection of engineering, software, and robotics projects I’ve worked on.</p>
 
+  <section class="project-grid career-grid" aria-labelledby="career-heading">
+    <h2 id="career-heading">Career</h2>
+
+    @for (position of career; track position.role + position.company + position.date) {
+      <a class="project-card career-card" [routerLink]="['/career', position.slug]">
+        <img [src]="position.logo" [alt]="position.logoAlt" loading="lazy" />
+        <div class="card-content">
+          <p class="project-year">{{ position.date }}</p>
+          <h3>{{ position.role }}</h3>
+          <p class="career-company">{{ position.company }}</p>
+          <p>{{ position.summary }}</p>
+          <span class="card-link">View role <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    }
+  </section>
+
   <section class="project-grid" aria-labelledby="projects-heading">
     <h2 id="projects-heading">Projects</h2>
 
