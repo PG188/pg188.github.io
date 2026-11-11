@@ -56,6 +56,8 @@
 }
 
 .site-nav {
+  position: relative;
+  right: 82px;
   display: flex;
   flex-wrap: wrap;
   gap: clamp(1rem, 3vw, 2.25rem);
@@ -387,6 +389,7 @@
   }
 
   .site-nav {
+    right: 62px;
     gap: 1rem;
   }
 
@@ -443,6 +446,13 @@
     width: min(100% - 2.5rem, 1180px);
   }
 
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
   .brand {
     gap: 0.5rem;
     font-size: 0.75rem;
@@ -455,7 +465,10 @@
   }
 
   .site-nav {
-    gap: 0.55rem;
+    right: 0;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1.2rem;
   }
 
   .site-nav a {

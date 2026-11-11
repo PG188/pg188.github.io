@@ -26,4 +26,14 @@ describe('App', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.brand')?.textContent).toContain('Prakhar Garg');
   });
+
+  it('should show an under-construction ribbon above the routed page', () => {
+    const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
+
+    const ribbon = (fixture.nativeElement as HTMLElement).querySelector(
+      '.construction-ribbon',
+    );
+    expect(ribbon?.textContent).toContain('Under construction');
+  });
 });
