@@ -42,8 +42,8 @@ The `Deploy Angular site` workflow publishes the Angular production build from
 `dist/portfolio/browser` to the root of GitHub Pages. It runs on pushes to
 `master`. Once the workflow is on the default branch, it can also be started
 manually from the Actions tab using another branch. It preserves the
-repository's `CNAME` and adds a `404.html` fallback so direct Angular routes can
-load.
+`CNAME` stored in `angular/public` and adds a `404.html` fallback so direct
+Angular routes can load.
 
 Before the first deployment, open the repository's **Settings → Pages** and set
 the build and deployment source to **GitHub Actions**. After that, merge the

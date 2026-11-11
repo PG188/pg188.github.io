@@ -44,7 +44,6 @@ jobs:
       - name: Prepare GitHub Pages files
         run: |
           cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
-          cp ../CNAME dist/portfolio/browser/CNAME
         working-directory: angular
 
       - name: Upload Pages artifact
