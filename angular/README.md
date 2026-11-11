@@ -45,11 +45,13 @@ manually from the Actions tab using another branch. It preserves the
 `CNAME` stored in `angular/public` and adds a `404.html` fallback so direct
 Angular routes can load.
 
-Before the first deployment, open the repository's **Settings → Pages** and set
-the build and deployment source to **GitHub Actions**. After that, merge the
-Angular changes into `master` to replace the live static homepage. The original
-static files remain in the repository but are not included in the deployed
-site.
+In the repository's **Settings → Pages**, set the build and deployment source
+to **GitHub Actions**. If the `pages-build-deployment` workflow is still
+building with Jekyll, Pages is still configured to deploy from a branch; that
+workflow publishes the repository root rather than this Angular build. After
+switching the source, merge the Angular changes into `master` to publish the
+site. The original static files remain in the repository but are not included
+in the Angular deployment.
 
 ## Running unit tests
 
