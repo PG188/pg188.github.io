@@ -21,10 +21,20 @@ describe('Home', () => {
     expect(component).toBeTruthy();
   });
 
+  it('should provide a photo-free hero and navigation to each section', () => {
+    const page = fixture.nativeElement as HTMLElement;
+
+    expect(page.querySelector('.hero-image')).toBeNull();
+    expect(page.querySelector('.brand')?.textContent).toContain('Prakhar Garg');
+    expect(page.querySelector('h1')?.textContent).toContain('useful software');
+    expect(page.querySelector('.site-nav a[href="#education"]')).toBeTruthy();
+    expect(page.querySelector('.site-nav a[href="#career"]')).toBeTruthy();
+    expect(page.querySelector('.site-nav a[href="#projects"]')).toBeTruthy();
+    expect(page.querySelector('.hero-visual')).toBeTruthy();
+  });
+
   it('should link all project cards to their Angular project routes', () => {
-    const links = fixture.nativeElement.querySelectorAll(
-      '#projects-heading ~ .project-card',
-    );
+    const links = fixture.nativeElement.querySelectorAll('#projects .project-card');
 
     expect(links.length).toBe(14);
     expect(fixture.nativeElement.querySelector('a[href="/projects/quadsim"]')?.textContent)
@@ -33,9 +43,7 @@ describe('Home', () => {
 
   it('should render a thumbnail and summary for every project', () => {
     const page = fixture.nativeElement as HTMLElement;
-    const cards = page.querySelectorAll<HTMLAnchorElement>(
-      '#projects-heading ~ .project-card',
-    );
+    const cards = page.querySelectorAll<HTMLAnchorElement>('#projects .project-card');
 
     expect(
       Array.from(cards).every(
@@ -49,7 +57,7 @@ describe('Home', () => {
   it('should display projects from newest to oldest', () => {
     const years = Array.from(
       (fixture.nativeElement as HTMLElement).querySelectorAll(
-        '#projects-heading ~ .project-card .project-year',
+        '#projects .project-card .project-year',
       ),
       (element) => Number(element.textContent),
     );

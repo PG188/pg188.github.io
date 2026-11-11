@@ -1,53 +1,111 @@
-<main>
-  <h1>Prakhar Garg</h1>
-  <p class="intro">A selection of engineering, software, and robotics projects I’ve worked on.</p>
+<main class="home-page">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Prakhar Garg, home">
+      <span class="brand-mark">PG</span>
+      <span>Prakhar Garg</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#education">Education</a>
+      <a href="#career">Career</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
 
-  <section class="project-grid education-grid" aria-labelledby="education-heading">
-    <h2 id="education-heading">Education</h2>
-
-    @for (item of education; track item.slug) {
-      <a class="project-card education-card" [routerLink]="['/education', item.slug]">
-        <img [src]="item.logo" [alt]="item.logoAlt" loading="lazy" />
-        <div class="card-content">
-          <h3>{{ item.title }}</h3>
-          <p class="career-company">{{ item.institution }}</p>
-          <p>{{ item.summary }}</p>
-          <span class="card-link">View education <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-    }
+  <section id="top" class="home-hero" aria-labelledby="home-title">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Engineer <span>·</span> Software developer <span>·</span> Builder</p>
+      <h1 id="home-title">Turning complex systems into <span>useful software.</span></h1>
+      <p class="hero-intro">
+        I work across robotics, computer vision, and software—bringing ideas from research and design into the real world.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">→</span></a>
+        <a class="button button-secondary" href="#career">My experience</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="visual-orbit orbit-outer"></div>
+      <div class="visual-orbit orbit-inner"></div>
+      <div class="visual-core"><span>PG</span></div>
+      <span class="visual-label label-robotics">Robotics</span>
+      <span class="visual-label label-vision">Computer vision</span>
+      <span class="visual-label label-software">Software</span>
+    </div>
   </section>
 
-  <section class="project-grid career-grid" aria-labelledby="career-heading">
-    <h2 id="career-heading">Career</h2>
-
-    @for (position of career; track position.role + position.company + position.date) {
-      <a class="project-card career-card" [routerLink]="['/career', position.slug]">
-        <img [src]="position.logo" [alt]="position.logoAlt" loading="lazy" />
-        <div class="card-content">
-          <p class="project-year">{{ position.date }}</p>
-          <h3>{{ position.role }}</h3>
-          <p class="career-company">{{ position.company }}</p>
-          <p>{{ position.summary }}</p>
-          <span class="card-link">View role <span aria-hidden="true">→</span></span>
+  <section id="education" class="collection education-section" aria-labelledby="education-heading">
+    <div class="section-inner">
+      <div class="section-heading">
+        <div>
+          <p class="section-eyebrow">01 / Learning and growth</p>
+          <h2 id="education-heading">Education</h2>
         </div>
-      </a>
-    }
+        <p class="section-description">The foundations behind the work I do today.</p>
+      </div>
+      <div class="project-grid education-grid">
+        @for (item of education; track item.slug) {
+          <a class="project-card education-card" [routerLink]="['/education', item.slug]">
+            <img [src]="item.logo" [alt]="item.logoAlt" loading="lazy" />
+            <div class="card-content">
+              <h3>{{ item.title }}</h3>
+              <p class="career-company">{{ item.institution }}</p>
+              <p>{{ item.summary }}</p>
+              <span class="card-link">View education <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        }
+      </div>
+    </div>
   </section>
 
-  <section class="project-grid" aria-labelledby="projects-heading">
-    <h2 id="projects-heading">Projects</h2>
-
-    @for (project of projects; track project.title) {
-      <a class="project-card" [routerLink]="['/projects', project.slug]">
-        <img [src]="project.image" [alt]="project.imageAlt" loading="lazy" />
-        <div class="card-content">
-          <p class="project-year">{{ project.startYear }}</p>
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.summary }}</p>
-          <span class="card-link">View project <span aria-hidden="true">→</span></span>
+  <section id="career" class="collection career-section" aria-labelledby="career-heading">
+    <div class="section-inner">
+      <div class="section-heading">
+        <div>
+          <p class="section-eyebrow">02 / Experience</p>
+          <h2 id="career-heading">Career</h2>
         </div>
-      </a>
-    }
+        <p class="section-description">A path through research, engineering, and building software.</p>
+      </div>
+      <div class="project-grid career-grid">
+        @for (position of career; track position.role + position.company + position.date) {
+          <a class="project-card career-card" [routerLink]="['/career', position.slug]">
+            <img [src]="position.logo" [alt]="position.logoAlt" loading="lazy" />
+            <div class="card-content">
+              <p class="project-year">{{ position.date }}</p>
+              <h3>{{ position.role }}</h3>
+              <p class="career-company">{{ position.company }}</p>
+              <p>{{ position.summary }}</p>
+              <span class="card-link">View role <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="collection projects-section" aria-labelledby="projects-heading">
+    <div class="section-inner">
+      <div class="section-heading">
+        <div>
+          <p class="section-eyebrow">03 / Selected work</p>
+          <h2 id="projects-heading">Projects</h2>
+        </div>
+        <p class="section-description">A selection of ideas explored, designed, and brought to life.</p>
+      </div>
+      <div class="project-grid">
+        @for (project of projects; track project.title) {
+          <a class="project-card" [routerLink]="['/projects', project.slug]">
+            <img [src]="project.image" [alt]="project.imageAlt" loading="lazy" />
+            <div class="card-content">
+              <p class="project-year">{{ project.startYear }}</p>
+              <h3>{{ project.title }}</h3>
+              <p>{{ project.summary }}</p>
+              <span class="card-link">View project <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        }
+      </div>
+    </div>
   </section>
 </main>

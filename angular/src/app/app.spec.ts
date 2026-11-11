@@ -24,6 +24,6 @@ describe('App', () => {
     fixture.detectChanges();
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Prakhar Garg');
+    expect(compiled.querySelector('.brand')?.textContent).toContain('Prakhar Garg');
   });
 });

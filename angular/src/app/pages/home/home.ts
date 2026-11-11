@@ -7,7 +7,6 @@ import { educationPages } from '../education/education-data';
 @Component({
   imports: [RouterLink],
   selector: 'app-home',
-  styleUrl: './home.css',
   templateUrl: './home.html',
 })
 export class Home {
