@@ -64,7 +64,8 @@ main {
   background: #eceeef;
 }
 
-.career-card > img {
+.career-card > img,
+.education-card > img {
   box-sizing: border-box;
   object-fit: contain;
   padding: 1.25rem;

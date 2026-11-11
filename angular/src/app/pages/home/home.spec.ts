@@ -75,4 +75,20 @@ describe('Home', () => {
       ),
     ).toBe(true);
   });
+
+  it('should link all education cards to their detail pages', () => {
+    const cards = (fixture.nativeElement as HTMLElement).querySelectorAll<HTMLAnchorElement>(
+      '.education-card',
+    );
+
+    expect(cards.length).toBe(4);
+    expect(
+      Array.from(cards).every(
+        (card) =>
+          card.querySelector('img')?.getAttribute('src') &&
+          card.getAttribute('href')?.startsWith('/education/'),
+      ),
+    ).toBe(true);
+    expect(cards[0].getAttribute('href')).toBe('/education/masters');
+  });
 });

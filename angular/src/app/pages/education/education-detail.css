@@ -1,0 +1,87 @@
+:host {
+  display: block;
+  color: #272b30;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.education-header {
+  min-height: 150px;
+  padding: 2rem;
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #a63a19;
+}
+
+.education-header > img {
+  float: right;
+  width: min(28%, 220px);
+  max-height: 130px;
+  margin: 1rem 0 1rem 2rem;
+  object-fit: contain;
+}
+
+h1,
+h2 {
+  color: #272b30;
+}
+
+.organization {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.program {
+  color: #555;
+}
+
+.content {
+  margin: 2rem 0;
+}
+
+.content p,
+.content li {
+  line-height: 1.65;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.education-image {
+  margin: 2rem 0;
+}
+
+.education-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  .education-header {
+    padding: 1.25rem;
+  }
+
+  .education-header > img {
+    width: 35%;
+    margin-left: 1rem;
+  }
+}
