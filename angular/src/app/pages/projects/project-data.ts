@@ -27,22 +27,114 @@ export interface ProjectPage {
   resources?: ProjectResource[];
 }
 
+export interface ProjectCard {
+  slug: string;
+  title: string;
+  summary: string;
+  image: string;
+  imageAlt: string;
+}
+
 export const projectCards = [
-  { slug: 'capstone', title: 'Mechatronics Engineering Capstone' },
-  { slug: 'website', title: 'Personal Website' },
-  { slug: 'hyperloop', title: 'McMaster Hyperloop' },
-  { slug: 'ecocar', title: 'EcoCAR3' },
-  { slug: 'formulahybrid', title: 'Formula Hybrid' },
-  { slug: 'strangers', title: 'Strangers' },
-  { slug: 'quadsim', title: 'QuadSim' },
-  { slug: 'sumobot', title: 'Sumobot' },
-  { slug: 'quadcopter', title: 'Quadcopter Design' },
-  { slug: 'class', title: 'Class Projects' },
-  { slug: 'first', title: 'FIRST Robotics' },
-  { slug: 'f1', title: 'F1 in schools' },
-  { slug: 'vex', title: 'VEX Robotics' },
-  { slug: 'skills', title: 'Skills Robotics' },
-];
+  {
+    slug: 'capstone',
+    title: 'Mechatronics Engineering Capstone',
+    summary: 'Designing a semi-autonomous medical walker focused on mobility and user safety.',
+    image: '/assets/projects/capstone/CADdesign.png',
+    imageAlt: 'CAD design of the semi-autonomous medical walker',
+  },
+  {
+    slug: 'website',
+    title: 'Personal Website',
+    summary: 'A personal portfolio built to share my projects and grow my web-development skills.',
+    image: '/assets/projects/website/websitescreenshot.png',
+    imageAlt: 'Screenshot of my personal portfolio website',
+  },
+  {
+    slug: 'hyperloop',
+    title: 'McMaster Hyperloop',
+    summary: 'A student feasibility study exploring a high-speed transportation concept.',
+    image: '/assets/projects/hyperloop/image0.jpg',
+    imageAlt: 'McMaster Hyperloop vehicle design',
+  },
+  {
+    slug: 'ecocar',
+    title: 'EcoCAR3',
+    summary: 'Developing low-level software for a university hybrid-electric vehicle team.',
+    image: '/assets/projects/ecocar/EcoCAR3Camaro.jpg',
+    imageAlt: 'Chevrolet Camaro converted for the EcoCAR 3 competition',
+  },
+  {
+    slug: 'formulahybrid',
+    title: 'Formula Hybrid',
+    summary: 'Working on vehicle software and a wheel-slip control algorithm for a hybrid race car.',
+    image: '/assets/projects/formulahybrid/Project Formula Hybrid.jpg',
+    imageAlt: 'McMaster Formula Hybrid race car',
+  },
+  {
+    slug: 'strangers',
+    title: 'Strangers',
+    summary: 'An Android hackathon app that matched people using personality insights.',
+    image: '/assets/projects/strangers/Screen 1.png',
+    imageAlt: 'Screen from the Strangers Android application',
+  },
+  {
+    slug: 'quadsim',
+    title: 'QuadSim',
+    summary: 'A Kinect-controlled quadcopter simulator created at a Rutgers hackathon.',
+    image: '/assets/quadsim/QuadSIM.JPG',
+    imageAlt: 'QuadSIM project model',
+  },
+  {
+    slug: 'sumobot',
+    title: 'Sumobot',
+    summary: 'Organizing a university robotics event and preparing robot parts kits for teams.',
+    image: '/assets/projects/sumobot/Project SumoBot.jpg',
+    imageAlt: 'McMaster SumoBot project',
+  },
+  {
+    slug: 'quadcopter',
+    title: 'Quadcopter Design',
+    summary: 'A personal quadcopter design project using CAD and wind-tunnel analysis.',
+    image: '/assets/projects/quadcopter/logo.jpg',
+    imageAlt: 'Quadcopter CAD design',
+  },
+  {
+    slug: 'class',
+    title: 'Class Projects',
+    summary: 'Engineering coursework, including an analog-to-digital converter and CD-drive design.',
+    image: '/assets/projects/class/Project Class.jpg',
+    imageAlt: 'Class engineering project',
+  },
+  {
+    slug: 'first',
+    title: 'FIRST Robotics',
+    summary: 'Four years of high-school robotics, robot design, manufacturing, and team leadership.',
+    image: '/assets/projects/first/2012robot.jpg',
+    imageAlt: 'Blizzard XIII FIRST Robotics Competition robot',
+  },
+  {
+    slug: 'f1',
+    title: 'F1 in Schools',
+    summary: 'Designing an F1-style model car as part of a cross-school competition team.',
+    image: '/assets/projects/f1/image057.gif',
+    imageAlt: 'F1 in Schools car design and analysis',
+  },
+  {
+    slug: 'vex',
+    title: 'VEX Robotics',
+    summary: 'Building and improving competition robots, then mentoring younger students.',
+    image: '/assets/projects/vex/image050.jpg',
+    imageAlt: 'VEX Robotics robot design',
+  },
+  {
+    slug: 'skills',
+    title: 'Skills Robotics',
+    summary: 'Designing a budget-conscious robot for Ontario’s Skills Robotics Competition.',
+    image: '/assets/projects/skills/image053.jpg',
+    imageAlt: 'Completed Skills Robotics robot',
+  },
+] satisfies ProjectCard[];
 
 export const projectPages: ProjectPage[] = [
   {

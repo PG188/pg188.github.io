@@ -1,14 +1,19 @@
 <main>
   <h1>Prakhar Garg</h1>
-  <p>Welcome to my portfolio. Here are some projects I’ve worked on.</p>
+  <p class="intro">A selection of engineering, software, and robotics projects I’ve worked on.</p>
 
-  <section aria-labelledby="projects-heading">
+  <section class="project-grid" aria-labelledby="projects-heading">
     <h2 id="projects-heading">Projects</h2>
 
     @for (project of projects; track project.title) {
-      <article>
-        <h3><a [routerLink]="['/projects', project.slug]">{{ project.title }}</a></h3>
-      </article>
+      <a class="project-card" [routerLink]="['/projects', project.slug]">
+        <img [src]="project.image" [alt]="project.imageAlt" loading="lazy" />
+        <div class="card-content">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.summary }}</p>
+          <span class="card-link">View project <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
     }
   </section>
 </main>
