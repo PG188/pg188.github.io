@@ -2,6 +2,7 @@ export interface ProjectSection {
   heading: string;
   paragraphs?: string[];
   items?: string[];
+  media?: ProjectMedia;
 }
 
 export interface ProjectMedia {
@@ -62,14 +63,26 @@ export const projectPages: ProjectPage[] = [
         paragraphs: [
           'I oversaw the mechanical components of the walker and supported the team’s development and testing work. The project brought together a large interdisciplinary team.',
         ],
+        media: { src: 'CADdesign.png', alt: 'CAD design of the medical walker' },
       },
       {
-        heading: 'Goals and Challenges',
+        heading: 'Knowledge, Skills and Abilities',
+        items: ['CAD', 'Rapid prototyping', 'Mechanical testing', 'Requirements engineering', 'Documentation'],
+        media: { src: 'wheelassembly.mp4', alt: 'Medical walker wheel assembly video' },
+      },
+      {
+        heading: 'Goals, Success Factors',
         items: [
           'Create a walker with appropriate software controls and feedback.',
           'Test the walker for strength and durability.',
+        ],
+      },
+      {
+        heading: 'Challenges',
+        items: [
           'Manage a large interdisciplinary team, work within a $600 budget, and maintain team communication.',
         ],
+        media: { src: 'testing.mp4', alt: 'Medical walker testing video' },
       },
       {
         heading: 'Reflection',
@@ -77,12 +90,6 @@ export const projectPages: ProjectPage[] = [
           'We allocated responsibilities early, but coordinating meetings around everyone’s schedules was difficult. In hindsight, a task coordination tool like Trello would have helped. The project concluded with an electric walker capable of autonomously navigating a room and detecting obstacles.',
         ],
       },
-    ],
-    skills: ['CAD', 'Rapid prototyping', 'Mechanical testing', 'Requirements engineering', 'Documentation'],
-    media: [
-      { src: 'CADdesign.png', alt: 'CAD design of the medical walker' },
-      { src: 'wheelassembly.mp4', alt: 'Medical walker wheel assembly video' },
-      { src: 'testing.mp4', alt: 'Medical walker testing video' },
     ],
   },
   {

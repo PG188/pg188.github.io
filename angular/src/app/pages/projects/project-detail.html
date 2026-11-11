@@ -12,7 +12,11 @@
     </header>
 
     @for (section of currentProject.sections; track section.heading) {
-      <section class="content project-section" [class.has-media]="currentProject.media?.[$index]">
+      <section
+        class="content project-section"
+        [class.has-media]="sectionMedia(currentProject, section, $index)"
+        [class.media-left]="mediaIsLeft(currentProject, $index)"
+      >
         <div class="section-copy">
           <h2>{{ section.heading }}</h2>
           @if (section.paragraphs) {
@@ -28,7 +32,7 @@
             </ul>
           }
         </div>
-        @if (currentProject.media?.[$index]; as item) {
+        @if (sectionMedia(currentProject, section, $index); as item) {
           <figure class="section-media">
             @if (item.src.endsWith('.mp4')) {
               <video controls preload="metadata">
@@ -59,23 +63,23 @@
 
     @if (additionalMedia(currentProject); as extraMedia) {
       @if (extraMedia.length) {
-      <section class="content media-grid" aria-label="Project media">
-        @for (item of extraMedia; track item.src) {
-          <figure>
-            @if (item.src.endsWith('.mp4')) {
-              <video controls preload="metadata">
-                <source [src]="assetUrl(currentProject.slug, item.src)" type="video/mp4" />
-                Your browser does not support HTML video.
-              </video>
-            } @else {
-              <img [src]="assetUrl(currentProject.slug, item.src)" [alt]="item.alt" />
-            }
-            @if (item.caption) {
-              <figcaption>{{ item.caption }}</figcaption>
-            }
-          </figure>
-        }
-      </section>
+        <section class="content media-grid" aria-label="Project media">
+          @for (item of extraMedia; track item.src) {
+            <figure>
+              @if (item.src.endsWith('.mp4')) {
+                <video controls preload="metadata">
+                  <source [src]="assetUrl(currentProject.slug, item.src)" type="video/mp4" />
+                  Your browser does not support HTML video.
+                </video>
+              } @else {
+                <img [src]="assetUrl(currentProject.slug, item.src)" [alt]="item.alt" />
+              }
+              @if (item.caption) {
+                <figcaption>{{ item.caption }}</figcaption>
+              }
+            </figure>
+          }
+        </section>
       }
     }
 

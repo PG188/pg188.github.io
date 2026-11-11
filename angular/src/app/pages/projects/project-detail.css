@@ -40,7 +40,7 @@ main {
   gap: 2rem;
 }
 
-.project-section:nth-of-type(even) .section-copy {
+.project-section.media-left .section-copy {
   order: 2;
 }
 
@@ -87,7 +87,7 @@ h2 {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .project-section:nth-of-type(even) .section-copy {
+  .project-section.media-left .section-copy {
     order: 0;
   }
 }
