@@ -7,11 +7,7 @@
 
     @for (project of projects; track project.title) {
       <article>
-        @if (project.route) {
-          <h3><a [routerLink]="project.route">{{ project.title }}</a></h3>
-        } @else {
-          <h3>{{ project.title }}</h3>
-        }
+        <h3><a [routerLink]="['/projects', project.slug]">{{ project.title }}</a></h3>
       </article>
     }
   </section>
