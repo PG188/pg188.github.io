@@ -9,5 +9,7 @@ import { projectCards } from '../projects/project-data';
   templateUrl: './home.html',
 })
 export class Home {
-  protected readonly projects = projectCards;
+  protected readonly projects = [...projectCards].sort(
+    (first, second) => second.startYear - first.startYear,
+  );
 }

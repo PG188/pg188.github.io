@@ -30,6 +30,7 @@ export interface ProjectPage {
 export interface ProjectCard {
   slug: string;
   title: string;
+  startYear: number;
   summary: string;
   image: string;
   imageAlt: string;
@@ -39,6 +40,7 @@ export const projectCards = [
   {
     slug: 'capstone',
     title: 'Mechatronics Engineering Capstone',
+    startYear: 2017,
     summary: 'Designing a semi-autonomous medical walker focused on mobility and user safety.',
     image: '/assets/projects/capstone/CADdesign.png',
     imageAlt: 'CAD design of the semi-autonomous medical walker',
@@ -46,6 +48,7 @@ export const projectCards = [
   {
     slug: 'website',
     title: 'Personal Website',
+    startYear: 2013,
     summary: 'A personal portfolio built to share my projects and grow my web-development skills.',
     image: '/assets/projects/website/websitescreenshot.png',
     imageAlt: 'Screenshot of my personal portfolio website',
@@ -53,6 +56,7 @@ export const projectCards = [
   {
     slug: 'hyperloop',
     title: 'McMaster Hyperloop',
+    startYear: 2015,
     summary: 'A student feasibility study exploring a high-speed transportation concept.',
     image: '/assets/projects/hyperloop/image0.jpg',
     imageAlt: 'McMaster Hyperloop vehicle design',
@@ -60,6 +64,7 @@ export const projectCards = [
   {
     slug: 'ecocar',
     title: 'EcoCAR3',
+    startYear: 2013,
     summary: 'Developing low-level software for a university hybrid-electric vehicle team.',
     image: '/assets/projects/ecocar/EcoCAR3Camaro.jpg',
     imageAlt: 'Chevrolet Camaro converted for the EcoCAR 3 competition',
@@ -67,6 +72,7 @@ export const projectCards = [
   {
     slug: 'formulahybrid',
     title: 'Formula Hybrid',
+    startYear: 2013,
     summary: 'Working on vehicle software and a wheel-slip control algorithm for a hybrid race car.',
     image: '/assets/projects/formulahybrid/Project Formula Hybrid.jpg',
     imageAlt: 'McMaster Formula Hybrid race car',
@@ -74,6 +80,7 @@ export const projectCards = [
   {
     slug: 'strangers',
     title: 'Strangers',
+    startYear: 2015,
     summary: 'An Android hackathon app that matched people using personality insights.',
     image: '/assets/projects/strangers/Screen 1.png',
     imageAlt: 'Screen from the Strangers Android application',
@@ -81,6 +88,7 @@ export const projectCards = [
   {
     slug: 'quadsim',
     title: 'QuadSim',
+    startYear: 2015,
     summary: 'A Kinect-controlled quadcopter simulator created at a Rutgers hackathon.',
     image: '/assets/quadsim/QuadSIM.JPG',
     imageAlt: 'QuadSIM project model',
@@ -88,6 +96,7 @@ export const projectCards = [
   {
     slug: 'sumobot',
     title: 'Sumobot',
+    startYear: 2013,
     summary: 'Organizing a university robotics event and preparing robot parts kits for teams.',
     image: '/assets/projects/sumobot/Project SumoBot.jpg',
     imageAlt: 'McMaster SumoBot project',
@@ -95,6 +104,7 @@ export const projectCards = [
   {
     slug: 'quadcopter',
     title: 'Quadcopter Design',
+    startYear: 2014,
     summary: 'A personal quadcopter design project using CAD and wind-tunnel analysis.',
     image: '/assets/projects/quadcopter/logo.jpg',
     imageAlt: 'Quadcopter CAD design',
@@ -102,6 +112,7 @@ export const projectCards = [
   {
     slug: 'class',
     title: 'Class Projects',
+    startYear: 2012,
     summary: 'Engineering coursework, including an analog-to-digital converter and CD-drive design.',
     image: '/assets/projects/class/Project Class.jpg',
     imageAlt: 'Class engineering project',
@@ -109,6 +120,7 @@ export const projectCards = [
   {
     slug: 'first',
     title: 'FIRST Robotics',
+    startYear: 2009,
     summary: 'Four years of high-school robotics, robot design, manufacturing, and team leadership.',
     image: '/assets/projects/first/2012robot.jpg',
     imageAlt: 'Blizzard XIII FIRST Robotics Competition robot',
@@ -116,6 +128,7 @@ export const projectCards = [
   {
     slug: 'f1',
     title: 'F1 in Schools',
+    startYear: 2010,
     summary: 'Designing an F1-style model car as part of a cross-school competition team.',
     image: '/assets/projects/f1/image057.gif',
     imageAlt: 'F1 in Schools car design and analysis',
@@ -123,13 +136,15 @@ export const projectCards = [
   {
     slug: 'vex',
     title: 'VEX Robotics',
+    startYear: 2009,
     summary: 'Building and improving competition robots, then mentoring younger students.',
-    image: '/assets/projects/vex/image050.jpg',
-    imageAlt: 'VEX Robotics robot design',
+    image: '/assets/projects/vex/logo.jpg',
+    imageAlt: 'VEX Robotics Competition logo',
   },
   {
     slug: 'skills',
     title: 'Skills Robotics',
+    startYear: 2010,
     summary: 'Designing a budget-conscious robot for Ontario’s Skills Robotics Competition.',
     image: '/assets/projects/skills/image053.jpg',
     imageAlt: 'Completed Skills Robotics robot',
@@ -472,50 +487,6 @@ export const projectPages: ProjectPage[] = [
     ],
   },
   {
-    slug: 'first',
-    title: 'FIRST Robotics Competition',
-    date: '2009–2012',
-    organization: 'Woburn C.I.',
-    sections: [
-      {
-        heading: 'Project Description',
-        paragraphs: [
-          'Founded by Dean Kamen, FIRST (For Inspiration and Recognition of Science and Technology) promotes interest in science, technology, engineering, and mathematics through international student competitions. I competed in the FIRST Tech Challenge and FIRST Robotics Competition.',
-        ],
-      },
-      {
-        heading: 'Blizzard XIII (2012)',
-        paragraphs: [
-          'In my senior year, my teammates and mentors appointed me team president. I coordinated sub-team and side-project progress, communicated with the team and mentors, and contributed to robot design and manufacturing. We built a sheet-metal robot, used rivets to reduce weight, and designed a fixed-hood wooden shooter. A PID feedback loop controlled flywheel speed.',
-        ],
-      },
-      {
-        heading: 'Blizzard XII (2011)',
-        paragraphs: [
-          'The challenge involved picking up and lifting inflatable tubes, with bonus points for deploying a mini-robot. I designed and maintained the robot’s pneumatic systems, including a shifting gearbox. The team developed a prototype and a competition robot, using testing to improve the design.',
-        ],
-      },
-      {
-        heading: 'Blizzard XI (2010)',
-        paragraphs: [
-          'The competition was soccer. Our robot used mecanum wheels for maneuverability and rollers to control the ball. The project taught me to choose materials carefully, account for weight limits, and plan maintenance. The team qualified for the world championships after winning the regional Chairman’s Award.',
-        ],
-      },
-      {
-        heading: 'Blizzard X (2009)',
-        paragraphs: [
-          'As a rookie, I learned manufacturing and robot design from senior teammates and helped oversee drivetrain manufacturing and maintenance. Our robot scored basketball-sized balls on a low-friction field. We improved traction by pulsing wheel power to alternate static and rolling friction.',
-        ],
-      },
-    ],
-    media: [
-      { src: '2012robot.jpg', alt: 'Blizzard XIII robot' },
-      { src: '2011robot.jpg', alt: 'Blizzard XII robot' },
-      { src: '2010robot.jpg', alt: 'Blizzard XI robot' },
-      { src: '2009robot.jpg', alt: 'Blizzard X robot' },
-    ],
-  },
-  {
     slug: 'f1',
     title: 'F1 in Schools',
     date: '2010–2012',
@@ -536,37 +507,6 @@ export const projectPages: ProjectPage[] = [
     ],
     media: [{ src: 'image057.gif', alt: 'F1 in Schools car design and analysis' }],
     resources: [{ label: 'Velocita Racing website', url: 'https://velocitaracing.weebly.com/' }],
-  },
-  {
-    slug: 'vex',
-    title: 'VEX Robotics Competition',
-    date: '2008–2012',
-    organization: 'Woburn C.I.',
-    sections: [
-      {
-        heading: 'Project Description',
-        paragraphs: [
-          'VEX competitions helped me develop my understanding of mechanical systems. The kit’s structural components were useful for proof-of-concept models, and competitions taught me about structural support and reducing inefficiency. I competed from 2008 to 2012 and mentored younger students in building robust machines.',
-        ],
-      },
-      {
-        heading: 'Design Lessons',
-        items: [
-          'Triangle bracing helped prevent the frame from flexing under heavy loads.',
-          'Unsupported drive shafts could bend under heavy loads.',
-          'Adding a second beam and additional gearing reduced shear stress and torsion.',
-          'Greased, well-aligned gearboxes reduced friction and energy loss.',
-          'Reducing the number of gears and using a central conical frame reduced friction and strain.',
-        ],
-      },
-    ],
-    media: [
-      { src: 'image046.jpg', alt: 'VEX robot frame with triangle bracing', caption: 'Triangle bracing reinforced the frame.' },
-      { src: 'image047.jpg', alt: 'VEX robot drive shaft', caption: 'Unsupported drive shafts could bend under heavy loads.' },
-      { src: 'image048.jpg', alt: 'VEX robot with additional support beams', caption: 'An added beam and gearing reduced stress and torsion.' },
-      { src: 'image049.jpg', alt: 'VEX robot gearbox', caption: 'Aligned, lubricated gearboxes helped reduce friction.' },
-      { src: 'image050.jpg', alt: 'Completed VEX robot design', caption: 'The final design reduced gears and supported the pickup assembly.' },
-    ],
   },
   {
     slug: 'skills',

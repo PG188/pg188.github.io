@@ -9,6 +9,7 @@
       <a class="project-card" [routerLink]="['/projects', project.slug]">
         <img [src]="project.image" [alt]="project.imageAlt" loading="lazy" />
         <div class="card-content">
+          <p class="project-year">{{ project.startYear }}</p>
           <h3>{{ project.title }}</h3>
           <p>{{ project.summary }}</p>
           <span class="card-link">View project <span aria-hidden="true">→</span></span>

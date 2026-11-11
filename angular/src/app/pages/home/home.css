@@ -77,6 +77,13 @@ main {
   font-size: 1.15rem;
 }
 
+.project-year {
+  margin: 0 0 0.4rem;
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
 .card-content p {
   margin: 0 0 1.25rem;
   color: #555;

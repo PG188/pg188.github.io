@@ -41,4 +41,13 @@ describe('Home', () => {
       ),
     ).toBe(true);
   });
+
+  it('should display projects from newest to oldest', () => {
+    const years = Array.from(
+      (fixture.nativeElement as HTMLElement).querySelectorAll('.project-year'),
+      (element) => Number(element.textContent),
+    );
+
+    expect(years).toEqual([...years].sort((first, second) => second - first));
+  });
 });
